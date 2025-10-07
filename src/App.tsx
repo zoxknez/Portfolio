@@ -2,7 +2,6 @@ import { useCallback, useEffect, useState } from 'react';
 import BackgroundCanvas from './components/BackgroundCanvas';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
-import About from './components/About';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
@@ -10,11 +9,10 @@ import { portfolioProjects } from './data/projects';
 import { skills } from './data/skills';
 
 const SECTIONS = [
-  { id: 'hero', label: 'Početak' },
-  { id: 'about', label: 'O meni' },
-  { id: 'skills', label: 'Veštine' },
-  { id: 'portfolio', label: 'Portfolio' },
-  { id: 'contact', label: 'Kontakt' },
+  { id: 'hero', label: '✨ Početak' },
+  { id: 'skills', label: '🛠️ Veštine' },
+  { id: 'portfolio', label: '🚀 Projekti' },
+  { id: 'contact', label: '📬 Kontakt' },
 ] as const;
 
 type SectionId = (typeof SECTIONS)[number]['id'];
@@ -95,7 +93,6 @@ function App() {
 
       <main className="relative z-10">
         <Hero sectionId="hero" onNavigate={handleNavigate} isLoaded={isLoaded} />
-        <About sectionId="about" />
         <Skills sectionId="skills" skills={skills} />
         <Portfolio sectionId="portfolio" projects={portfolioProjects} />
         <Contact sectionId="contact" />

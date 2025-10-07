@@ -1,5 +1,5 @@
 import { MouseEvent } from 'react';
-import { Rocket, Github, Linkedin } from 'lucide-react';
+import { Rocket, Github } from 'lucide-react';
 
 interface NavProps {
   sections: ReadonlyArray<{ id: string; label: string }>;
@@ -31,40 +31,30 @@ export default function Nav({ sections, activeSection, onNavigate }: NavProps) {
               PORTFOLIO
             </span>
           </a>
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-2">
             {sections.map((section) => (
               <a
                 key={section.id}
                 href={`#${section.id}`}
                 onClick={(event) => handleClick(event, section.id)}
-                className={`relative px-4 py-2 transition-all duration-300 ${
+                className={`relative px-5 py-2.5 rounded-xl font-medium transition-all duration-300 ${
                   activeSection === section.id
-                    ? 'text-cyan-400'
-                    : 'text-gray-400 hover:text-white'
+                    ? 'bg-gradient-to-r from-cyan-500/20 to-blue-500/20 text-cyan-300 border border-cyan-400/30 shadow-lg shadow-cyan-500/20'
+                    : 'text-gray-400 hover:text-white hover:bg-white/5'
                 }`}
                 aria-current={activeSection === section.id ? 'page' : undefined}
               >
                 {section.label}
-                {activeSection === section.id && (
-                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500" />
-                )}
               </a>
             ))}
           </div>
           <div className="flex items-center gap-3">
             <a
-              href="#"
+              href="https://github.com/zoxknez"
               className="w-10 h-10 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center hover:bg-white/10 hover:border-cyan-400/50 transition-all duration-300 hover:scale-110"
               target="_blank" rel="noopener noreferrer"
             >
               <Github className="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              className="w-10 h-10 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center hover:bg-white/10 hover:border-blue-400/50 transition-all duration-300 hover:scale-110"
-              target="_blank" rel="noopener noreferrer"
-            >
-              <Linkedin className="w-5 h-5" />
             </a>
           </div>
         </div>

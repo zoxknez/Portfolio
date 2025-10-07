@@ -1,8 +1,9 @@
 export const skills = [
-  { name: 'React & Next.js', level: 95, color: 'from-cyan-400 to-blue-500' },
-  { name: 'TypeScript', level: 90, color: 'from-blue-400 to-indigo-500' },
-  { name: 'Node.js', level: 88, color: 'from-green-400 to-emerald-500' },
-  { name: 'C# & .NET', level: 92, color: 'from-purple-400 to-pink-500' },
-  { name: 'Android/Kotlin', level: 85, color: 'from-teal-400 to-cyan-500' },
-  { name: 'AI/ML', level: 80, color: 'from-orange-400 to-rose-500' },
+  { name: 'Next.js & React', level: 94, color: 'from-cyan-400 to-blue-500' },
+  { name: 'TypeScript & Node.js', level: 90, color: 'from-blue-400 to-indigo-500' },
+  { name: 'Supabase & Postgres', level: 86, color: 'from-emerald-400 to-teal-500' },
+  { name: 'Express & API dizajn', level: 84, color: 'from-purple-400 to-pink-500' },
+  { name: 'Tailwind CSS & UI dizajn', level: 82, color: 'from-sky-400 to-cyan-500' },
+  { name: 'Electron & Desktop ekosistem', level: 78, color: 'from-orange-400 to-rose-500' },
+  { name: 'Python & automatizacija', level: 74, color: 'from-amber-400 to-lime-500' },
 ];

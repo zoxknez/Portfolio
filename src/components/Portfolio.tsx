@@ -8,6 +8,8 @@ interface Project {
   technologies: string[];
   gradient: string;
   icon: LucideIcon;
+  url?: string;
+  repo?: string;
 }
 
 interface PortfolioProps {
@@ -19,9 +21,18 @@ export default function Portfolio({ projects, sectionId }: PortfolioProps) {
   return (
     <section id={sectionId} className="min-h-screen flex items-center justify-center px-6 py-24">
       <div className="max-w-7xl w-full">
-        <h2 className="text-5xl md:text-6xl font-bold mb-12 text-center bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-          Portfolio
-        </h2>
+        <div className="relative mb-16">
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-cyan-500/10 to-blue-500/20 blur-3xl -z-10" />
+          <div className="relative p-10 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-2xl text-center shadow-[0_30px_90px_-45px_rgba(147,51,234,0.6)]">
+            <h2 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent pb-2">
+              Portfolio
+            </h2>
+            <p className="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
+              Projekti u nastavku nastali su kroz kombinaciju gotovih servisa, AI asistencije i samostalnog rada.
+              Biram rešenja koja donose najveću vrednost korisnicima, dok kodiranje prilagođavam nivou koji je potreban da ideja proradi.
+            </p>
+          </div>
+        </div>
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => {
             const Icon = project.icon;
@@ -52,10 +63,30 @@ export default function Portfolio({ projects, sectionId }: PortfolioProps) {
                     </span>
                   ))}
                 </div>
-                <button className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors group/btn">
-                  Vidi Više
-                  <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                </button>
+                <div className="flex flex-wrap items-center gap-4 mt-6">
+                  {project.url && (
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-400/40 text-cyan-100 hover:bg-cyan-500/20 transition-colors"
+                    >
+                      Live
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  )}
+                  {project.repo && (
+                    <a
+                      href={project.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-gray-200 hover:border-cyan-400/50 transition-colors"
+                    >
+                      Repo
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  )}
+                </div>
               </div>
             );
           })}
