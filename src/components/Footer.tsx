@@ -1,9 +1,13 @@
-import { Github, Mail, Phone, Heart } from 'lucide-react';
+import { Github, Mail, Phone, ArrowUp } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Footer() {
   const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <footer className="relative z-20 border-t border-white/10 bg-slate-900/95 backdrop-blur-xl">
@@ -88,12 +92,17 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-6 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-gray-400 flex items-center gap-1">
+            <p className="text-sm text-gray-400">
               © {currentYear} Zoran Knežević. {t?.footer?.rights || 'All rights reserved'}
             </p>
-            <p className="text-sm text-gray-400 flex items-center gap-1">
-              {t?.footer?.madeWith || 'Made with'} <Heart className="w-4 h-4 text-red-400 animate-pulse" /> {t?.footer?.using || 'using'} React + TypeScript + Vite
-            </p>
+            <button
+              onClick={scrollToTop}
+              className="group flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-400/30 text-cyan-300 hover:from-cyan-500/30 hover:to-blue-500/30 hover:border-cyan-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20"
+              aria-label={t?.footer?.backToTop || 'Back to Top'}
+            >
+              <ArrowUp className="w-4 h-4 group-hover:-translate-y-1 transition-transform" />
+              <span className="text-sm font-semibold">{t?.footer?.backToTop || 'Back to Top'}</span>
+            </button>
           </div>
         </div>
       </div>

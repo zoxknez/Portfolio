@@ -47,6 +47,7 @@
     "intro": "Ovo su alati koje najčešće koristim uz AI pair‑programming i gotove template‑ove. Procente shvatam kao nivo sigurnosti kad treba da nešto sastavim u ovom ekosistemu, a ne kao tvrdnju da sam senior programer.",
     "focusStackHeading": "Fokus stack",
     "toolboxHeading": "Razvojni Alati",
+    "toolboxIntro": "Ključni alati i servisi koje koristim za deployment, upravljanje bazama podataka i automatizaciju",
     "focusStack": [
       {
         "name": "Next.js & React",
@@ -227,7 +228,6 @@
     "quickLinks": "Brzi Linkovi",
     "connect": "Poveži se",
     "rights": "Sva prava zadržana",
-    "madeWith": "Napravljeno sa",
-    "using": "koristeći"
+    "backToTop": "Nazad na Vrh"
   }
 }

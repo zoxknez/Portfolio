@@ -10,7 +10,7 @@ interface HeroProps {
 export default function Hero({ onNavigate, isLoaded, sectionId }: HeroProps) {
   const { t } = useLanguage();
   return (
-    <section id={sectionId} className="min-h-screen flex items-center justify-center px-4 md:px-6 py-16 md:py-24">
+    <section id={sectionId} className="min-h-screen flex items-center justify-center px-4 md:px-6 py-16 md:pt-24 md:pb-12">
       <div
         className={`w-full max-w-6xl mx-auto transform transition-all duration-1000 ${
           isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'

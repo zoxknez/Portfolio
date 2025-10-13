@@ -71,14 +71,15 @@ export default function Nav({ sections, activeSection, onNavigate }: NavProps) {
           <div className="flex items-center gap-3">
             <button
               onClick={() => setLanguage(language === 'en' ? 'sr' : 'en')}
-              className="relative px-4 py-2 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 flex items-center gap-2 hover:bg-white/10 hover:border-cyan-400/50 transition-all duration-300 hover:scale-105 group"
+              className="group relative px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500/20 to-blue-500/20 backdrop-blur-sm border border-cyan-400/40 flex items-center gap-2 hover:from-cyan-500/30 hover:to-blue-500/30 hover:border-cyan-400/60 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-cyan-500/30"
               title={t?.nav?.language || 'Language'}
             >
-              <Languages className="w-4 h-4 text-cyan-400" />
-              <span className="text-sm font-semibold text-cyan-300">
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/0 via-cyan-400/10 to-cyan-400/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl" />
+              <Languages className="w-5 h-5 text-cyan-300 group-hover:text-cyan-200 group-hover:rotate-12 transition-all duration-300 relative z-10" />
+              <span className="text-base font-bold text-white relative z-10 group-hover:tracking-wider transition-all duration-300">
                 {language === 'en' ? 'EN' : 'SR'}
               </span>
-              <div className="absolute -bottom-1 right-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-400 group-hover:w-full transition-all duration-300" />
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-xl opacity-0 group-hover:opacity-20 blur-lg transition-opacity duration-300" />
             </button>
             <a
               href="https://github.com/zoxknez"

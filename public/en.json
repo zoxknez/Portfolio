@@ -47,6 +47,7 @@
     "intro": "These are the tools I most often use with AI pair-programming and ready-made templates. Percentages reflect my confidence when assembling within this ecosystem—not a claim of seniority.",
     "focusStackHeading": "Focus stack",
     "toolboxHeading": "Development Toolbox",
+    "toolboxIntro": "Essential tools and services I use for deployment, database management, and automation",
     "focusStack": [
       {
         "name": "Next.js & React",
@@ -227,7 +228,6 @@
     "quickLinks": "Quick Links",
     "connect": "Connect",
     "rights": "All rights reserved",
-    "madeWith": "Made with",
-    "using": "using"
+    "backToTop": "Back to Top"
   }
 }

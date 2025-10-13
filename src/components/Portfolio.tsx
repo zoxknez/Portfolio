@@ -28,7 +28,7 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
   
   const projects = t?.projects?.items || [];
   return (
-    <section id={sectionId} className="min-h-screen flex items-center justify-center px-4 md:px-6 py-16 md:py-24">
+    <section id={sectionId} className="min-h-screen md:min-h-0 flex items-center justify-center px-4 md:px-6 py-16 md:py-20">
       <div className="max-w-7xl w-full">
         <div className="relative mb-10 md:mb-16">
           <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-cyan-500/10 to-blue-500/20 blur-3xl -z-10" />

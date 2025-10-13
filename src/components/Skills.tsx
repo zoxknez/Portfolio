@@ -40,7 +40,7 @@ export default function Skills({ sectionId }: SkillsProps) {
   ];
 
   return (
-    <section id={sectionId} className="min-h-screen flex items-center justify-center px-4 md:px-6 py-16 md:py-24">
+    <section id={sectionId} className="min-h-screen md:min-h-0 flex items-center justify-center px-4 md:px-6 py-16 md:pt-12 md:pb-20">
       <div className="max-w-5xl w-full">
         <div className="relative mb-10 md:mb-16">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-cyan-500/10 to-purple-500/20 blur-3xl -z-10" />
@@ -102,11 +102,23 @@ export default function Skills({ sectionId }: SkillsProps) {
             );
           })}
         </div>
-        <div className="mt-8 md:mt-12">
-          <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-center bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-            {t?.skills?.toolboxHeading || 'Development Toolbox'}
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+        
+        {/* Development Toolbox Section */}
+        <div className="relative mt-12 md:mt-16">
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-cyan-500/5 to-blue-500/10 blur-2xl -z-10" />
+          <div className="relative p-6 md:p-8 rounded-3xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl">
+            <div className="text-center mb-6 md:mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-400/30 bg-cyan-500/10 mb-3">
+                <span className="text-xs md:text-sm uppercase tracking-[0.2em] font-semibold text-cyan-300">Toolbox</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+                {t?.skills?.toolboxHeading || 'Development Toolbox'}
+              </h3>
+              <p className="text-sm md:text-base text-gray-400 mt-3 max-w-2xl mx-auto">
+                {t?.skills?.toolboxIntro || 'Essential tools and services I use for deployment, database management, and automation'}
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
             {toolsConfig.map((tool) => {
               const Icon = tool.icon;
               return (
@@ -127,6 +139,7 @@ export default function Skills({ sectionId }: SkillsProps) {
                 </a>
               );
             })}
+            </div>
           </div>
         </div>
       </div>

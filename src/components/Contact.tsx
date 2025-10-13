@@ -61,7 +61,7 @@ export default function Contact({ sectionId }: ContactProps) {
   return (
     <section
       id={sectionId}
-      className="min-h-screen flex items-center justify-center px-4 md:px-6 py-16 md:py-24"
+      className="min-h-screen md:min-h-0 flex items-center justify-center px-4 md:px-6 py-16 md:py-20"
     >
       <div className="max-w-4xl w-full">
         <div className="relative mb-10 md:mb-16">
