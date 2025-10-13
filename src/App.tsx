@@ -104,6 +104,7 @@ function App() {
         <Skills sectionId="skills" />
         <Portfolio sectionId="portfolio" />
         <Contact sectionId="contact" />
+        <Footer />
       </main>
 
       <div className="fixed bottom-8 right-8 z-50 hidden flex-col gap-2 md:flex">
@@ -123,8 +124,6 @@ function App() {
           );
         })}
       </div>
-      
-      <Footer />
     </div>
   );
 }

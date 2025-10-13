@@ -21,7 +21,7 @@ export default function BackgroundCanvas() {
 
     const resize = () => {
       canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      canvas.height = Math.max(window.innerHeight, document.documentElement.scrollHeight);
     };
 
     const stars: { x: number; y: number; size: number; speed: number }[] = [];
