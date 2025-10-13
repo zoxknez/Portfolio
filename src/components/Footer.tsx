@@ -25,15 +25,30 @@ export default function Footer() {
               {t?.footer?.quickLinks || 'Quick Links'}
             </h4>
             <div className="flex flex-col gap-2">
-              {['Hero', 'Skills', 'Portfolio', 'Contact'].map((section) => (
-                <a
-                  key={section}
-                  href={`#${section.toLowerCase()}`}
-                  className="text-sm text-gray-400 hover:text-cyan-400 transition-colors w-fit"
-                >
-                  {section}
-                </a>
-              ))}
+              <a
+                href="#hero"
+                className="text-sm text-gray-400 hover:text-cyan-400 transition-colors w-fit"
+              >
+                {t?.nav?.home || 'Home'}
+              </a>
+              <a
+                href="#skills"
+                className="text-sm text-gray-400 hover:text-cyan-400 transition-colors w-fit"
+              >
+                {t?.nav?.skills || 'Skills'}
+              </a>
+              <a
+                href="#portfolio"
+                className="text-sm text-gray-400 hover:text-cyan-400 transition-colors w-fit"
+              >
+                {t?.nav?.projects || 'Projects'}
+              </a>
+              <a
+                href="#contact"
+                className="text-sm text-gray-400 hover:text-cyan-400 transition-colors w-fit"
+              >
+                {t?.nav?.contact || 'Contact'}
+              </a>
             </div>
           </div>
 
