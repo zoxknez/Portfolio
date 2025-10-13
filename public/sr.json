@@ -1,0 +1,233 @@
+{
+  "nav": {
+    "portfolio": "PORTFOLIO",
+    "home": "Početak",
+    "skills": "Veštine",
+    "projects": "Projekti",
+    "contact": "Kontakt",
+    "language": "Jezik",
+    "sr": "SR",
+    "en": "EN"
+  },
+  "hero": {
+    "heading": "Ko sam ja?",
+    "name": "Zoran Knežević",
+    "tagline": "IT entuzijasta koji već 20+ godina spaja infrastrukturu, podršku, dizajn i optimizaciju procesa. Nemam duboku programersku pozadinu, ali umem da povežem ljude, alate i AI asistente kako bismo ideju pretvorili u rešenje.",
+    "story": "Početak je bio 2005. na MyCity.rs forumu, kada sam otvorio svoj prvi nalog na IT forumu i ušao u ovaj svet. Tada sam otkrio Linux i postavio svoj prvi server za card‑sharing. Danas, uz pomoć modernog AI toolchaina, sastavljam web, desktop i mobilna rešenja bez potrebe da budem „hardcore“ programer.",
+    "ctaViewPortfolio": "Vidi Portfolio",
+    "ctaContact": "Kontaktiraj Me"
+  },
+  "stats": {
+    "years": "20+",
+    "yearsLabel": "godina u IT ekosistemu",
+    "solutions": "12+",
+    "solutionsLabel": "kreiranih rešenja samostalno",
+    "aiFirst": "AI-first",
+    "aiFirstLabel": "workflow kao moja prednost"
+  },
+  "pillars": [
+    {
+      "icon": "flash",
+      "title": "Brza Realizacija",
+      "desc": "AI-powered development za efikasne rezultate"
+    },
+    {
+      "icon": "target",
+      "title": "Fokus na Vrednost",
+      "desc": "Praktična rešenja koja rešavaju realne probleme"
+    },
+    {
+      "icon": "wrench",
+      "title": "Fleksibilan Pristup",
+      "desc": "Od ideje do produkcije, sa pravim alatima"
+    }
+  ],
+  "skills": {
+    "heading": "Tehničke Veštine",
+    "intro": "Ovo su alati koje najčešće koristim uz AI pair‑programming i gotove template‑ove. Procente shvatam kao nivo sigurnosti kad treba da nešto sastavim u ovom ekosistemu, a ne kao tvrdnju da sam senior programer.",
+    "focusStackHeading": "Fokus stack",
+    "toolboxHeading": "Razvojni Alati",
+    "focusStack": [
+      {
+        "name": "Next.js & React",
+        "confidence": "94%",
+        "note": "sigurnosti uz AI asistenciju"
+      },
+      {
+        "name": "TypeScript & Node.js",
+        "confidence": "90%"
+      },
+      {
+        "name": "Supabase & Postgres",
+        "confidence": "86%"
+      },
+      {
+        "name": "Express & API dizajn",
+        "confidence": "84%"
+      },
+      {
+        "name": "Tailwind CSS & UI dizajn",
+        "confidence": "82%"
+      },
+      {
+        "name": "Electron & Desktop ekosistem",
+        "confidence": "78%"
+      },
+      {
+        "name": "Python & automatizacija",
+        "confidence": "74%"
+      }
+    ],
+    "toolbox": [
+      "Supabase",
+      "Prisma",
+      "Vercel",
+      "Railway",
+      "GitHub Actions",
+      "Docker",
+      "Redis",
+      "ffmpeg/yt-dlp"
+    ]
+  },
+  "projects": {
+    "heading": "Portfolio",
+    "intro": "Projekti u nastavku nastali su kombinacijom gotovih servisa, AI asistencije i samostalnog rada. Biram rešenja koja donose najveću vrednost korisnicima, dok kodiranje prilagođavam nivou koji je potreban da ideja proradi.",
+    "items": [
+      {
+        "id": "balkan-remote",
+        "category": "WEB PLATFORM",
+        "title": "Balkan Remote",
+        "description": "Karijerni hub za remote talente sa Balkana: poreski kalkulator, agregator poslova, resursi, alati i Q&A forum.",
+        "stack": [
+          "Next.js 15",
+          "Supabase",
+          "Tailwind",
+          "Vercel",
+          "GitHub Actions"
+        ],
+        "url": "https://www.balkan-remote.com/",
+        "repo": "https://github.com/zoxknez/BalkanRemote",
+        "links": {
+          "live": "Live",
+          "repo": "Repo"
+        }
+      },
+      {
+        "id": "pumpaj",
+        "category": "MULTI PLATFORM",
+        "title": "Pumpaj Video Downloader",
+        "description": "Video downloader koji sam orkestrirao kombinujući Next.js klijent, Express API i Electron shell uz pomoć AI pair‑programminga. Pokriva 100+ platformi i prikazuje progres u realnom vremenu.",
+        "stack": [
+          "Next.js",
+          "Express",
+          "Electron",
+          "yt-dlp",
+          "Supabase"
+        ],
+        "url": "https://pumpajvideodl.com/",
+        "repo": "https://github.com/zoxknez/pumpajvideodownloader",
+        "links": {
+          "live": "Live",
+          "repo": "Repo"
+        }
+      },
+      {
+        "id": "sef-efakture",
+        "category": "ENTERPRISE",
+        "title": "SEF eFakture",
+        "description": "Kompletan eFaktura sistem za srpski SEF. Solo projekat gde vodim arhitekturu, integracije, QA i kodiranje uz pomoć AI asistencije (dashboard, UBL 2.1, API, webhookovi, audit trail).",
+        "stack": [
+          "React",
+          "Node.js",
+          "Prisma",
+          "PostgreSQL",
+          "Redis"
+        ],
+        "repo": "https://github.com/zoxknez/eFakturaSef",
+        "links": {
+          "live": "Live",
+          "repo": "Repo"
+        }
+      },
+      {
+        "id": "pdf-scraper",
+        "category": "DATA TOOL",
+        "title": "PDF Skrejper",
+        "description": "Open‑source alat za indeksiranje PDF dokumenata — vodio sam koncept, automatizaciju i orkestraciju, uz pomoć AI asistenata za scrape rutine i lokalizovani UI.",
+        "stack": [
+          "Python",
+          "Flask",
+          "SQLite",
+          "Tailwind",
+          "Docker"
+        ],
+        "repo": "https://github.com/zoxknez/pdfskrejper",
+        "links": {
+          "repo": "Repo"
+        }
+      },
+      {
+        "id": "mma-balkan",
+        "category": "COMMUNITY",
+        "title": "MMA Balkan",
+        "description": "Regionalni hub za MMA zajednicu sa vestima, eventima i korporativnim partnerstvima. Moja uloga: arhitektura, automatizovani ingest pipeline‑ovi i AI podrška za sadržaj.",
+        "stack": [
+          "Next.js",
+          "Supabase",
+          "Tailwind",
+          "Vercel"
+        ],
+        "url": "https://www.mma-balkan.org/",
+        "repo": "https://github.com/zoxknez/mma-balkan",
+        "links": {
+          "repo": "Repo"
+        }
+      },
+      {
+        "id": "efina",
+        "category": "FINTECH",
+        "title": "eFina",
+        "description": "Fintech rešenje za hrvatsko tržište: e‑računi, fiskalizacija i cashflow dashboard. Vodio sam product discovery i integracije, dok AI agenti pokrivaju repetitivni kod.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Supabase",
+          "Tailwind",
+          "Azure"
+        ],
+        "repo": "https://github.com/zoxknez/FinaeFakturaHR",
+        "links": {
+          "repo": "Repo"
+        }
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Kontaktiraj Me",
+    "intro": "Otvoren sam za saradnju, konsultacije i brainstorming. Ako imaš ideju koju želiš da pretvorimo u rešenje uz AI i timski pristup, javi mi se preko email‑a, telefona ili društvenih mreža.",
+    "emailLabel": "Email",
+    "emailValue": "zoxknez@hotmail.com",
+    "githubLabel": "GitHub profil",
+    "githubValue": "github.com/zoxknez",
+    "phoneLabel": "Telefon / Viber / WhatsApp",
+    "phoneValue": "+381 60 049 4451",
+    "form": {
+      "sendMessage": "Pošalji Poruku",
+      "name": "Tvoje Ime",
+      "email": "Email",
+      "message": "Poruka",
+      "submit": "Pošalji Poruku",
+      "sending": "Šaljem...",
+      "success": "✓ Poruka uspešno poslata!",
+      "error": "✗ Greška prilikom slanja. Pokušajte ponovo."
+    }
+  },
+  "footer": {
+    "tagline": "AI-first Digital Maker koji gradi rešenja za moderan web",
+    "quickLinks": "Brzi Linkovi",
+    "connect": "Poveži se",
+    "rights": "Sva prava zadržana",
+    "madeWith": "Napravljeno sa",
+    "using": "koristeći"
+  }
+}

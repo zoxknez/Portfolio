@@ -1,0 +1,233 @@
+{
+  "nav": {
+    "portfolio": "PORTFOLIO",
+    "home": "Home",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "language": "Language",
+    "sr": "SR",
+    "en": "EN"
+  },
+  "hero": {
+    "heading": "Who am I?",
+    "name": "Zoran Knežević",
+    "tagline": "IT enthusiast with 20+ years connecting infrastructure, support, design, and process optimization. I’m not a hardcore programmer, but I align people, tools, and AI assistants to turn ideas into working solutions.",
+    "story": "I started in 2005 on the MyCity.rs forum, opening my first IT account and diving into this world. That’s when I discovered Linux and set up my first card‑sharing server. Today—using a modern AI toolchain—I assemble web, desktop, and mobile solutions without needing to be a hardcore coder.",
+    "ctaViewPortfolio": "View Portfolio",
+    "ctaContact": "Contact Me"
+  },
+  "stats": {
+    "years": "20+",
+    "yearsLabel": "years in the IT ecosystem",
+    "solutions": "12+",
+    "solutionsLabel": "solutions built independently",
+    "aiFirst": "AI-first",
+    "aiFirstLabel": "workflow as my edge"
+  },
+  "pillars": [
+    {
+      "icon": "flash",
+      "title": "Fast Delivery",
+      "desc": "AI-powered development for efficient results"
+    },
+    {
+      "icon": "target",
+      "title": "Value-First",
+      "desc": "Practical solutions that solve real problems"
+    },
+    {
+      "icon": "wrench",
+      "title": "Flexible Approach",
+      "desc": "From idea to production, with the right tools"
+    }
+  ],
+  "skills": {
+    "heading": "Technical Skills",
+    "intro": "These are the tools I most often use with AI pair-programming and ready-made templates. Percentages reflect my confidence when assembling within this ecosystem—not a claim of seniority.",
+    "focusStackHeading": "Focus stack",
+    "toolboxHeading": "Development Toolbox",
+    "focusStack": [
+      {
+        "name": "Next.js & React",
+        "confidence": "94%",
+        "note": "confidence with AI assistance"
+      },
+      {
+        "name": "TypeScript & Node.js",
+        "confidence": "90%"
+      },
+      {
+        "name": "Supabase & Postgres",
+        "confidence": "86%"
+      },
+      {
+        "name": "Express & API design",
+        "confidence": "84%"
+      },
+      {
+        "name": "Tailwind CSS & UI design",
+        "confidence": "82%"
+      },
+      {
+        "name": "Electron & Desktop ecosystem",
+        "confidence": "78%"
+      },
+      {
+        "name": "Python & automation",
+        "confidence": "74%"
+      }
+    ],
+    "toolbox": [
+      "Supabase",
+      "Prisma",
+      "Vercel",
+      "Railway",
+      "GitHub Actions",
+      "Docker",
+      "Redis",
+      "ffmpeg/yt-dlp"
+    ]
+  },
+  "projects": {
+    "heading": "Portfolio",
+    "intro": "The projects below were created through a mix of off‑the‑shelf services, AI assistance, and solo work. I choose solutions that deliver the most value to users, while coding to the level required to make the idea work.",
+    "items": [
+      {
+        "id": "balkan-remote",
+        "category": "WEB PLATFORM",
+        "title": "Balkan Remote",
+        "description": "Career hub for remote talent from the Balkans: tax calculator, job aggregator, resources, tools, and a Q&A forum.",
+        "stack": [
+          "Next.js 15",
+          "Supabase",
+          "Tailwind",
+          "Vercel",
+          "GitHub Actions"
+        ],
+        "url": "https://www.balkan-remote.com/",
+        "repo": "https://github.com/zoxknez/BalkanRemote",
+        "links": {
+          "live": "Live",
+          "repo": "Repo"
+        }
+      },
+      {
+        "id": "pumpaj",
+        "category": "MULTI PLATFORM",
+        "title": "Pumpaj Video Downloader",
+        "description": "Video downloader orchestrated by combining a Next.js client, Express API, and Electron shell with AI pair‑programming. Supports 100+ platforms and shows real‑time progress.",
+        "stack": [
+          "Next.js",
+          "Express",
+          "Electron",
+          "yt-dlp",
+          "Supabase"
+        ],
+        "url": "https://pumpajvideodl.com/",
+        "repo": "https://github.com/zoxknez/pumpajvideodownloader",
+        "links": {
+          "live": "Live",
+          "repo": "Repo"
+        }
+      },
+      {
+        "id": "sef-efakture",
+        "category": "ENTERPRISE",
+        "title": "SEF eInvoices",
+        "description": "Complete e‑invoicing system for the Serbian SEF. Solo project where I handle architecture, integrations, QA, and coding with AI assistance (dashboard, UBL 2.1, API, webhooks, audit trail).",
+        "stack": [
+          "React",
+          "Node.js",
+          "Prisma",
+          "PostgreSQL",
+          "Redis"
+        ],
+        "repo": "https://github.com/zoxknez/eFakturaSef",
+        "links": {
+          "live": "Live",
+          "repo": "Repo"
+        }
+      },
+      {
+        "id": "pdf-scraper",
+        "category": "DATA TOOL",
+        "title": "PDF Scraper",
+        "description": "Open‑source tool for indexing PDF documents—led concept, automation, and orchestration, with AI assistants helping on scrape routines and localized UI.",
+        "stack": [
+          "Python",
+          "Flask",
+          "SQLite",
+          "Tailwind",
+          "Docker"
+        ],
+        "repo": "https://github.com/zoxknez/pdfskrejper",
+        "links": {
+          "repo": "Repo"
+        }
+      },
+      {
+        "id": "mma-balkan",
+        "category": "COMMUNITY",
+        "title": "MMA Balkan",
+        "description": "Regional hub for the MMA community with news, events, and corporate partnerships. My role: architecture, automated ingest pipelines, and AI‑supported content.",
+        "stack": [
+          "Next.js",
+          "Supabase",
+          "Tailwind",
+          "Vercel"
+        ],
+        "url": "https://www.mma-balkan.org/",
+        "repo": "https://github.com/zoxknez/mma-balkan",
+        "links": {
+          "repo": "Repo"
+        }
+      },
+      {
+        "id": "efina",
+        "category": "FINTECH",
+        "title": "eFina",
+        "description": "Fintech solution for the Croatian market: e‑invoices, fiscalization, and a cash‑flow dashboard. I led product discovery and integrations while AI agents covered repetitive code.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Supabase",
+          "Tailwind",
+          "Azure"
+        ],
+        "repo": "https://github.com/zoxknez/FinaeFakturaHR",
+        "links": {
+          "repo": "Repo"
+        }
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Contact Me",
+    "intro": "I’m open to collaboration, consulting, and brainstorming. If you have an idea to turn into a solution with AI and a team‑driven approach, reach out via email, phone, or social.",
+    "emailLabel": "Email",
+    "emailValue": "zoxknez@hotmail.com",
+    "githubLabel": "GitHub",
+    "githubValue": "github.com/zoxknez",
+    "phoneLabel": "Phone / Viber / WhatsApp",
+    "phoneValue": "+381 60 049 4451",
+    "form": {
+      "sendMessage": "Send a Message",
+      "name": "Your Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "✓ Message sent successfully!",
+      "error": "✗ Error sending message. Please try again."
+    }
+  },
+  "footer": {
+    "tagline": "AI-first Digital Maker building solutions for the modern web",
+    "quickLinks": "Quick Links",
+    "connect": "Connect",
+    "rights": "All rights reserved",
+    "madeWith": "Made with",
+    "using": "using"
+  }
+}

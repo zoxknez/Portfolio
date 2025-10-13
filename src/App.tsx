@@ -1,25 +1,33 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState, useMemo } from 'react';
 import BackgroundCanvas from './components/BackgroundCanvas';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import { portfolioProjects } from './data/projects';
-import { skills } from './data/skills';
+import Footer from './components/Footer';
+import { useLanguage } from './contexts/LanguageContext';
 
-const SECTIONS = [
-  { id: 'hero', label: '✨ Početak' },
-  { id: 'skills', label: '🛠️ Veštine' },
-  { id: 'portfolio', label: '🚀 Projekti' },
-  { id: 'contact', label: '📬 Kontakt' },
+const SECTION_IDS = [
+  { id: 'hero' },
+  { id: 'skills' },
+  { id: 'portfolio' },
+  { id: 'contact' },
 ] as const;
 
-type SectionId = (typeof SECTIONS)[number]['id'];
+type SectionId = (typeof SECTION_IDS)[number]['id'];
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [activeSection, setActiveSection] = useState<SectionId>(SECTIONS[0].id);
+  const [activeSection, setActiveSection] = useState<SectionId>(SECTION_IDS[0].id);
+  const { t } = useLanguage();
+
+  const SECTIONS = useMemo(() => [
+    { id: 'hero', label: `✨ ${t?.nav?.home || 'Početak'}` },
+    { id: 'skills', label: `🛠️ ${t?.nav?.skills || 'Veštine'}` },
+    { id: 'portfolio', label: `🚀 ${t?.nav?.projects || 'Projekti'}` },
+    { id: 'contact', label: `📬 ${t?.nav?.contact || 'Kontakt'}` },
+  ], [t]);
 
   useEffect(() => {
     setIsLoaded(true);
@@ -27,7 +35,7 @@ function App() {
 
   useEffect(() => {
     const hash = window.location.hash.replace('#', '');
-    if (hash && SECTIONS.some((section) => section.id === hash)) {
+    if (hash && SECTION_IDS.some((section) => section.id === hash)) {
       setActiveSection(hash as SectionId);
       requestAnimationFrame(() => {
         const target = document.getElementById(hash);
@@ -37,7 +45,7 @@ function App() {
   }, []);
 
   const handleNavigate = useCallback((sectionId: string) => {
-    if (!SECTIONS.some((section) => section.id === sectionId)) {
+    if (!SECTION_IDS.some((section) => section.id === sectionId)) {
       return;
     }
 
@@ -75,7 +83,7 @@ function App() {
       }
     );
 
-    SECTIONS.forEach((section) => {
+    SECTION_IDS.forEach((section) => {
       const element = document.getElementById(section.id);
       if (element) {
         observer.observe(element);
@@ -93,8 +101,8 @@ function App() {
 
       <main className="relative z-10">
         <Hero sectionId="hero" onNavigate={handleNavigate} isLoaded={isLoaded} />
-        <Skills sectionId="skills" skills={skills} />
-        <Portfolio sectionId="portfolio" projects={portfolioProjects} />
+        <Skills sectionId="skills" />
+        <Portfolio sectionId="portfolio" />
         <Contact sectionId="contact" />
       </main>
 
@@ -115,6 +123,8 @@ function App() {
           );
         })}
       </div>
+      
+      <Footer />
     </div>
   );
 }
