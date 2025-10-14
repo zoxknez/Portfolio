@@ -49,8 +49,7 @@ export default function Skills({ sectionId }: SkillsProps) {
               {t?.skills?.heading || 'Tehničke Veštine'}
             </h2>
             <p className="text-base md:text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
-              Ovo su alati које najčešće koristim uz AI pair-programming i gotove template-ove. Procente shvatam kao nivo
-              sigurnosti кад treba да nešto sastavim у ovom ekosistemu, a не као tvrdnju da sam senior programer.
+              {t?.skills?.intro || 'Ovo su alati koje najčešće koristim uz AI pair-programming i gotove template-ove. Procente shvatam kao nivo sigurnosti kad treba da nešto sastavim u ovom ekosistemu, a ne kao tvrdnju da sam senior programer.'}
             </p>
             {featuredSkill && (
               <div className="mt-6 md:mt-8 w-full text-left">
