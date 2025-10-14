@@ -17,7 +17,7 @@ export const portfolioProjects = [
     id: 2,
     title: 'Pumpaj Video Downloader',
     description:
-      'Video downloader koji sam orkestrirao kombinujući Next.js klijent, Express API i Electron shell uz pomoć AI pair-programminga. Pokriva 100+ platformi и prikazuje progres u realnom vremenu.',
+      'Video downloader koji sam orkestrirao kombinujući Next.js klijent, Express API i Electron shell uz pomoć AI pair-programminga. Pokriva 100+ platformi i prikazuje progres u realnom vremenu.',
     type: 'MULTI PLATFORM',
     technologies: ['Next.js', 'Express', 'Electron', 'yt-dlp', 'Supabase'],
     gradient: 'from-amber-500 via-orange-500 to-rose-500',
@@ -29,7 +29,7 @@ export const portfolioProjects = [
     id: 3,
     title: 'SEF eFakture',
     description:
-      'Kompletan eFaktura sistem za srpski SEF gde vodim arhitekturu, integracije и QA dok tim i AI asistenti pomažu oko detaljnog kodiranja (dashboard, UBL 2.1, API, webhookovi, audit trail).',
+      'Kompletan eFaktura sistem za srpski SEF gde vodim arhitekturu, integracije i QA dok tim i AI asistenti pomažu oko detaljnog kodiranja (dashboard, UBL 2.1, API, webhookovi, audit trail).',
     type: 'ENTERPRISE',
     technologies: ['React', 'Node.js', 'Prisma', 'PostgreSQL', 'Redis'],
     gradient: 'from-emerald-500 via-teal-500 to-cyan-500',
@@ -41,7 +41,7 @@ export const portfolioProjects = [
     id: 4,
     title: 'PDF Skrejper',
     description:
-      'Open-source alat za indeksiranje PDF dokumenata где sam vodio koncept, automatizaciju i orkestraciju, dok su AI asistenti pomagali oko kodiranja scrape rutina i lokalizovanog UI-ja.',
+      'Open-source alat za indeksiranje PDF dokumenata gde sam vodio koncept, automatizaciju i orkestraciju, dok su AI asistenti pomagali oko kodiranja scrape rutina i lokalizovanog UI-ja.',
     type: 'DATA TOOL',
     technologies: ['Python', 'Flask', 'SQLite', 'Tailwind', 'Docker'],
     gradient: 'from-violet-500 via-purple-500 to-fuchsia-600',
@@ -52,7 +52,7 @@ export const portfolioProjects = [
     id: 5,
     title: 'MMA Balkan',
     description:
-      'Regionalni hub za MMA zajednicu sa vestima, eventima i korporativnim partnerstvima. Moja uloga: arhitektura, automatizovana ingest pipeline-ova и AI podrška za sadržaj.',
+      'Regionalni hub za MMA zajednicu sa vestima, eventima i korporativnim partnerstvima. Moja uloga: arhitektura, automatizovana ingest pipeline-ova i AI podrška za sadržaj.',
     type: 'COMMUNITY',
     technologies: ['Next.js', 'Supabase', 'Tailwind', 'Vercel'],
     gradient: 'from-rose-500 via-red-500 to-orange-500',
@@ -63,7 +63,7 @@ export const portfolioProjects = [
     id: 6,
     title: 'eFina',
     description:
-      'Fintech rešenje za hrvatsko tržište: e-računi, fiskalizacija i cashflow dashboard. Vodiо sam product discovery i integracije dok AI agenti pokrivaju repetitivni kod.',
+      'Fintech rešenje za hrvatsko tržište: e-računi, fiskalizacija i cashflow dashboard. Vodio sam product discovery i integracije dok AI agenti pokrivaju repetitivni kod.',
     type: 'FINTECH',
     technologies: ['Next.js', 'TypeScript', 'Supabase', 'Tailwind', 'Azure'],
     gradient: 'from-emerald-500 via-sky-500 to-indigo-500',
