@@ -93,7 +93,54 @@
   "projects": {
     "heading": "Portfolio",
     "intro": "Projekti u nastavku nastali su kombinacijom gotovih servisa, AI asistencije i samostalnog rada. Biram rešenja koja donose najveću vrednost korisnicima, dok kodiranje prilagođavam nivou koji je potreban da ideja proradi.",
+    "demoAccessLabel": "Demo nalozi",
     "items": [
+      {
+        "id": "fiskalni-racun",
+        "category": "SAAS",
+        "title": "Fiskalni Račun",
+  "description": "Cloud platforma za maloprodaju u Srbiji: izdavanje fiskalnih računa, upravljanje katalozima i analitika u realnom vremenu. Vodim produkt strategiju, integracije sa državnim servisima i korisničke tokove, dok AI asistencija preuzima repetitivno kodiranje.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Supabase",
+          "Tailwind",
+          "Vercel"
+        ],
+        "url": "https://fiskalni.app",
+        "links": {
+          "live": "Produkcija"
+        },
+        "demoAccounts": [
+          "proba@gmail.com / proba1234",
+          "proba1@gmail.com / proba1234",
+          "proba2@gmail.com / proba1234"
+        ]
+      },
+      {
+        "id": "osnovci",
+        "category": "EDTECH",
+        "title": "Osnovci",
+        "description": "Digitalni pomoćnik za osnovce sa praćenjem napretka, kuriranim lekcijama i AI savetima za učenje. Orkestriram CMS za nastavni plan, automatizaciju učionica i analitičke table.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Supabase",
+          "Tailwind",
+          "Vercel"
+        ],
+        "url": "https://osnovci.vercel.app/",
+        "links": {
+          "live": "Produkcija"
+        },
+        "demoAccounts": [
+          "1️⃣ Marko Marković — marko@demo.rs / marko123",
+          "2️⃣ Ana Petrović — ana@demo.rs / ana123",
+          "3️⃣ Stefan Nikolić — stefan@demo.rs / stefan123",
+          "4️⃣ Milica Stanković — milica@demo.rs / milica123",
+          "5️⃣ Luka Pavlović — luka@demo.rs / luka123"
+        ]
+      },
       {
         "id": "balkan-remote",
         "category": "WEB PLATFORM",

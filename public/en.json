@@ -93,7 +93,54 @@
   "projects": {
     "heading": "Portfolio",
     "intro": "The projects below were created through a mix of off‑the‑shelf services, AI assistance, and solo work. I choose solutions that deliver the most value to users, while coding to the level required to make the idea work.",
+    "demoAccessLabel": "Demo access",
     "items": [
+      {
+          "id": "fiskalni-racun",
+          "category": "SAAS",
+          "title": "Fiskalni Račun",
+          "description": "Cloud platform for Serbian retailers to issue fiscal receipts, manage catalogues, and export analytics in real time. I lead product strategy, integrations with state services, and UX flows while AI assists with repetitive coding.",
+          "stack": [
+            "Next.js",
+            "TypeScript",
+            "Supabase",
+            "Tailwind",
+            "Vercel"
+          ],
+          "url": "https://fiskalni.app",
+          "links": {
+            "live": "Production"
+          },
+          "demoAccounts": [
+            "proba@gmail.com / proba1234",
+            "proba1@gmail.com / proba1234",
+            "proba2@gmail.com / proba1234"
+          ]
+        },
+        {
+          "id": "osnovci",
+          "category": "EDTECH",
+          "title": "Osnovci",
+          "description": "Learning companion for elementary students with progress tracking, curated lessons, and AI-assisted study tips. I orchestrate the curriculum CMS, classroom automation, and analytics dashboards.",
+          "stack": [
+            "Next.js",
+            "TypeScript",
+            "Supabase",
+            "Tailwind",
+            "Vercel"
+          ],
+          "url": "https://osnovci.vercel.app/",
+          "links": {
+            "live": "Production"
+          },
+          "demoAccounts": [
+            "1️⃣ Marko Marković — marko@demo.rs / marko123",
+            "2️⃣ Ana Petrović — ana@demo.rs / ana123",
+            "3️⃣ Stefan Nikolić — stefan@demo.rs / stefan123",
+            "4️⃣ Milica Stanković — milica@demo.rs / milica123",
+            "5️⃣ Luka Pavlović — luka@demo.rs / luka123"
+          ]
+        },
       {
         "id": "balkan-remote",
         "category": "WEB PLATFORM",

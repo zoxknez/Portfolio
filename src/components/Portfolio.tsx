@@ -1,14 +1,35 @@
-import { ExternalLink, CircleDollarSign, Download, Dumbbell, FileSpreadsheet, Globe, ScanText } from 'lucide-react';
+import { ExternalLink, BookOpen, CircleDollarSign, Download, Dumbbell, FileSpreadsheet, FileText, Globe, ScanText } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface PortfolioProps {
   sectionId?: string;
 }
 
+type ProjectLinkLabels = {
+  live?: string;
+  repo?: string;
+};
+
+interface ProjectItem {
+  id: string;
+  category?: string;
+  title: string;
+  description: string;
+  stack?: string[];
+  url?: string;
+  repo?: string;
+  demoAccounts?: string[];
+  links?: ProjectLinkLabels;
+}
+
 export default function Portfolio({ sectionId }: PortfolioProps) {
   const { t } = useLanguage();
-  
-  const iconMap: { [key: string]: any } = {
+
+  type IconComponent = typeof Globe;
+
+  const iconMap: Record<string, IconComponent> = {
+    'fiskalni-racun': FileText,
+    osnovci: BookOpen,
     'balkan-remote': Globe,
     'pumpaj': Download,
     'sef-efakture': FileSpreadsheet,
@@ -18,15 +39,17 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
   };
   
   const gradients = [
+    'from-amber-400 via-orange-500 to-rose-500',
+    'from-sky-400 via-blue-500 to-indigo-500',
     'from-cyan-500 via-blue-500 to-purple-600',
-    'from-amber-500 via-orange-500 to-rose-500',
     'from-emerald-500 via-teal-500 to-cyan-500',
     'from-violet-500 via-purple-500 to-fuchsia-600',
     'from-rose-500 via-red-500 to-orange-500',
     'from-emerald-500 via-sky-500 to-indigo-500',
+    'from-amber-500 via-orange-500 to-yellow-500',
   ];
   
-  const projects = t?.projects?.items || [];
+  const projects = (t?.projects?.items as ProjectItem[]) || [];
   return (
     <section id={sectionId} className="min-h-screen md:min-h-0 flex items-center justify-center px-4 md:px-6 py-16 md:py-20">
       <div className="max-w-7xl w-full">
@@ -42,9 +65,11 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          {projects.map((project: any, index: number) => {
+          {projects.map((project, index) => {
             const Icon = iconMap[project.id] || Globe;
             const gradient = gradients[index] || gradients[0];
+            const demoAccounts = project.demoAccounts ?? [];
+            const hasDemoAccounts = demoAccounts.length > 0;
             return (
               <div
                 key={project.id}
@@ -63,6 +88,23 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
                 </div>
                 <h3 className="relative z-10 text-xl md:text-2xl font-bold mb-2 md:mb-3">{project.title}</h3>
                 <p className="relative z-10 text-sm md:text-base text-gray-400 mb-3 md:mb-4 leading-relaxed">{project.description}</p>
+                {hasDemoAccounts && (
+                  <div className="relative z-10 mb-3 md:mb-4 space-y-2 text-left">
+                    <div className="text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">
+                      {t?.projects?.demoAccessLabel || 'Demo Access'}
+                    </div>
+                    <div className="grid gap-1.5">
+                      {demoAccounts.map((account) => (
+                        <div
+                          key={account}
+                          className="px-3 py-2 rounded-lg bg-white/5 border border-white/10 text-xs md:text-sm text-gray-200 leading-snug"
+                        >
+                          {account}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
                 <div className="relative z-10 flex flex-wrap gap-2 mb-3 md:mb-4">
                   {project.stack?.map((tech: string) => (
                     <span
