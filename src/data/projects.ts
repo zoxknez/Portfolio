@@ -1,6 +1,17 @@
-import { CircleDollarSign, Download, Dumbbell, FileSpreadsheet, Globe, ScanText } from 'lucide-react';
+import { CircleDollarSign, Download, Dumbbell, FileSpreadsheet, FileText, Globe, ScanText } from 'lucide-react';
 
 export const portfolioProjects = [
+  {
+    id: 'racuni',
+    title: 'Računi',
+    description:
+      'Offline-first PWA za digitalizaciju fiskalnih računa, praćenje garancija i analitiku kućnih troškova. Vodim produkt viziju, Supabase sinhronizaciju i AI podržane OCR/analitičke tokove.',
+    type: 'PWA',
+    technologies: ['React', 'TypeScript', 'Zustand', 'Supabase', 'Tailwind', 'Vite'],
+    gradient: 'from-amber-400 via-orange-500 to-rose-500',
+    icon: FileText,
+    url: 'https://fiskalni.app',
+  },
   {
     id: 1,
     title: 'Balkan Remote',

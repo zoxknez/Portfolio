@@ -28,7 +28,7 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
   type IconComponent = typeof Globe;
 
   const iconMap: Record<string, IconComponent> = {
-    'fiskalni-racun': FileText,
+    racuni: FileText,
     osnovci: BookOpen,
     'balkan-remote': Globe,
     'pumpaj': Download,

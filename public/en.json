@@ -96,26 +96,27 @@
     "demoAccessLabel": "Demo access",
     "items": [
       {
-          "id": "fiskalni-racun",
-          "category": "SAAS",
-          "title": "Fiskalni Račun",
-          "description": "Cloud platform for Serbian retailers to issue fiscal receipts, manage catalogues, and export analytics in real time. I lead product strategy, integrations with state services, and UX flows while AI assists with repetitive coding.",
-          "stack": [
-            "Next.js",
-            "TypeScript",
-            "Supabase",
-            "Tailwind",
-            "Vercel"
-          ],
-          "url": "https://fiskalni.app",
-          "links": {
-            "live": "Production"
-          },
-          "demoAccounts": [
-            "proba@gmail.com / proba1234",
-            "proba1@gmail.com / proba1234",
-            "proba2@gmail.com / proba1234"
-          ]
+        "id": "racuni",
+        "category": "PWA",
+        "title": "Računi",
+        "description": "Offline-first PWA for scanning fiscal receipts, storing warranties, and tracking household spending. I lead the product vision, Supabase sync architecture, and AI-assisted OCR/analytics experiences.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Zustand",
+          "Supabase",
+          "Tailwind",
+          "Vite"
+        ],
+        "url": "https://fiskalni.app",
+        "links": {
+          "live": "Production"
+        },
+        "demoAccounts": [
+          "proba@gmail.com / proba1234",
+          "proba1@gmail.com / proba1234",
+          "proba2@gmail.com / proba1234"
+        ]
         },
         {
           "id": "osnovci",

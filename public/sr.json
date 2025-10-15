@@ -96,16 +96,17 @@
     "demoAccessLabel": "Demo nalozi",
     "items": [
       {
-        "id": "fiskalni-racun",
-        "category": "SAAS",
-        "title": "Fiskalni Račun",
-  "description": "Cloud platforma za maloprodaju u Srbiji: izdavanje fiskalnih računa, upravljanje katalozima i analitika u realnom vremenu. Vodim produkt strategiju, integracije sa državnim servisima i korisničke tokove, dok AI asistencija preuzima repetitivno kodiranje.",
+        "id": "racuni",
+        "category": "PWA",
+        "title": "Računi",
+        "description": "Offline-first PWA za skeniranje fiskalnih računa, čuvanje garancija i praćenje kućnih troškova. Vodim produkt viziju, Supabase sinhronizaciju i AI podržan OCR/analitičke tokove.",
         "stack": [
-          "Next.js",
+          "React",
           "TypeScript",
+          "Zustand",
           "Supabase",
           "Tailwind",
-          "Vercel"
+          "Vite"
         ],
         "url": "https://fiskalni.app",
         "links": {
