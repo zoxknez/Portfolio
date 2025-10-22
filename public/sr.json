@@ -122,7 +122,7 @@
         "id": "osnovci",
         "category": "EDTECH",
         "title": "Osnovci",
-  "description": "Holistička platforma za osnovce koja spaja adaptivne lekcije, roditeljske panele i AI mentora. Gradim višetenantski nastavni CMS, automatizaciju učionica u realnom vremenu i analitiku napretka.",
+  "description": "Holistička platforma za osnovce koja spaja adaptivne lekcije, roditeljske panele i AI mentora. Gradim višetemantski nastavni CMS, automatizaciju učionica u realnom vremenu i analitiku napretka.",
         "stack": [
           "Next.js",
           "TypeScript",
