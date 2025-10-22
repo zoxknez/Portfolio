@@ -122,7 +122,7 @@
         "id": "osnovci",
         "category": "EDTECH",
         "title": "Osnovci",
-        "description": "Digitalni pomoćnik za osnovce sa praćenjem napretka, kuriranim lekcijama i AI savetima za učenje. Orkestriram CMS za nastavni plan, automatizaciju učionica i analitičke table.",
+  "description": "Holistička platforma za osnovce koja spaja adaptivne lekcije, roditeljske panele i AI mentora. Gradim višetenantski nastavni CMS, automatizaciju učionica u realnom vremenu i analitiku napretka.",
         "stack": [
           "Next.js",
           "TypeScript",

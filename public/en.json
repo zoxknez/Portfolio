@@ -122,7 +122,7 @@
           "id": "osnovci",
           "category": "EDTECH",
           "title": "Osnovci",
-          "description": "Learning companion for elementary students with progress tracking, curated lessons, and AI-assisted study tips. I orchestrate the curriculum CMS, classroom automation, and analytics dashboards.",
+    "description": "Holistic learning platform for elementary students combining mastery-based lessons, parent dashboards, and AI coaching. I architect the multi-tenant curriculum CMS, real-time classroom automations, and progress analytics.",
           "stack": [
             "Next.js",
             "TypeScript",
