@@ -110,7 +110,7 @@
         ],
         "url": "https://fiskalni.app",
         "links": {
-          "live": "Production"
+          "live": "Open App"
         },
         "demoAccounts": [
           "proba@gmail.com / proba1234",
@@ -132,7 +132,7 @@
           ],
           "url": "https://osnovci.vercel.app/",
           "links": {
-            "live": "Production"
+            "live": "Open App"
           },
           "demoAccounts": [
             "1️⃣ Marko Marković — marko@demo.rs / marko123",
@@ -157,7 +157,7 @@
         "url": "https://www.balkan-remote.com/",
         "repo": "https://github.com/zoxknez/BalkanRemote",
         "links": {
-          "live": "Live",
+          "live": "Open App",
           "repo": "Repo"
         }
       },
@@ -176,7 +176,7 @@
         "url": "https://pumpajvideodl.com/",
         "repo": "https://github.com/zoxknez/pumpajvideodownloader",
         "links": {
-          "live": "Live",
+          "live": "Open App",
           "repo": "Repo"
         }
       },
@@ -194,7 +194,7 @@
         ],
         "repo": "https://github.com/zoxknez/eFakturaSef",
         "links": {
-          "live": "Live",
+          "live": "Open App",
           "repo": "Repo"
         }
       },
@@ -244,9 +244,9 @@
           "Tailwind",
           "Azure"
         ],
-        "repo": "https://github.com/zoxknez/FinaeFakturaHR",
+        "url": "https://efakturahr.vercel.app/",
         "links": {
-          "repo": "Repo"
+          "live": "Open App"
         }
       }
     ]

@@ -123,7 +123,7 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-400/40 text-cyan-100 hover:bg-cyan-500/20 transition-colors text-sm md:text-base cursor-pointer"
                     >
-                      {project.links?.live || 'Live'}
+                      {project.links?.live || 'Open App'}
                       <ExternalLink className="w-3 h-3 md:w-4 md:h-4" />
                     </a>
                   )}

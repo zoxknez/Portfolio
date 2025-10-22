@@ -79,6 +79,6 @@ export const portfolioProjects = [
     technologies: ['Next.js', 'TypeScript', 'Supabase', 'Tailwind', 'Azure'],
     gradient: 'from-emerald-500 via-sky-500 to-indigo-500',
     icon: CircleDollarSign,
-    repo: 'https://github.com/zoxknez/FinaeFakturaHR',
+    url: 'https://efakturahr.vercel.app/',
   },
 ];
