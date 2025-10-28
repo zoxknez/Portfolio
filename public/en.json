@@ -96,6 +96,38 @@
     "demoAccessLabel": "Demo access",
     "items": [
       {
+        "id": "odmor",
+        "category": "TRAVEL PLATFORM",
+        "title": "Travel",
+        "description": "Comprehensive travel platform featuring 80+ best websites for flights, accommodation, transport, and activities in one place. Organized by categories with detailed reviews and links to providers.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Vite"
+        ],
+        "url": "https://www.odmor.fun/",
+        "links": {
+          "live": "Open App"
+        }
+      },
+      {
+        "id": "kursevi",
+        "category": "EDUCATION",
+        "title": "Courses",
+        "description": "Educational platform for online courses and learning resources. Centralized place to access quality educational content and courses.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Vite"
+        ],
+        "url": "https://www.coursesedu.space/",
+        "links": {
+          "live": "Open App"
+        }
+      },
+      {
         "id": "racuni",
         "category": "PWA",
         "title": "Računi",

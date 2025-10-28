@@ -96,6 +96,38 @@
     "demoAccessLabel": "Demo nalozi",
     "items": [
       {
+        "id": "odmor",
+        "category": "TRAVEL PLATFORM",
+        "title": "Putovanje",
+        "description": "Kompleksna platforma za putovanja sa 80+ najboljih websajta za letove, smeštaj, transport i aktivnosti na jednom mestu. Organizovano po kategorijama sa detaljnim recenzijama i linkovima ka provajderima.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Vite"
+        ],
+        "url": "https://www.odmor.fun/",
+        "links": {
+          "live": "Otvori aplikaciju"
+        }
+      },
+      {
+        "id": "kursevi",
+        "category": "EDUCATION",
+        "title": "Kursevi",
+        "description": "Edukativna platforma za online kurseve i resurse za učenje. Centralizovano mesto za pristup kvalitetnim obrazovnim sadržajima i kursevima.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Vite"
+        ],
+        "url": "https://www.coursesedu.space/",
+        "links": {
+          "live": "Otvori aplikaciju"
+        }
+      },
+      {
         "id": "racuni",
         "category": "PWA",
         "title": "Računi",

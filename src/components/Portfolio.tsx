@@ -1,4 +1,4 @@
-import { ExternalLink, BookOpen, CircleDollarSign, Download, Dumbbell, FileSpreadsheet, FileText, Globe, ScanText } from 'lucide-react';
+import { ExternalLink, BookOpen, CircleDollarSign, Download, Dumbbell, FileSpreadsheet, FileText, Globe, ScanText, Plane, GraduationCap } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface PortfolioProps {
@@ -28,6 +28,8 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
   type IconComponent = typeof Globe;
 
   const iconMap: Record<string, IconComponent> = {
+    odmor: Plane,
+    kursevi: GraduationCap,
     racuni: FileText,
     osnovci: BookOpen,
     'balkan-remote': Globe,
