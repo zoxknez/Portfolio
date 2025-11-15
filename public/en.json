@@ -280,6 +280,38 @@
         "links": {
           "live": "Open App"
         }
+      },
+      {
+        "id": "aferesns",
+        "category": "DATA PLATFORM",
+        "title": "SNS Scandals List",
+        "description": "Database with over 324 recorded or reported scandals and affairs. Visual representation of estimated damage, categorization by areas, and search and filter capabilities.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Vite"
+        ],
+        "url": "https://aferesns.vercel.app/",
+        "links": {
+          "live": "Open App"
+        }
+      },
+      {
+        "id": "blokirani",
+        "category": "DATA TOOL",
+        "title": "Public Twitter Bot Accounts Database",
+        "description": "Public database of Twitter bot accounts. Transparent platform for accessing information about bot accounts and their activity.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Vite"
+        ],
+        "url": "https://blokirani.vercel.app/",
+        "links": {
+          "live": "Open App"
+        }
       }
     ]
   },

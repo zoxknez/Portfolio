@@ -280,6 +280,38 @@
         "links": {
           "live": "Otvori aplikaciju"
         }
+      },
+      {
+        "id": "aferesns",
+        "category": "DATA PLATFORM",
+        "title": "Spisak afera SNS",
+        "description": "Baza podataka sa preko 324 zabeležene ili prijavljene afere i skandala. Vizuelni prikaz procenjene štete, kategorizacija po oblastima i mogućnost pretrage i filtriranja.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Vite"
+        ],
+        "url": "https://aferesns.vercel.app/",
+        "links": {
+          "live": "Otvori aplikaciju"
+        }
+      },
+      {
+        "id": "blokirani",
+        "category": "DATA TOOL",
+        "title": "Javna baza bot naloga na Twitter-u",
+        "description": "Javna baza podataka bot naloga na Twitter-u. Transparentna platforma za pristup informacijama o bot nalozima i njihovoj aktivnosti.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Vite"
+        ],
+        "url": "https://blokirani.vercel.app/",
+        "links": {
+          "live": "Otvori aplikaciju"
+        }
       }
     ]
   },

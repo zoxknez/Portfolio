@@ -1,4 +1,4 @@
-import { ExternalLink, BookOpen, CircleDollarSign, Download, Dumbbell, FileSpreadsheet, FileText, Globe, ScanText, Plane, GraduationCap } from 'lucide-react';
+import { ExternalLink, BookOpen, CircleDollarSign, Download, Dumbbell, FileSpreadsheet, FileText, Globe, ScanText, Plane, GraduationCap, AlertCircle, Users } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface PortfolioProps {
@@ -38,6 +38,8 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
     'pdf-scraper': ScanText,
     'mma-balkan': Dumbbell,
     'efina': CircleDollarSign,
+    'aferesns': AlertCircle,
+    'blokirani': Users,
   };
   
   const gradients = [
