@@ -312,6 +312,38 @@
         "links": {
           "live": "Otvori aplikaciju"
         }
+      },
+      {
+        "id": "radecosic",
+        "category": "E-COMMERCE",
+        "title": "Rade Cosic Knjige",
+        "description": "E-commerce platforma za prodaju knjiga sa modernim dizajnom i korisničkim iskustvom. Implementirana sa fokusom na jednostavnost navigacije i brzu pretragu knjiga.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Vite"
+        ],
+        "url": "https://radecosic.vercel.app/",
+        "links": {
+          "live": "Otvori aplikaciju"
+        }
+      },
+      {
+        "id": "david-knezevic",
+        "category": "PORTFOLIO",
+        "title": "David Knežević Portfolio",
+        "description": "Premium fitness coaching portfolio sa personalizovanim programima, uspešnim pričama klijenata i kompletnim informacijama o treninzima. Moderni dizajn sa fokusom na konverziju i profesionalni imidž.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Vite"
+        ],
+        "url": "https://davidportfolio-ochre.vercel.app/",
+        "links": {
+          "live": "Otvori aplikaciju"
+        }
       }
     ]
   },

@@ -312,6 +312,38 @@
         "links": {
           "live": "Open App"
         }
+      },
+      {
+        "id": "radecosic",
+        "category": "E-COMMERCE",
+        "title": "Rade Cosic Books",
+        "description": "E-commerce platform for book sales with modern design and user experience. Implemented with focus on simple navigation and fast book search.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Vite"
+        ],
+        "url": "https://radecosic.vercel.app/",
+        "links": {
+          "live": "Open App"
+        }
+      },
+      {
+        "id": "david-knezevic",
+        "category": "PORTFOLIO",
+        "title": "David Knežević Portfolio",
+        "description": "Premium fitness coaching portfolio with personalized programs, client success stories, and comprehensive training information. Modern design focused on conversion and professional image.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Vite"
+        ],
+        "url": "https://davidportfolio-ochre.vercel.app/",
+        "links": {
+          "live": "Open App"
+        }
       }
     ]
   },

@@ -40,6 +40,8 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
     'efina': CircleDollarSign,
     'aferesns': AlertCircle,
     'blokirani': Users,
+    'radecosic': BookOpen,
+    'david-knezevic': Dumbbell,
   };
   
   const gradients = [
