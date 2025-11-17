@@ -162,7 +162,7 @@
             "Tailwind",
             "Vercel"
           ],
-          "url": "https://osnovci.vercel.app/",
+          "url": "https://osnovci.vercel.app/dashboard",
           "links": {
             "live": "Open App"
           },
@@ -224,10 +224,9 @@
           "PostgreSQL",
           "Redis"
         ],
-        "repo": "https://github.com/zoxknez/eFakturaSef",
+        "url": "https://esef-olive.vercel.app/",
         "links": {
-          "live": "Open App",
-          "repo": "Repo"
+          "live": "Open App"
         }
       },
       {
@@ -341,6 +340,38 @@
           "Vite"
         ],
         "url": "https://davidportfolio-ochre.vercel.app/",
+        "links": {
+          "live": "Open App"
+        }
+      },
+      {
+        "id": "nestasica",
+        "category": "DATA PLATFORM",
+        "title": "Nestašica",
+        "description": "Interactive data hub tracking product and resource shortages in real time. Emphasis on transparency, location filters, and quick alerting for communities and media.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Supabase",
+          "Tailwind"
+        ],
+        "url": "https://nestasica.vercel.app/",
+        "links": {
+          "live": "Open App"
+        }
+      },
+      {
+        "id": "filmovi",
+        "category": "MEDIA HUB",
+        "title": "Filmovi & Serije",
+        "description": "Curated catalogue of movies and TV shows with genre-based recommendations, watchlist support, and detailed content cards—ideal for discovering new titles and sharing picks.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Vite"
+        ],
+        "url": "https://filmovi-serije.vercel.app/",
         "links": {
           "live": "Open App"
         }

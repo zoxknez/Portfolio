@@ -162,7 +162,7 @@
           "Tailwind",
           "Vercel"
         ],
-        "url": "https://osnovci.vercel.app/",
+        "url": "https://osnovci.vercel.app/dashboard",
         "links": {
           "live": "Otvori aplikaciju"
         },
@@ -224,10 +224,9 @@
           "PostgreSQL",
           "Redis"
         ],
-        "repo": "https://github.com/zoxknez/eFakturaSef",
+        "url": "https://esef-olive.vercel.app/",
         "links": {
-          "live": "Otvori aplikaciju",
-          "repo": "Repo"
+          "live": "Otvori aplikaciju"
         }
       },
       {
@@ -341,6 +340,38 @@
           "Vite"
         ],
         "url": "https://davidportfolio-ochre.vercel.app/",
+        "links": {
+          "live": "Otvori aplikaciju"
+        }
+      },
+      {
+        "id": "nestasica",
+        "category": "DATA PLATFORM",
+        "title": "Nestašica",
+        "description": "Interaktivna baza podataka koja mapira nestašice proizvoda i resursa u realnom vremenu. Fokus na transparentnosti, filtriranju po lokacijama i brzim signalima za zajednice i medije.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Supabase",
+          "Tailwind"
+        ],
+        "url": "https://nestasica.vercel.app/",
+        "links": {
+          "live": "Otvori aplikaciju"
+        }
+      },
+      {
+        "id": "filmovi",
+        "category": "MEDIA HUB",
+        "title": "Filmovi & Serije",
+        "description": "Kuratirani katalog filmova i serija sa preporukama po žanrovima, watchlist podrškom i detaljnim karticama sadržaja. Idealno za brzo otkrivanje novih naslova i deljenje liste sa prijateljima.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Vite"
+        ],
+        "url": "https://filmovi-serije.vercel.app/",
         "links": {
           "live": "Otvori aplikaciju"
         }

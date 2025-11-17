@@ -42,6 +42,8 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
     'blokirani': Users,
     'radecosic': BookOpen,
     'david-knezevic': Dumbbell,
+    'nestasica': AlertCircle,
+    'filmovi': FileText,
   };
   
   const gradients = [
