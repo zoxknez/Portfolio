@@ -348,7 +348,7 @@
         "id": "nestasica",
         "category": "DATA PLATFORM",
         "title": "Nestašica",
-        "description": "Interaktivna baza podataka koja mapira nestašice proizvoda i resursa u realnom vremenu. Fokus na transparentnosti, filtriranju po lokacijama i brzim signalima za zajednice i medije.",
+        "description": "Satirična baza podataka koja simulira nestašice i reakcije na potencijalne sankcije NIS-u u Srbiji. Koristim je kao parodiju da prikažem kako bi izgledala transparentna tabla upozorenja sa filtrima po lokaciji i temama.",
         "stack": [
           "Next.js",
           "TypeScript",

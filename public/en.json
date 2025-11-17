@@ -348,7 +348,7 @@
         "id": "nestasica",
         "category": "DATA PLATFORM",
         "title": "Nestašica",
-        "description": "Interactive data hub tracking product and resource shortages in real time. Emphasis on transparency, location filters, and quick alerting for communities and media.",
+        "description": "Satirical data hub that imagines shortages and responses tied to potential sanctions on NIS in Serbia. I use it as a parody dashboard showing how transparent alerts, filters, and narratives could look.",
         "stack": [
           "Next.js",
           "TypeScript",
