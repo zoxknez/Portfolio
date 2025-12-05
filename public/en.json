@@ -113,6 +113,62 @@
       {
         "name": "Bash/Shell & DevOps",
         "confidence": "76%"
+      },
+      {
+        "name": "Vue.js & Nuxt.js",
+        "confidence": "75%"
+      },
+      {
+        "name": "Angular & RxJS",
+        "confidence": "70%"
+      },
+      {
+        "name": "Svelte & SvelteKit",
+        "confidence": "72%"
+      },
+      {
+        "name": "GraphQL & Apollo",
+        "confidence": "78%"
+      },
+      {
+        "name": "REST API & OpenAPI",
+        "confidence": "85%"
+      },
+      {
+        "name": "MongoDB & Mongoose",
+        "confidence": "77%"
+      },
+      {
+        "name": "Firebase & Firestore",
+        "confidence": "80%"
+      },
+      {
+        "name": "AWS Lambda & Serverless",
+        "confidence": "73%"
+      },
+      {
+        "name": "Microservices & gRPC",
+        "confidence": "71%"
+      },
+      {
+        "name": "WebSocket & Real-time",
+        "confidence": "79%"
+      },
+      {
+        "name": "JWT & Auth0",
+        "confidence": "82%"
+      },
+      {
+        "name": "Stripe & Payment APIs",
+        "confidence": "76%"
+      },
+      {
+        "name": "TensorFlow & ML",
+        "confidence": "68%"
+      },
+      {
+        "name": "Blockchain & Web3",
+        "confidence": "65%"
       }
     ],
     "toolbox": [
@@ -123,7 +179,32 @@
       "GitHub Actions",
       "Docker",
       "Redis",
-      "ffmpeg/yt-dlp"
+      "ffmpeg/yt-dlp",
+      "PostgreSQL",
+      "MongoDB",
+      "MySQL",
+      "AWS",
+      "Azure",
+      "Google Cloud",
+      "Netlify",
+      "Cloudflare",
+      "Nginx",
+      "PM2",
+      "Git",
+      "VS Code",
+      "Postman",
+      "Figma",
+      "Jest",
+      "Cypress",
+      "ESLint",
+      "Prettier",
+      "Webpack",
+      "Vite",
+      "npm/yarn/pnpm",
+      "Terraform",
+      "Kubernetes",
+      "Jenkins",
+      "CircleCI"
     ]
   },
   "projects": {
