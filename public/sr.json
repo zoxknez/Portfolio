@@ -77,6 +77,42 @@
       {
         "name": "Python & automatizacija",
         "confidence": "74%"
+      },
+      {
+        "name": "JavaScript & ES6+",
+        "confidence": "88%"
+      },
+      {
+        "name": "Java & Spring Boot",
+        "confidence": "72%"
+      },
+      {
+        "name": "C# & .NET",
+        "confidence": "70%"
+      },
+      {
+        "name": "Go & mikroservisi",
+        "confidence": "68%"
+      },
+      {
+        "name": "PHP & Laravel",
+        "confidence": "75%"
+      },
+      {
+        "name": "Rust & sistemsko programiranje",
+        "confidence": "65%"
+      },
+      {
+        "name": "Ruby & Rails",
+        "confidence": "70%"
+      },
+      {
+        "name": "SQL & optimizacija baza",
+        "confidence": "80%"
+      },
+      {
+        "name": "Bash/Shell & DevOps",
+        "confidence": "76%"
       }
     ],
     "toolbox": [
