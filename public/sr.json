@@ -258,10 +258,7 @@
           "Vercel"
         ],
         "url": "https://www.mma-balkan.org/",
-        "repo": "https://github.com/zoxknez/mma-balkan",
-        "links": {
-          "repo": "Repo"
-        }
+        "links": {}
       },
       {
         "id": "efina",
@@ -375,6 +372,35 @@
         "links": {
           "live": "Otvori aplikaciju"
         }
+      },
+      {
+        "id": "vremenska-prognoza",
+        "category": "WEATHER APP",
+        "title": "Vremenska Prognoza",
+        "description": "Moderna Next.js 16 web aplikacija za praćenje vremenske prognoze i kvaliteta vazduha na Balkanu sa real-time podacima iz više izvora. Uključuje 7-dnevnu prognozu, interaktivne mape, AQI monitoring i smart upozorenja.",
+        "stack": [
+          "Next.js 16",
+          "TypeScript",
+          "Tailwind CSS",
+          "Mapbox",
+          "Drizzle ORM",
+          "PostgreSQL"
+        ],
+        "url": "https://vremenskaprognoza.vercel.app/",
+        "links": {
+          "live": "Otvori aplikaciju"
+        }
+      },
+      {
+        "id": "brojac-vozila",
+        "category": "DATA TOOL",
+        "title": "Brojac Vozila",
+        "description": "Aplikacija za brojanje vozila sa mogućnostima praćenja i analize saobraćajnih podataka u realnom vremenu.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind"
+        ]
       }
     ]
   },
