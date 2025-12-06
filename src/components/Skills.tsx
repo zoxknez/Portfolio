@@ -140,7 +140,7 @@ export default function Skills({ sectionId }: SkillsProps) {
                 </span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
-                {featuredSkills.map((skill: any, index: number) => (
+                {featuredSkills.map((skill: any) => (
                   <div
                     key={skill.name}
                     className="flex flex-col md:flex-row items-center gap-3 md:gap-4 p-4 md:p-6 rounded-2xl border border-white/15 bg-black/40 hover:border-cyan-400/50 transition-all duration-300"
@@ -181,7 +181,7 @@ export default function Skills({ sectionId }: SkillsProps) {
                 
                 {isExpanded && (
                   <div className="px-4 md:px-6 pb-4 md:pb-6 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 animate-in slide-in-from-top-2 duration-300">
-                    {category.skills.map((skill: any, index: number) => {
+                    {category.skills.map((skill: any, skillIndex: number) => {
                       const percentage = parseInt(skill.confidence) || 0;
                       return (
                         <div
@@ -202,7 +202,7 @@ export default function Skills({ sectionId }: SkillsProps) {
                           </div>
                           <div className="relative h-3 bg-white/5 rounded-full overflow-hidden">
                             <div
-                              className={`absolute inset-y-0 left-0 bg-gradient-to-r ${colors[(catIndex + index) % colors.length]} rounded-full transition-all duration-1000 ease-out group-hover:scale-x-105`}
+                              className={`absolute inset-y-0 left-0 bg-gradient-to-r ${colors[(catIndex + skillIndex) % colors.length]} rounded-full transition-all duration-1000 ease-out group-hover:scale-x-105`}
                               style={{ width: `${percentage}%` }}
                             >
                               <div className="absolute inset-0 bg-white/20 animate-pulse" />
