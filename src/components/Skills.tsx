@@ -180,7 +180,7 @@ export default function Skills({ sectionId }: SkillsProps) {
                 </button>
                 
                 {isExpanded && (
-                  <div className="px-4 md:px-6 pb-4 md:pb-6 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 animate-in slide-in-from-top-2 duration-300">
+                  <div className="px-4 md:px-6 pt-4 md:pt-6 pb-4 md:pb-6 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 animate-in slide-in-from-top-2 duration-300">
                     {category.skills.map((skill: any, skillIndex: number) => {
                       const percentage = parseInt(skill.confidence) || 0;
                       return (
