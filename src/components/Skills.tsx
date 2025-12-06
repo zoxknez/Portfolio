@@ -1,5 +1,6 @@
+import { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Database, Box, Rocket, Train, GitBranch, Container, Layers, FileCode } from 'lucide-react';
+import { Database, Box, Rocket, Train, GitBranch, Container, Layers, FileCode, ChevronDown } from 'lucide-react';
 
 interface SkillsProps {
   sectionId?: string;
@@ -12,12 +13,84 @@ interface ToolConfig {
   gradient: string;
 }
 
+interface SkillCategory {
+  name: string;
+  skills: Array<{
+    name: string;
+    confidence: string;
+    note?: string;
+  }>;
+}
+
 export default function Skills({ sectionId }: SkillsProps) {
   const { t } = useLanguage();
+  const [expandedCategories, setExpandedCategories] = useState<Record<string, boolean>>({});
   
   const skills = t?.skills?.focusStack || [];
-  const [featuredSkill, ...otherSkills] = skills;
-  
+  const featuredSkills = skills.filter((skill: any) => 
+    skill.confidence === '94%' || skill.confidence === '90%'
+  );
+  const otherSkills = skills.filter((skill: any) => 
+    skill.confidence !== '94%' && skill.confidence !== '90%'
+  );
+
+  // Organizuj ostale stavke po kategorijama
+  const categoryNames = t?.skills?.categories || {
+    frontend: 'Frontend Frameworks',
+    backend: 'Backend & APIs',
+    databases: 'Databases',
+    cloud: 'Cloud & DevOps',
+    languages: 'Programming Languages',
+    other: 'Other Tools'
+  };
+
+  const categories: SkillCategory[] = [
+    {
+      name: categoryNames.frontend,
+      skills: otherSkills.filter((s: any) => 
+        s.name.includes('Vue') || s.name.includes('Angular') || s.name.includes('Svelte') || 
+        s.name.includes('Tailwind') || s.name.includes('UI') || s.name.includes('UI dizajn')
+      )
+    },
+    {
+      name: categoryNames.backend,
+      skills: otherSkills.filter((s: any) => 
+        s.name.includes('Express') || s.name.includes('API') || s.name.includes('GraphQL') || 
+        s.name.includes('gRPC') || s.name.includes('REST') || s.name.includes('Microservices')
+      )
+    },
+    {
+      name: categoryNames.databases,
+      skills: otherSkills.filter((s: any) => 
+        s.name.includes('MongoDB') || s.name.includes('Firebase') || s.name.includes('SQL') || 
+        s.name.includes('Postgres') || s.name.includes('Database') || s.name.includes('baza')
+      )
+    },
+    {
+      name: categoryNames.cloud,
+      skills: otherSkills.filter((s: any) => 
+        s.name.includes('AWS') || s.name.includes('Serverless') || s.name.includes('Bash') || 
+        s.name.includes('DevOps') || s.name.includes('Lambda') || s.name.includes('Shell')
+      )
+    },
+    {
+      name: categoryNames.languages,
+      skills: otherSkills.filter((s: any) => 
+        s.name.includes('Java') || s.name.includes('C#') || s.name.includes('Go') || 
+        s.name.includes('PHP') || s.name.includes('Rust') || s.name.includes('Ruby') || 
+        s.name.includes('Python') || s.name.includes('JavaScript')
+      )
+    },
+    {
+      name: categoryNames.other,
+      skills: otherSkills.filter((s: any) => 
+        s.name.includes('Electron') || s.name.includes('WebSocket') || s.name.includes('JWT') || 
+        s.name.includes('Stripe') || s.name.includes('TensorFlow') || s.name.includes('Blockchain') ||
+        s.name.includes('Real-time') || s.name.includes('automatizacija')
+      )
+    }
+  ].filter(cat => cat.skills.length > 0);
+
   const colors = [
     'from-cyan-400 to-blue-500',
     'from-blue-400 to-indigo-500',
@@ -27,6 +100,13 @@ export default function Skills({ sectionId }: SkillsProps) {
     'from-orange-400 to-rose-500',
     'from-amber-400 to-lime-500',
   ];
+
+  const toggleCategory = (categoryName: string) => {
+    setExpandedCategories(prev => ({
+      ...prev,
+      [categoryName]: !prev[categoryName]
+    }));
+  };
 
   const toolsConfig: ToolConfig[] = [
     { name: 'Supabase', url: 'https://supabase.com/', icon: Database, gradient: 'from-green-500 to-emerald-600' },
@@ -51,52 +131,88 @@ export default function Skills({ sectionId }: SkillsProps) {
             <p className="text-base md:text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
               {t?.skills?.intro || 'Ovo su alati koje najčešće koristim uz AI pair-programming i gotove template-ove. Procente shvatam kao nivo sigurnosti kad treba da nešto sastavim u ovom ekosistemu, a ne kao tvrdnju da sam senior programer.'}
             </p>
-            {featuredSkill && (
-              <div className="mt-6 md:mt-8 w-full text-left">
-                <div className="flex flex-col md:flex-row items-center gap-3 md:gap-4 p-4 md:p-6 rounded-2xl border border-white/15 bg-black/40">
-                  <div className="flex flex-col md:flex-row items-center gap-2 md:gap-3">
-                    <span className="px-2 md:px-3 py-1 text-xs uppercase tracking-[0.25em] md:tracking-[0.35em] rounded-full bg-white/10 border border-white/20 text-cyan-300">
-                      {t?.skills?.focusStackHeading || 'Fokus stack'}
-                    </span>
-                    <span className="text-xl md:text-2xl font-semibold text-white text-center md:text-left">{featuredSkill.name}</span>
-                  </div>
-                  <p className="md:ml-auto text-sm text-gray-300 text-center md:text-right">
-                    <span className="text-xl md:text-2xl font-bold text-cyan-300">{featuredSkill.confidence}</span> {featuredSkill.note || ''}
-                  </p>
-                </div>
+            
+            {/* Featured Skills - Fokus Stack */}
+            <div className="mt-6 md:mt-8 space-y-3 md:space-y-4">
+              <div className="text-left mb-4">
+                <span className="px-3 py-1 text-xs uppercase tracking-[0.35em] rounded-full bg-white/10 border border-white/20 text-cyan-300">
+                  {t?.skills?.focusStackHeading || 'Fokus stack'}
+                </span>
               </div>
-            )}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                {featuredSkills.map((skill: any, index: number) => (
+                  <div
+                    key={skill.name}
+                    className="flex flex-col md:flex-row items-center gap-3 md:gap-4 p-4 md:p-6 rounded-2xl border border-white/15 bg-black/40 hover:border-cyan-400/50 transition-all duration-300"
+                  >
+                    <span className="text-lg md:text-xl font-semibold text-white text-center md:text-left flex-1">{skill.name}</span>
+                    <p className="text-sm text-gray-300 text-center md:text-right">
+                      <span className="text-xl md:text-2xl font-bold text-cyan-300">{skill.confidence}</span> {skill.note || ''}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-          {otherSkills.map((skill: any, index: number) => {
-            const percentage = parseInt(skill.confidence) || 0;
+
+        {/* Categorized Skills with Accordion */}
+        <div className="space-y-4 md:space-y-6">
+          {categories.map((category, catIndex) => {
+            const isExpanded = expandedCategories[category.name];
             return (
               <div
-                key={skill.name}
-                className="group relative p-4 md:p-6 rounded-2xl bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 hover:border-cyan-400/50 transition-all duration-500 hover:scale-[1.02] hover:shadow-lg hover:shadow-cyan-500/20"
-                style={{ animationDelay: `${index * 100}ms` }}
+                key={category.name}
+                className="group relative rounded-2xl bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 hover:border-cyan-400/50 transition-all duration-500 overflow-hidden"
               >
-                {/* Hover tooltip */}
-                {skill.note && (
-                  <div className="absolute -top-12 left-1/2 -translate-x-1/2 px-4 py-2 bg-slate-900/95 border border-cyan-400/50 rounded-lg text-sm text-cyan-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap z-10 backdrop-blur-xl">
-                    {skill.note}
-                    <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-slate-900 border-r border-b border-cyan-400/50 rotate-45" />
+                <button
+                  onClick={() => toggleCategory(category.name)}
+                  className="w-full flex items-center justify-between p-4 md:p-6 hover:bg-white/5 transition-colors"
+                >
+                  <h3 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                    {category.name}
+                  </h3>
+                  <ChevronDown
+                    className={`w-5 h-5 md:w-6 md:h-6 text-cyan-400 transition-transform duration-300 ${
+                      isExpanded ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+                
+                {isExpanded && (
+                  <div className="px-4 md:px-6 pb-4 md:pb-6 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 animate-in slide-in-from-top-2 duration-300">
+                    {category.skills.map((skill: any, index: number) => {
+                      const percentage = parseInt(skill.confidence) || 0;
+                      return (
+                        <div
+                          key={skill.name}
+                          className="group relative p-4 md:p-6 rounded-2xl bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 hover:border-cyan-400/50 transition-all duration-500 hover:scale-[1.02] hover:shadow-lg hover:shadow-cyan-500/20"
+                        >
+                          {/* Hover tooltip */}
+                          {skill.note && (
+                            <div className="absolute -top-12 left-1/2 -translate-x-1/2 px-4 py-2 bg-slate-900/95 border border-cyan-400/50 rounded-lg text-sm text-cyan-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap z-10 backdrop-blur-xl">
+                              {skill.note}
+                              <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-slate-900 border-r border-b border-cyan-400/50 rotate-45" />
+                            </div>
+                          )}
+                          
+                          <div className="flex justify-between items-center mb-2 md:mb-3">
+                            <span className="text-lg md:text-xl font-semibold group-hover:text-cyan-300 transition-colors">{skill.name}</span>
+                            <span className="text-cyan-400 font-bold text-sm md:text-base">{skill.confidence}</span>
+                          </div>
+                          <div className="relative h-3 bg-white/5 rounded-full overflow-hidden">
+                            <div
+                              className={`absolute inset-y-0 left-0 bg-gradient-to-r ${colors[(catIndex + index) % colors.length]} rounded-full transition-all duration-1000 ease-out group-hover:scale-x-105`}
+                              style={{ width: `${percentage}%` }}
+                            >
+                              <div className="absolute inset-0 bg-white/20 animate-pulse" />
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
                 )}
-                
-                <div className="flex justify-between items-center mb-2 md:mb-3">
-                  <span className="text-lg md:text-xl font-semibold group-hover:text-cyan-300 transition-colors">{skill.name}</span>
-                  <span className="text-cyan-400 font-bold text-sm md:text-base">{skill.confidence}</span>
-                </div>
-                <div className="relative h-3 bg-white/5 rounded-full overflow-hidden">
-                  <div
-                    className={`absolute inset-y-0 left-0 bg-gradient-to-r ${colors[index + 1] || colors[0]} rounded-full transition-all duration-1000 ease-out group-hover:scale-x-105`}
-                    style={{ width: `${percentage}%` }}
-                  >
-                    <div className="absolute inset-0 bg-white/20 animate-pulse" />
-                  </div>
-                </div>
               </div>
             );
           })}

@@ -48,6 +48,14 @@
     "focusStackHeading": "Focus stack",
     "toolboxHeading": "Development Toolbox",
     "toolboxIntro": "Essential tools and services I use for deployment, database management, and automation",
+    "categories": {
+      "frontend": "Frontend Frameworks",
+      "backend": "Backend & APIs",
+      "databases": "Databases",
+      "cloud": "Cloud & DevOps",
+      "languages": "Programming Languages",
+      "other": "Other Tools"
+    },
     "focusStack": [
       {
         "name": "Next.js & React",
@@ -56,11 +64,18 @@
       },
       {
         "name": "TypeScript & Node.js",
-        "confidence": "90%"
+        "confidence": "90%",
+        "note": "confidence with AI assistance"
       },
       {
-        "name": "Supabase & Postgres",
-        "confidence": "86%"
+        "name": "Supabase & PostgreSQL",
+        "confidence": "90%",
+        "note": "confidence with AI assistance"
+      },
+      {
+        "name": "Tailwind CSS & Shadcn/ui",
+        "confidence": "90%",
+        "note": "confidence with AI assistance"
       },
       {
         "name": "Express & API design",

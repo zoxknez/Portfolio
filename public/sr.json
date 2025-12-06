@@ -48,6 +48,14 @@
     "focusStackHeading": "Fokus stack",
     "toolboxHeading": "Razvojni Alati",
     "toolboxIntro": "Ključni alati i servisi koje koristim za deployment, upravljanje bazama podataka i automatizaciju",
+    "categories": {
+      "frontend": "Frontend Frameworks",
+      "backend": "Backend & APIs",
+      "databases": "Baze Podataka",
+      "cloud": "Cloud & DevOps",
+      "languages": "Programski Jezici",
+      "other": "Ostali Alati"
+    },
     "focusStack": [
       {
         "name": "Next.js & React",
@@ -56,11 +64,18 @@
       },
       {
         "name": "TypeScript & Node.js",
-        "confidence": "90%"
+        "confidence": "90%",
+        "note": "sigurnosti uz AI asistenciju"
       },
       {
-        "name": "Supabase & Postgres",
-        "confidence": "86%"
+        "name": "Supabase & PostgreSQL",
+        "confidence": "90%",
+        "note": "sigurnosti uz AI asistenciju"
+      },
+      {
+        "name": "Tailwind CSS & Shadcn/ui",
+        "confidence": "90%",
+        "note": "sigurnosti uz AI asistenciju"
       },
       {
         "name": "Express & API dizajn",
