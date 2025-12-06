@@ -20,7 +20,7 @@
   "stats": {
     "years": "20+",
     "yearsLabel": "years in the IT ecosystem",
-    "solutions": "12+",
+    "solutions": "30+",
     "solutionsLabel": "solutions built independently",
     "aiFirst": "AI-first",
     "aiFirstLabel": "workflow as my edge"
@@ -518,6 +518,25 @@
           "TypeScript",
           "Tailwind"
         ]
+      },
+      {
+        "id": "pisma",
+        "category": "DIGITAL HERITAGE",
+        "title": "Pisma",
+        "description": "Digital platform for time-locked letters that combines modern technology with the nostalgia of handwritten correspondence. Features personalized wax seals, audio messages, vintage paper effects, QR code tracking, and 3D unboxing experience.",
+        "stack": [
+          "Next.js 16",
+          "TypeScript",
+          "Prisma",
+          "PostgreSQL",
+          "NextAuth.js",
+          "Tailwind CSS",
+          "Framer Motion"
+        ],
+        "url": "https://pisma.fun/",
+        "links": {
+          "live": "Open App"
+        }
       }
     ]
   },
