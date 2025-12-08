@@ -1,4 +1,4 @@
-import { ExternalLink, BookOpen, CircleDollarSign, Download, Dumbbell, FileSpreadsheet, FileText, Globe, ScanText, Plane, GraduationCap, AlertCircle, Users, Cloud, Car, Mail } from 'lucide-react';
+import { ExternalLink, BookOpen, CircleDollarSign, Download, Dumbbell, FileSpreadsheet, FileText, Globe, ScanText, Plane, GraduationCap, AlertCircle, Users, Cloud, Car, Mail, Building2, UtensilsCrossed } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface PortfolioProps {
@@ -47,6 +47,8 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
     'vremenska-prognoza': Cloud,
     'brojac-vozila': Car,
     'pisma': Mail,
+    'sipka-group': Building2,
+    'ketering-bg': UtensilsCrossed,
   };
   
   const gradients = [

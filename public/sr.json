@@ -552,6 +552,39 @@
         "links": {
           "live": "Otvori aplikaciju"
         }
+      },
+      {
+        "id": "sipka-group",
+        "category": "REAL ESTATE",
+        "title": "Sipka Group",
+        "description": "Premium web sajt za property investment grupu u Novom Zelandu. Prikazuje portfolio nekretnina, istoriju kompanije i dostupne prostore sa modernim dizajnom i interaktivnim mapama.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Framer Motion",
+          "Vercel"
+        ],
+        "url": "https://sipagroupweb.vercel.app/",
+        "links": {
+          "live": "Otvori aplikaciju"
+        }
+      },
+      {
+        "id": "ketering-bg",
+        "category": "FOOD & CATERING",
+        "title": "Ketering Beograd",
+        "description": "Ekskluzivni ketering servis za korporativne događaje i privatne proslave u Beogradu. Web sajt sa menijima, galerijom jela, personalizovanim ponudama i multi-jezičnom podrškom (srpski, engleski, ruski).",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Vercel"
+        ],
+        "url": "https://keteringbg.vercel.app/",
+        "links": {
+          "live": "Otvori aplikaciju"
+        }
       }
     ]
   },
