@@ -27,7 +27,7 @@ export default function Hero({ onNavigate, isLoaded, sectionId }: HeroProps) {
                 </h2>
                 <div className="space-y-4 md:space-y-6">
                   <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-                    <span className="font-semibold text-white">{t?.hero?.name || 'Zoran Knežević'}</span> — {t?.hero?.tagline}
+                    <span className="font-semibold text-white">{t?.hero?.name || 'Zoran Knežević'}</span> - {t?.hero?.tagline}
                   </p>
                   <p className="text-base md:text-lg text-gray-400 leading-relaxed">
                     {t?.hero?.story}
