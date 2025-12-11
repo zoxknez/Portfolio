@@ -247,7 +247,10 @@
         "url": "https://www.odmor.fun/",
         "links": {
           "live": "Open App"
-        }
+        },
+        "images": [
+          "/odmor.png"
+        ]
       },
       {
         "id": "kursevi",
@@ -263,7 +266,10 @@
         "url": "https://www.coursesedu.space/",
         "links": {
           "live": "Open App"
-        }
+        },
+        "images": [
+          "/kurs.png"
+        ]
       },
       {
         "id": "racuni",
@@ -282,12 +288,15 @@
         "links": {
           "live": "Open App"
         },
+        "images": [
+          "/fiskalni.jpeg"
+        ],
         "demoAccounts": [
           "proba@gmail.com / proba1234",
           "proba1@gmail.com / proba1234",
           "proba2@gmail.com / proba1234"
         ]
-        },
+      },
         {
           "id": "osnovci",
           "category": "EDTECH",
@@ -329,7 +338,10 @@
         "links": {
           "live": "Open App",
           "repo": "Repo"
-        }
+        },
+        "images": [
+          "/balkanremote.png"
+        ]
       },
       {
         "id": "pumpaj",
@@ -365,7 +377,10 @@
         "url": "https://esef-olive.vercel.app/",
         "links": {
           "live": "Open App"
-        }
+        },
+        "images": [
+          "/sef.jpeg"
+        ]
       },
       {
         "id": "pdf-scraper",
@@ -396,7 +411,10 @@
           "Vercel"
         ],
         "url": "https://www.mma-balkan.org/",
-        "links": {}
+        "links": {},
+        "images": [
+          "/mmabalkan.jpeg"
+        ]
       },
       {
         "id": "efina",
@@ -461,7 +479,10 @@
         "url": "https://radecosic.vercel.app/",
         "links": {
           "live": "Open App"
-        }
+        },
+        "images": [
+          "/radecosic.jpeg"
+        ]
       },
       {
         "id": "david-knezevic",
@@ -527,7 +548,10 @@
         "url": "https://vremenskaprognoza.vercel.app/",
         "links": {
           "live": "Open App"
-        }
+        },
+        "images": [
+          "/vremenskaprognoza.png"
+        ]
       },
       {
         "id": "brojac-vozila",
@@ -557,7 +581,10 @@
         "url": "https://pisma.fun/",
         "links": {
           "live": "Open App"
-        }
+        },
+        "images": [
+          "/pisma.png"
+        ]
       },
       {
         "id": "sipka-group",
@@ -610,7 +637,10 @@
         "url": "https://bidon-tau.vercel.app/",
         "links": {
           "live": "Open App"
-        }
+        },
+        "images": [
+          "/bidon.jpeg"
+        ]
       },
       {
         "id": "twitter-block-manager",
