@@ -611,6 +611,27 @@
         "links": {
           "live": "Open App"
         }
+      },
+      {
+        "id": "twitter-block-manager",
+        "category": "CHROME EXTENSION",
+        "title": "Block Manager for Twitter/X",
+        "description": "Chrome extension for managing blocked users on Twitter/X platform. Modern glassmorphism UI with dark/light themes, Alt+B shortcut for quick blocking, advanced manager with search and filtering, visual statistics, smart tagging, and backup system. Supports import/export and bulk actions.",
+        "stack": [
+          "Chrome Extension",
+          "Manifest V3",
+          "Vanilla JavaScript",
+          "CSS3 Glassmorphism",
+          "Chrome Storage API"
+        ],
+        "repo": "https://github.com/zoxknez/Twitter-X-Block-Manager",
+        "images": [
+          "/twitter-block-manager-dark.png",
+          "/twitter-block-manager-light.png"
+        ],
+        "links": {
+          "repo": "Repo"
+        }
       }
     ]
   },

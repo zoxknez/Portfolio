@@ -1,4 +1,5 @@
-import { ExternalLink, BookOpen, CircleDollarSign, Download, Dumbbell, FileSpreadsheet, FileText, Globe, ScanText, Plane, GraduationCap, AlertCircle, Users, Cloud, Car, Mail, Building2, UtensilsCrossed, Fuel } from 'lucide-react';
+import { useState } from 'react';
+import { ExternalLink, BookOpen, CircleDollarSign, Download, Dumbbell, FileSpreadsheet, FileText, Globe, ScanText, Plane, GraduationCap, AlertCircle, Users, Cloud, Car, Mail, Building2, UtensilsCrossed, Fuel, Shield, X } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface PortfolioProps {
@@ -20,10 +21,12 @@ interface ProjectItem {
   repo?: string;
   demoAccounts?: string[];
   links?: ProjectLinkLabels;
+  images?: string[];
 }
 
 export default function Portfolio({ sectionId }: PortfolioProps) {
   const { t } = useLanguage();
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 
   type IconComponent = typeof Globe;
 
@@ -50,6 +53,7 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
     'sipka-group': Building2,
     'ketering-bg': UtensilsCrossed,
     'bidon': Fuel,
+    'twitter-block-manager': Shield,
   };
   
   const gradients = [
@@ -119,6 +123,33 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
                     </div>
                   </div>
                 )}
+                {project.images && project.images.length > 0 && (
+                  <div className="relative z-10 mb-3 md:mb-4">
+                    <div className="text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200 mb-2">
+                      Screenshots
+                    </div>
+                    <div className="grid grid-cols-2 gap-2">
+                      {project.images.map((image, imgIndex) => (
+                        <button
+                          key={imgIndex}
+                          onClick={() => setLightboxImage(image)}
+                          className="relative group/image overflow-hidden rounded-lg border border-white/10 hover:border-cyan-400/50 transition-all duration-300 hover:scale-105"
+                        >
+                          <img
+                            src={image}
+                            alt={`${project.title} screenshot ${imgIndex + 1}`}
+                            className="w-full h-auto object-cover"
+                          />
+                          <div className="absolute inset-0 bg-black/0 group-hover/image:bg-black/20 transition-colors flex items-center justify-center">
+                            <div className="opacity-0 group-hover/image:opacity-100 transition-opacity text-white text-xs font-semibold">
+                              Click to enlarge
+                            </div>
+                          </div>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
                 <div className="relative z-10 flex flex-wrap gap-2 mb-3 md:mb-4">
                   {project.stack?.map((tech: string) => (
                     <span
@@ -158,6 +189,30 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
           })}
         </div>
       </div>
+      
+      {/* Lightbox Modal */}
+      {lightboxImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4"
+          onClick={() => setLightboxImage(null)}
+        >
+          <button
+            onClick={() => setLightboxImage(null)}
+            className="absolute top-4 right-4 p-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 transition-colors"
+            aria-label="Close lightbox"
+          >
+            <X className="w-6 h-6 text-white" />
+          </button>
+          <div className="relative max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center">
+            <img
+              src={lightboxImage}
+              alt="Lightbox view"
+              className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }

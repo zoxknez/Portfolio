@@ -611,6 +611,27 @@
         "links": {
           "live": "Otvori aplikaciju"
         }
+      },
+      {
+        "id": "twitter-block-manager",
+        "category": "CHROME EXTENSION",
+        "title": "Block Manager for Twitter/X",
+        "description": "Chrome ekstenzija za upravljanje blokiranim korisnicima na Twitter/X platformi. Moderna glassmorphism UI sa dark/light temama, Alt+B prečica za brzo blokiranje, napredni menadžer sa pretragom i filtriranjem, vizuelna statistika, smart tagovanje i backup sistem. Podržava import/export i masovne akcije.",
+        "stack": [
+          "Chrome Extension",
+          "Manifest V3",
+          "Vanilla JavaScript",
+          "CSS3 Glassmorphism",
+          "Chrome Storage API"
+        ],
+        "repo": "https://github.com/zoxknez/Twitter-X-Block-Manager",
+        "images": [
+          "/twitter-block-manager-dark.png",
+          "/twitter-block-manager-light.png"
+        ],
+        "links": {
+          "repo": "Repo"
+        }
       }
     ]
   },
