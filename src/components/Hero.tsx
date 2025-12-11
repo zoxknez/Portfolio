@@ -81,9 +81,10 @@ export default function Hero({ onNavigate, isLoaded, sectionId }: HeroProps) {
           </div>
 
           {/* Feature highlight sekcija */}
-          <div className="max-w-5xl mx-auto mt-8 md:mt-12">
+          <div className="max-w-5xl mx-auto mt-8 md:mt-12 space-y-6 md:space-y-8">
+            {/* Prvi red - 3 mala badge-a */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 text-center">
-              {t?.pillars?.map((pillar: any, index: number) => {
+              {t?.pillars?.filter((p: any) => !p.featured).map((pillar: any, index: number) => {
                 const icons: { [key: string]: string } = {
                   flash: '⚡',
                   target: '🎯',
@@ -114,6 +115,31 @@ export default function Hero({ onNavigate, isLoaded, sectionId }: HeroProps) {
                 );
               })}
             </div>
+            
+            {/* Veći featured badge */}
+            {t?.pillars?.find((p: any) => p.featured) && (() => {
+              const featuredPillar = t.pillars.find((p: any) => p.featured);
+              const icons: { [key: string]: string } = {
+                globe: '🌐',
+                flash: '⚡',
+                target: '🎯',
+                wrench: '🔧',
+              };
+              return (
+                <div className="relative group p-8 md:p-12 rounded-3xl border-2 border-white/20 bg-gradient-to-br from-emerald-500/10 via-cyan-500/10 to-blue-500/10 backdrop-blur-xl hover:border-cyan-400/60 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-cyan-500/20">
+                  <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 via-cyan-500/20 to-blue-500/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="relative text-center space-y-4 md:space-y-6">
+                    <div className="text-5xl md:text-6xl lg:text-7xl">{icons[featuredPillar.icon] || '🌐'}</div>
+                    <h3 className="font-bold text-2xl md:text-3xl lg:text-4xl bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                      {featuredPillar.title}
+                    </h3>
+                    <p className="text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
+                      {featuredPillar.desc}
+                    </p>
+                  </div>
+                </div>
+              );
+            })()}
           </div>
         </div>
       </div>

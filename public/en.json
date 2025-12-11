@@ -40,6 +40,12 @@
       "icon": "wrench",
       "title": "Flexible Approach",
       "desc": "From idea to production, with the right tools"
+    },
+    {
+      "icon": "globe",
+      "title": "All Types of Web Applications",
+      "desc": "I build complex web applications: e-commerce platforms, SaaS solutions, dashboard applications, PWAs, real-time systems, API integrations, and custom enterprise solutions",
+      "featured": true
     }
   ],
   "skills": {
@@ -582,6 +588,26 @@
           "Vercel"
         ],
         "url": "https://keteringbg.vercel.app/",
+        "links": {
+          "live": "Open App"
+        }
+      },
+      {
+        "id": "bidon",
+        "category": "PWA",
+        "title": "Bidon",
+        "description": "Modern PWA application for tracking and recording fuel dispensing from tanks. Ideal for agricultural farms and transport companies. Features tank management with animated fuel level display, vehicle records, consumption reports by vehicle and sector, and PWA support for mobile installation.",
+        "stack": [
+          "Next.js 15",
+          "TypeScript",
+          "Tailwind CSS",
+          "Drizzle ORM",
+          "PostgreSQL",
+          "NextAuth.js",
+          "Framer Motion",
+          "Recharts"
+        ],
+        "url": "https://bidon-tau.vercel.app/",
         "links": {
           "live": "Open App"
         }

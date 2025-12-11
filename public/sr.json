@@ -40,6 +40,12 @@
       "icon": "wrench",
       "title": "Fleksibilan Pristup",
       "desc": "Od ideje do produkcije, sa pravim alatima"
+    },
+    {
+      "icon": "globe",
+      "title": "Sve Vrste Web Aplikacija",
+      "desc": "Izrađujem kompleksne web aplikacije: e-commerce platforme, SaaS rešenja, dashboard aplikacije, PWA, real-time sisteme, API integracije i custom enterprise rešenja",
+      "featured": true
     }
   ],
   "skills": {
@@ -582,6 +588,26 @@
           "Vercel"
         ],
         "url": "https://keteringbg.vercel.app/",
+        "links": {
+          "live": "Otvori aplikaciju"
+        }
+      },
+      {
+        "id": "bidon",
+        "category": "PWA",
+        "title": "Bidon",
+        "description": "Moderna PWA aplikacija za evidenciju i praćenje sipanja goriva iz bidona. Idealna za poljoprivredna gazdinstva i transportne firme. Uključuje upravljanje bidonima sa animiranim prikazom nivoa goriva, evidenciju vozila, izveštaje o potrošnji po vozilu i sektorima, te PWA podršku za instalaciju na mobilne uređaje.",
+        "stack": [
+          "Next.js 15",
+          "TypeScript",
+          "Tailwind CSS",
+          "Drizzle ORM",
+          "PostgreSQL",
+          "NextAuth.js",
+          "Framer Motion",
+          "Recharts"
+        ],
+        "url": "https://bidon-tau.vercel.app/",
         "links": {
           "live": "Otvori aplikaciju"
         }
