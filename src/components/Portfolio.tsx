@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ExternalLink, BookOpen, CircleDollarSign, Download, Dumbbell, FileSpreadsheet, FileText, Globe, ScanText, Plane, GraduationCap, AlertCircle, Users, Cloud, Car, Mail, Building2, UtensilsCrossed, Fuel, Shield, X } from 'lucide-react';
+import { ExternalLink, BookOpen, CircleDollarSign, Download, Dumbbell, FileSpreadsheet, FileText, Globe, ScanText, Plane, GraduationCap, AlertCircle, Users, Cloud, Car, Mail, Building2, UtensilsCrossed, Fuel, Shield, X, Languages } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface PortfolioProps {
@@ -54,6 +54,7 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
     'ketering-bg': UtensilsCrossed,
     'bidon': Fuel,
     'twitter-block-manager': Shield,
+    'nemacki-jezik': Languages,
   };
   
   const gradients = [

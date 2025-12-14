@@ -272,6 +272,29 @@
         ]
       },
       {
+        "id": "nemacki-jezik",
+        "category": "LANGUAGE LEARNING",
+        "title": "Nemački Jezik",
+        "description": "Kompleksna platforma za učenje nemačkog jezika sa interaktivnim lekcijama, vežbama, testovima i praćenjem napretka. Uključuje personalizovane kurseve, sistem ocenjivanja i detaljnu analitiku učenja.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Supabase",
+          "Tailwind CSS",
+          "Vercel"
+        ],
+        "url": "https://nemackijezik.vercel.app/",
+        "links": {
+          "live": "Otvori aplikaciju"
+        },
+        "demoAccounts": [
+          "demo@deutschmaster.rs / demo123",
+          "marko@demo.rs / demo123",
+          "ana@demo.rs / demo123",
+          "test@test.com / demo123"
+        ]
+      },
+      {
         "id": "racuni",
         "category": "PWA",
         "title": "Računi",
@@ -601,7 +624,10 @@
         "url": "https://sipagroupweb.vercel.app/",
         "links": {
           "live": "Otvori aplikaciju"
-        }
+        },
+        "images": [
+          "/sipkagroup.png"
+        ]
       },
       {
         "id": "ketering-bg",
