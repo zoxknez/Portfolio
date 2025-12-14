@@ -274,8 +274,8 @@
       {
         "id": "nemacki-jezik",
         "category": "LANGUAGE LEARNING",
-        "title": "Nemački Jezik",
-        "description": "Kompleksna platforma za učenje nemačkog jezika sa interaktivnim lekcijama, vežbama, testovima i praćenjem napretka. Uključuje personalizovane kurseve, sistem ocenjivanja i detaljnu analitiku učenja.",
+        "title": "Platforma za učenje Nemačkog jezika",
+        "description": "Kompleksna platforma za učenje nemačkog jezika sa interaktivnim lekcijama, vežbama, testovima i praćenjem napretka. Uključuje personalizovane kurseve, sistem ocenjivanja, AI tutora, sistem dostignuća, rang listu i detaljnu analitiku učenja.",
         "stack": [
           "Next.js",
           "TypeScript",
@@ -287,6 +287,9 @@
         "links": {
           "live": "Otvori aplikaciju"
         },
+        "images": [
+          "/nemacki-jezik.png"
+        ],
         "demoAccounts": [
           "demo@deutschmaster.rs / demo123",
           "marko@demo.rs / demo123",

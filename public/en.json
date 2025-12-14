@@ -274,8 +274,8 @@
       {
         "id": "nemacki-jezik",
         "category": "LANGUAGE LEARNING",
-        "title": "German Language",
-        "description": "Comprehensive platform for learning German language with interactive lessons, exercises, tests, and progress tracking. Features personalized courses, grading system, and detailed learning analytics.",
+        "title": "German Language Learning Platform",
+        "description": "Comprehensive platform for learning German language with interactive lessons, exercises, tests, and progress tracking. Features personalized courses, grading system, AI tutor, achievements system, leaderboard, and detailed learning analytics.",
         "stack": [
           "Next.js",
           "TypeScript",
@@ -287,6 +287,9 @@
         "links": {
           "live": "Open App"
         },
+        "images": [
+          "/nemacki-jezik.png"
+        ],
         "demoAccounts": [
           "demo@deutschmaster.rs / demo123",
           "marko@demo.rs / demo123",
