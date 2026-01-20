@@ -9,11 +9,12 @@
     "sr": "SR",
     "en": "EN"
   },
-     "intro": "I'm open to collaboration, consulting, and creative discussions. If you have an idea to turn into a solution with AI and a team‑driven approach, reach out via email, phone, or social.","hero": {
+  "intro": "I'm open to collaboration, consulting, and creative discussions. If you have an idea to turn into a solution with AI and a team‑driven approach, reach out via email, phone, or social.",
+  "hero": {
     "heading": "Who am I?",
     "name": "Zoran Knežević",
     "tagline": "IT enthusiast with 20+ years connecting infrastructure, support, design, and process optimization. I’m not a hardcore programmer, but I align people, tools, and AI assistants to turn ideas into working solutions.",
-    "story": "I started in 2005 on the MyCity.rs forum, opening my first IT account and diving into this world. That’s when I discovered Linux and set up my first card‑sharing server. Today—using a modern AI toolchain—I assemble web, desktop, and mobile solutions without needing to be a hardcore coder.",
+    "story": "I started in 2005 on the MyCity.rs forum, opening my first IT account and diving into this world. That’s when I discovered Linux and set up my first card‑sharing server. Today - using a modern AI toolchain - I assemble web, desktop, and mobile solutions without needing to be a hardcore coder.",
     "ctaViewPortfolio": "View Portfolio",
     "ctaContact": "Contact Me"
   },
@@ -323,30 +324,30 @@
           "proba2@gmail.com / proba1234"
         ]
       },
-        {
-          "id": "osnovci",
-          "category": "EDTECH",
-          "title": "Osnovci",
-    "description": "Holistic learning platform for elementary students combining mastery-based lessons, parent dashboards, and AI coaching. I architect the multi-tenant curriculum CMS, real-time classroom automations, and progress analytics.",
-          "stack": [
-            "Next.js",
-            "TypeScript",
-            "Supabase",
-            "Tailwind",
-            "Vercel"
-          ],
-          "url": "https://osnovci.vercel.app/dashboard",
-          "links": {
-            "live": "Open App"
-          },
-          "demoAccounts": [
-            "1️⃣ Marko Marković — marko@demo.rs / marko123",
-            "2️⃣ Ana Petrović — ana@demo.rs / ana123",
-            "3️⃣ Stefan Nikolić — stefan@demo.rs / stefan123",
-            "4️⃣ Milica Stanković — milica@demo.rs / milica123",
-            "5️⃣ Luka Pavlović — luka@demo.rs / luka123"
-          ]
+      {
+        "id": "osnovci",
+        "category": "EDTECH",
+        "title": "Osnovci",
+        "description": "Holistic learning platform for elementary students combining mastery-based lessons, parent dashboards, and AI coaching. I architect the multi-tenant curriculum CMS, real-time classroom automations, and progress analytics.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Supabase",
+          "Tailwind",
+          "Vercel"
+        ],
+        "url": "https://osnovci.vercel.app/dashboard",
+        "links": {
+          "live": "Open App"
         },
+        "demoAccounts": [
+          "1️⃣ Marko Marković - marko@demo.rs / marko123",
+          "2️⃣ Ana Petrović - ana@demo.rs / ana123",
+          "3️⃣ Stefan Nikolić - stefan@demo.rs / stefan123",
+          "4️⃣ Milica Stanković - milica@demo.rs / milica123",
+          "5️⃣ Luka Pavlović - luka@demo.rs / luka123"
+        ]
+      },
       {
         "id": "balkan-remote",
         "category": "WEB PLATFORM",

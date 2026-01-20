@@ -327,7 +327,7 @@
         "id": "osnovci",
         "category": "EDTECH",
         "title": "Osnovci",
-  "description": "Holistička platforma za osnovce koja spaja adaptivne lekcije, roditeljske panele i AI mentora. Gradim višetemantski nastavni CMS, automatizaciju učionica u realnom vremenu i analitiku napretka.",
+        "description": "Holistička platforma za osnovce koja spaja adaptivne lekcije, roditeljske panele i AI mentora. Gradim višetemantski nastavni CMS, automatizaciju učionica u realnom vremenu i analitiku napretka.",
         "stack": [
           "Next.js",
           "TypeScript",
@@ -340,11 +340,11 @@
           "live": "Otvori aplikaciju"
         },
         "demoAccounts": [
-          "1️⃣ Marko Marković — marko@demo.rs / marko123",
-          "2️⃣ Ana Petrović — ana@demo.rs / ana123",
-          "3️⃣ Stefan Nikolić — stefan@demo.rs / stefan123",
-          "4️⃣ Milica Stanković — milica@demo.rs / milica123",
-          "5️⃣ Luka Pavlović — luka@demo.rs / luka123"
+          "1️⃣ Marko Marković - marko@demo.rs / marko123",
+          "2️⃣ Ana Petrović - ana@demo.rs / ana123",
+          "3️⃣ Stefan Nikolić - stefan@demo.rs / stefan123",
+          "4️⃣ Milica Stanković - milica@demo.rs / milica123",
+          "5️⃣ Luka Pavlović - luka@demo.rs / luka123"
         ]
       },
       {
