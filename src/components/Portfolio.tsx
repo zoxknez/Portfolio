@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, BookOpen, CircleDollarSign, Download, Dumbbell, FileSpreadsheet, FileText, Globe, ScanText, Plane, GraduationCap, AlertCircle, Users, Cloud, Car, Mail, Building2, UtensilsCrossed, Fuel, Shield, X, Languages } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -56,7 +57,7 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
     'twitter-block-manager': Shield,
     'nemacki-jezik': Languages,
   };
-  
+
   const gradients = [
     'from-amber-400 via-orange-500 to-rose-500',
     'from-sky-400 via-blue-500 to-indigo-500',
@@ -67,153 +68,214 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
     'from-emerald-500 via-sky-500 to-indigo-500',
     'from-amber-500 via-orange-500 to-yellow-500',
   ];
-  
+
   const projects = (t?.projects?.items as ProjectItem[]) || [];
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: [0.22, 1, 0.36, 1]
+      } as any
+    },
+  };
+
   return (
-    <section id={sectionId} className="min-h-screen md:min-h-0 flex items-center justify-center px-4 md:px-6 py-16 md:py-20">
-      <div className="max-w-7xl w-full">
-        <div className="relative mb-10 md:mb-16">
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-cyan-500/10 to-blue-500/20 blur-3xl -z-10" />
-          <div className="relative p-6 md:p-10 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-2xl text-center shadow-[0_30px_90px_-45px_rgba(147,51,234,0.6)]">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent pb-2">
-              {t?.projects?.heading || 'Portfolio'}
-            </h2>
-            <p className="text-base md:text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
-              {t?.projects?.intro}
-            </p>
-          </div>
+    <section id={sectionId} className="min-h-screen px-4 md:px-6 py-24 md:py-32 relative">
+      <div className="absolute top-0 left-0 w-full h-full bg-grid opacity-[0.03] pointer-events-none" />
+
+      <div className="max-w-7xl w-full mx-auto relative z-10">
+        <div className="text-center space-y-4 mb-20">
+          <motion.h2
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="text-5xl md:text-7xl font-black bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent"
+          >
+            {t?.projects?.heading || 'Portfolio'}
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto font-light leading-relaxed"
+          >
+            {t?.projects?.intro}
+          </motion.p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10"
+        >
           {projects.map((project, index) => {
             const Icon = iconMap[project.id] || Globe;
-            const gradient = gradients[index] || gradients[0];
+            const gradient = gradients[index % gradients.length];
             const demoAccounts = project.demoAccounts ?? [];
-            const hasDemoAccounts = demoAccounts.length > 0;
             return (
-              <div
+              <motion.div
                 key={project.id}
-                className="group relative p-6 md:p-8 rounded-2xl bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 hover:border-cyan-400/50 transition-all duration-500 hover:scale-[1.03] hover:shadow-2xl hover:shadow-cyan-500/20"
-                style={{ animationDelay: `${index * 100}ms` }}
+                variants={cardVariants}
+                whileHover={{ y: -10 }}
+                className="group relative p-8 rounded-[2.5rem] border border-white/5 bg-white/[0.02] backdrop-blur-3xl hover:border-cyan-500/30 transition-all duration-500 overflow-hidden"
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-15 transition-all duration-500 rounded-2xl pointer-events-none`} />
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 -z-10" />
-                <div className="relative z-10 flex items-start justify-between mb-3 md:mb-4">
-                  <div className={`w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br ${gradient} flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-500`}>
-                    <Icon className="w-6 h-6 md:w-7 md:h-7" />
+                {/* Visual Enhancers */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-[0.03] transition-opacity duration-1000`} />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 blur-[80px] opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+
+                <div className="relative z-10 flex items-start justify-between mb-8">
+                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center shadow-lg group-hover:rotate-6 group-hover:scale-110 transition-transform duration-500`}>
+                    <Icon className="w-7 h-7 text-white" />
                   </div>
-                  <span className="px-2 md:px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs md:text-sm font-semibold">
+                  <span className="px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-black uppercase tracking-widest text-slate-400 group-hover:text-cyan-400 group-hover:border-cyan-500/30 transition-colors">
                     {project.category}
                   </span>
                 </div>
-                <h3 className="relative z-10 text-xl md:text-2xl font-bold mb-2 md:mb-3">{project.title}</h3>
-                <p className="relative z-10 text-sm md:text-base text-gray-400 mb-3 md:mb-4 leading-relaxed">{project.description}</p>
-                {hasDemoAccounts && (
-                  <div className="relative z-10 mb-3 md:mb-4 space-y-2 text-left">
-                    <div className="text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">
+
+                <div className="relative z-10 space-y-4">
+                  <h3 className="text-2xl md:text-3xl font-black text-white group-hover:text-cyan-400 transition-colors uppercase tracking-tight">
+                    {project.title}
+                  </h3>
+                  <p className="text-slate-400 font-light leading-relaxed text-lg italic">
+                    {project.description}
+                  </p>
+                </div>
+
+                {/* Demo Accounts */}
+                {demoAccounts.length > 0 && (
+                  <div className="relative z-10 mt-8 space-y-3">
+                    <span className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-500/70">
                       {t?.projects?.demoAccessLabel || 'Demo Access'}
-                    </div>
-                    <div className="grid gap-1.5">
+                    </span>
+                    <div className="grid gap-2">
                       {demoAccounts.map((account) => (
-                        <div
-                          key={account}
-                          className="px-3 py-2 rounded-lg bg-white/5 border border-white/10 text-xs md:text-sm text-gray-200 leading-snug"
-                        >
+                        <div key={account} className="px-4 py-2.5 rounded-xl bg-slate-900/50 border border-white/5 text-sm text-slate-300 font-mono">
                           {account}
                         </div>
                       ))}
                     </div>
                   </div>
                 )}
+
+                {/* Screenshots */}
                 {project.images && project.images.length > 0 && (
-                  <div className="relative z-10 mb-3 md:mb-4">
-                    <div className="text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200 mb-2">
-                      Screenshots
-                    </div>
-                    <div className="grid grid-cols-2 gap-2">
+                  <div className="relative z-10 mt-8 space-y-4">
+                    <span className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-500/70">
+                      Visuals
+                    </span>
+                    <div className="grid grid-cols-2 gap-4">
                       {project.images.map((image, imgIndex) => (
-                        <button
+                        <motion.button
                           key={imgIndex}
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
                           onClick={() => setLightboxImage(image)}
-                          className="relative group/image overflow-hidden rounded-lg border border-white/10 hover:border-cyan-400/50 transition-all duration-300 hover:scale-105"
+                          className="relative aspect-video overflow-hidden rounded-2xl border border-white/5 bg-slate-900 shadow-2xl group/img"
                         >
-                          <img
-                            src={image}
-                            alt={`${project.title} screenshot ${imgIndex + 1}`}
-                            className="w-full h-auto object-cover"
-                          />
-                          <div className="absolute inset-0 bg-black/0 group-hover/image:bg-black/20 transition-colors flex items-center justify-center">
-                            <div className="opacity-0 group-hover/image:opacity-100 transition-opacity text-white text-xs font-semibold">
-                              Click to enlarge
-                            </div>
-                          </div>
-                        </button>
+                          <img src={image} alt="Preview" className="w-full h-full object-cover group-hover/img:scale-110 transition-transform duration-700" />
+                          <div className="absolute inset-0 bg-cyan-500/10 opacity-0 group-hover/img:opacity-100 transition-opacity" />
+                        </motion.button>
                       ))}
                     </div>
                   </div>
                 )}
-                <div className="relative z-10 flex flex-wrap gap-2 mb-3 md:mb-4">
-                  {project.stack?.map((tech: string) => (
-                    <span
-                      key={tech}
-                      className="px-2 md:px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs md:text-sm hover:border-cyan-400/50 transition-colors"
-                    >
+
+                {/* Tech Stack */}
+                <div className="relative z-10 flex flex-wrap gap-2 mt-8">
+                  {project.stack?.map((tech) => (
+                    <span key={tech} className="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs font-bold text-slate-400 uppercase tracking-tighter hover:text-cyan-400 hover:border-cyan-500/30 transition-colors">
                       {tech}
                     </span>
                   ))}
                 </div>
-                <div className="relative z-10 flex flex-wrap items-center gap-3 md:gap-4 mt-4 md:mt-6">
+
+                {/* Actions */}
+                <div className="relative z-10 flex items-center gap-4 mt-10">
                   {project.url && (
-                    <a
+                    <motion.a
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-400/40 text-cyan-100 hover:bg-cyan-500/20 transition-colors text-sm md:text-base cursor-pointer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-white text-slate-950 font-black text-sm uppercase tracking-wider shadow-xl"
                     >
-                      {project.links?.live || 'Open App'}
-                      <ExternalLink className="w-3 h-3 md:w-4 md:h-4" />
-                    </a>
+                      {project.links?.live || 'Launch'}
+                      <ExternalLink className="w-4 h-4" />
+                    </motion.a>
                   )}
                   {project.repo && (
-                    <a
+                    <motion.a
                       href={project.repo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-gray-200 hover:border-cyan-400/50 transition-colors text-sm md:text-base cursor-pointer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-white/5 border border-white/10 text-white font-black text-sm uppercase tracking-wider backdrop-blur-sm hover:bg-white/10 transition-all"
                     >
-                      {project.links?.repo || 'Repo'}
-                      <ExternalLink className="w-3 h-3 md:w-4 md:h-4" />
-                    </a>
+                      {project.links?.repo || 'Code'}
+                      <ExternalLink className="w-4 h-4" />
+                    </motion.a>
                   )}
                 </div>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
-      
+
       {/* Lightbox Modal */}
-      {lightboxImage && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4"
-          onClick={() => setLightboxImage(null)}
-        >
-          <button
+      <AnimatePresence>
+        {lightboxImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/95 backdrop-blur-xl p-4 md:p-10"
             onClick={() => setLightboxImage(null)}
-            className="absolute top-4 right-4 p-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 transition-colors"
-            aria-label="Close lightbox"
           >
-            <X className="w-6 h-6 text-white" />
-          </button>
-          <div className="relative max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center">
-            <img
-              src={lightboxImage}
-              alt="Lightbox view"
-              className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+            <motion.button
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              whileHover={{ scale: 1.1 }}
+              onClick={() => setLightboxImage(null)}
+              className="absolute top-8 right-8 p-3 rounded-full bg-white/10 text-white border border-white/20 z-[60]"
+            >
+              <X className="w-6 h-6" />
+            </motion.button>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              className="relative max-w-6xl w-full aspect-video flex items-center justify-center p-4"
               onClick={(e) => e.stopPropagation()}
-            />
-          </div>
-        </div>
-      )}
+            >
+              <img
+                src={lightboxImage}
+                alt="Fullscreen Preview"
+                className="max-w-full max-h-full object-contain rounded-[2rem] shadow-[0_0_100px_rgba(0,0,0,0.5)] border border-white/10"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }

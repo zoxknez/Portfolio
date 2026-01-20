@@ -1,725 +1,725 @@
-{
-  "nav": {
-    "portfolio": "PORTFOLIO",
-    "home": "Home",
-    "skills": "Skills",
-    "projects": "Projects",
-    "contact": "Contact",
-    "language": "Language",
-    "sr": "SR",
-    "en": "EN"
-  },
-  "intro": "I'm open to collaboration, consulting, and creative discussions. If you have an idea to turn into a solution with AI and a team‚Äëdriven approach, reach out via email, phone, or social.",
-  "hero": {
-    "heading": "Who am I?",
-    "name": "Zoran Kne≈æeviƒá",
-    "tagline": "IT enthusiast with 20+ years connecting infrastructure, support, design, and process optimization. I‚Äôm not a hardcore programmer, but I align people, tools, and AI assistants to turn ideas into working solutions.",
-    "story": "I started in 2005 on the MyCity.rs forum, opening my first IT account and diving into this world. That‚Äôs when I discovered Linux and set up my first card‚Äësharing server. Today - using a modern AI toolchain - I assemble web, desktop, and mobile solutions without needing to be a hardcore coder.",
-    "ctaViewPortfolio": "View Portfolio",
-    "ctaContact": "Contact Me"
-  },
-  "stats": {
-    "years": "20+",
-    "yearsLabel": "years in the IT ecosystem",
-    "solutions": "30+",
-    "solutionsLabel": "solutions built independently",
-    "aiFirst": "AI-first",
-    "aiFirstLabel": "workflow as my edge"
-  },
-  "pillars": [
-    {
-      "icon": "flash",
-      "title": "Fast Delivery",
-      "desc": "AI-powered development for efficient results"
-    },
-    {
-      "icon": "target",
-      "title": "Value-First",
-      "desc": "Practical solutions that solve real problems"
-    },
-    {
-      "icon": "wrench",
-      "title": "Flexible Approach",
-      "desc": "From idea to production, with the right tools"
-    },
-    {
-      "icon": "globe",
-      "title": "All Types of Web Applications",
-      "desc": "I build complex web applications: e-commerce platforms, SaaS solutions, dashboard applications, PWAs, real-time systems, API integrations, and custom enterprise solutions",
-      "featured": true
-    }
-  ],
-  "skills": {
-    "heading": "Technical Skills",
-    "intro": "These are the tools I most often use with AI pair-programming and ready-made templates. Percentages reflect my confidence when assembling within this ecosystem‚Äînot a claim of seniority.",
-    "focusStackHeading": "Focus stack",
-    "toolboxHeading": "Development Toolbox",
-    "toolboxIntro": "Essential tools and services I use for deployment, database management, and automation",
-    "categories": {
-      "frontend": "Frontend Frameworks",
-      "backend": "Backend & APIs",
-      "databases": "Databases",
-      "cloud": "Cloud & DevOps",
-      "languages": "Programming Languages",
-      "other": "Other Tools"
-    },
-    "focusStack": [
-      {
-        "name": "Next.js & React",
-        "confidence": "94%",
-        "note": "confidence with AI assistance"
-      },
-      {
-        "name": "TypeScript & Node.js",
-        "confidence": "90%",
-        "note": "confidence with AI assistance"
-      },
-      {
-        "name": "Supabase & PostgreSQL",
-        "confidence": "90%",
-        "note": "confidence with AI assistance"
-      },
-      {
-        "name": "Tailwind CSS & Shadcn/ui",
-        "confidence": "90%",
-        "note": "confidence with AI assistance"
-      },
-      {
-        "name": "Express & API design",
-        "confidence": "84%"
-      },
-      {
-        "name": "Tailwind CSS & UI design",
-        "confidence": "82%"
-      },
-      {
-        "name": "Electron & Desktop ecosystem",
-        "confidence": "78%"
-      },
-      {
-        "name": "Python & automation",
-        "confidence": "74%"
-      },
-      {
-        "name": "JavaScript & ES6+",
-        "confidence": "88%"
-      },
-      {
-        "name": "Java & Spring Boot",
-        "confidence": "72%"
-      },
-      {
-        "name": "C# & .NET",
-        "confidence": "70%"
-      },
-      {
-        "name": "Go & microservices",
-        "confidence": "68%"
-      },
-      {
-        "name": "PHP & Laravel",
-        "confidence": "75%"
-      },
-      {
-        "name": "Rust & systems programming",
-        "confidence": "65%"
-      },
-      {
-        "name": "Ruby & Rails",
-        "confidence": "70%"
-      },
-      {
-        "name": "SQL & database optimization",
-        "confidence": "80%"
-      },
-      {
-        "name": "Bash/Shell & DevOps",
-        "confidence": "76%"
-      },
-      {
-        "name": "Vue.js & Nuxt.js",
-        "confidence": "75%"
-      },
-      {
-        "name": "Angular & RxJS",
-        "confidence": "70%"
-      },
-      {
-        "name": "Svelte & SvelteKit",
-        "confidence": "72%"
-      },
-      {
-        "name": "GraphQL & Apollo",
-        "confidence": "78%"
-      },
-      {
-        "name": "REST API & OpenAPI",
-        "confidence": "85%"
-      },
-      {
-        "name": "MongoDB & Mongoose",
-        "confidence": "77%"
-      },
-      {
-        "name": "Firebase & Firestore",
-        "confidence": "80%"
-      },
-      {
-        "name": "AWS Lambda & Serverless",
-        "confidence": "73%"
-      },
-      {
-        "name": "Microservices & gRPC",
-        "confidence": "71%"
-      },
-      {
-        "name": "WebSocket & Real-time",
-        "confidence": "79%"
-      },
-      {
-        "name": "JWT & Auth0",
-        "confidence": "82%"
-      },
-      {
-        "name": "Stripe & Payment APIs",
-        "confidence": "76%"
-      },
-      {
-        "name": "TensorFlow & ML",
-        "confidence": "68%"
-      },
-      {
-        "name": "Blockchain & Web3",
-        "confidence": "65%"
-      }
-    ],
-    "toolbox": [
-      "Supabase",
-      "Prisma",
-      "Vercel",
-      "Railway",
-      "GitHub Actions",
-      "Docker",
-      "Redis",
-      "ffmpeg/yt-dlp",
-      "PostgreSQL",
-      "MongoDB",
-      "MySQL",
-      "AWS",
-      "Azure",
-      "Google Cloud",
-      "Netlify",
-      "Cloudflare",
-      "Nginx",
-      "PM2",
-      "Git",
-      "VS Code",
-      "Postman",
-      "Figma",
-      "Jest",
-      "Cypress",
-      "ESLint",
-      "Prettier",
-      "Webpack",
-      "Vite",
-      "npm/yarn/pnpm",
-      "Terraform",
-      "Kubernetes",
-      "Jenkins",
-      "CircleCI"
-    ]
-  },
-  "projects": {
-    "heading": "Portfolio",
-    "intro": "The projects below were created through a mix of off‚Äëthe‚Äëshelf services, AI assistance, and solo work. I choose solutions that deliver the most value to users, while coding to the level required to make the idea work.",
-    "demoAccessLabel": "Demo access",
-    "items": [
-      {
-        "id": "odmor",
-        "category": "TRAVEL PLATFORM",
-        "title": "Travel",
-        "description": "Comprehensive travel platform featuring 80+ best websites for flights, accommodation, transport, and activities in one place. Organized by categories with detailed reviews and links to providers.",
-        "stack": [
-          "React",
-          "TypeScript",
-          "Tailwind",
-          "Vite"
-        ],
-        "url": "https://www.odmor.fun/",
-        "links": {
-          "live": "Open App"
-        },
-        "images": [
-          "/odmor.png"
-        ]
-      },
-      {
-        "id": "kursevi",
-        "category": "EDUCATION",
-        "title": "Courses",
-        "description": "Educational platform for online courses and learning resources. Centralized place to access quality educational content and courses.",
-        "stack": [
-          "React",
-          "TypeScript",
-          "Tailwind",
-          "Vite"
-        ],
-        "url": "https://www.coursesedu.space/",
-        "links": {
-          "live": "Open App"
-        },
-        "images": [
-          "/kurs.png"
-        ]
-      },
-      {
-        "id": "nemacki-jezik",
-        "category": "LANGUAGE LEARNING",
-        "title": "German Language Learning Platform",
-        "description": "Comprehensive platform for learning German language with interactive lessons, exercises, tests, and progress tracking. Features personalized courses, grading system, AI tutor, achievements system, leaderboard, and detailed learning analytics.",
-        "stack": [
-          "Next.js",
-          "TypeScript",
-          "Supabase",
-          "Tailwind CSS",
-          "Vercel"
-        ],
-        "url": "https://nemackijezik.vercel.app/",
-        "links": {
-          "live": "Open App"
-        },
-        "images": [
-          "/nemacki-jezik.jpeg"
-        ],
-        "demoAccounts": [
-          "demo@deutschmaster.rs / demo123",
-          "marko@demo.rs / demo123",
-          "ana@demo.rs / demo123",
-          "test@test.com / demo123"
-        ]
-      },
-      {
-        "id": "racuni",
-        "category": "PWA",
-        "title": "Raƒçuni",
-        "description": "Offline-first PWA for scanning fiscal receipts, storing warranties, and tracking household spending. I lead the product vision, Supabase sync architecture, and AI-assisted OCR/analytics experiences.",
-        "stack": [
-          "React",
-          "TypeScript",
-          "Zustand",
-          "Supabase",
-          "Tailwind",
-          "Vite"
-        ],
-        "url": "https://fiskalni.app",
-        "links": {
-          "live": "Open App"
-        },
-        "images": [
-          "/fiskalni.jpeg"
-        ],
-        "demoAccounts": [
-          "proba@gmail.com / proba1234",
-          "proba1@gmail.com / proba1234",
-          "proba2@gmail.com / proba1234"
-        ]
-      },
-      {
-        "id": "osnovci",
-        "category": "EDTECH",
-        "title": "Osnovci",
-        "description": "Holistic learning platform for elementary students combining mastery-based lessons, parent dashboards, and AI coaching. I architect the multi-tenant curriculum CMS, real-time classroom automations, and progress analytics.",
-        "stack": [
-          "Next.js",
-          "TypeScript",
-          "Supabase",
-          "Tailwind",
-          "Vercel"
-        ],
-        "url": "https://osnovci.vercel.app/dashboard",
-        "links": {
-          "live": "Open App"
-        },
-        "demoAccounts": [
-          "1Ô∏è‚É£ Marko Markoviƒá - marko@demo.rs / marko123",
-          "2Ô∏è‚É£ Ana Petroviƒá - ana@demo.rs / ana123",
-          "3Ô∏è‚É£ Stefan Nikoliƒá - stefan@demo.rs / stefan123",
-          "4Ô∏è‚É£ Milica Stankoviƒá - milica@demo.rs / milica123",
-          "5Ô∏è‚É£ Luka Pavloviƒá - luka@demo.rs / luka123"
-        ]
-      },
-      {
-        "id": "balkan-remote",
-        "category": "WEB PLATFORM",
-        "title": "Balkan Remote",
-        "description": "Career hub for remote talent from the Balkans: tax calculator, job aggregator, resources, tools, and a Q&A forum.",
-        "stack": [
-          "Next.js 15",
-          "Supabase",
-          "Tailwind",
-          "Vercel",
-          "GitHub Actions"
-        ],
-        "url": "https://www.balkan-remote.com/",
-        "repo": "https://github.com/zoxknez/BalkanRemote",
-        "links": {
-          "live": "Open App",
-          "repo": "Repo"
-        },
-        "images": [
-          "/balkanremote.png"
-        ]
-      },
-      {
-        "id": "pumpaj",
-        "category": "MULTI PLATFORM",
-        "title": "Pumpaj Video Downloader",
-        "description": "Video downloader orchestrated by combining a Next.js client, Express API, and Electron shell with AI pair‚Äëprogramming. Supports 100+ platforms and shows real‚Äëtime progress.",
-        "stack": [
-          "Next.js",
-          "Express",
-          "Electron",
-          "yt-dlp",
-          "Supabase"
-        ],
-        "url": "https://pumpajvideodl.com/",
-        "repo": "https://github.com/zoxknez/pumpajvideodownloader",
-        "links": {
-          "live": "Open App",
-          "repo": "Repo"
-        }
-      },
-      {
-        "id": "sef-efakture",
-        "category": "ENTERPRISE",
-        "title": "SEF eInvoices",
-        "description": "Complete e‚Äëinvoicing system for the Serbian SEF. Solo project where I handle architecture, integrations, QA, and coding with AI assistance (dashboard, UBL 2.1, API, webhooks, audit trail).",
-        "stack": [
-          "React",
-          "Node.js",
-          "Prisma",
-          "PostgreSQL",
-          "Redis"
-        ],
-        "url": "https://esef-olive.vercel.app/",
-        "links": {
-          "live": "Open App"
-        },
-        "images": [
-          "/sef.jpeg"
-        ]
-      },
-      {
-        "id": "pdf-scraper",
-        "category": "DATA TOOL",
-        "title": "PDF Scraper",
-        "description": "Open‚Äësource tool for indexing PDF documents‚Äîled concept, automation, and orchestration, with AI assistants helping on scrape routines and localized UI.",
-        "stack": [
-          "Python",
-          "Flask",
-          "SQLite",
-          "Tailwind",
-          "Docker"
-        ],
-        "repo": "https://github.com/zoxknez/pdfskrejper",
-        "links": {
-          "repo": "Repo"
-        }
-      },
-      {
-        "id": "mma-balkan",
-        "category": "COMMUNITY",
-        "title": "MMA Balkan",
-        "description": "Regional hub for the MMA community with news, events, and corporate partnerships. My role: architecture, automated ingest pipelines, and AI‚Äësupported content.",
-        "stack": [
-          "Next.js",
-          "Supabase",
-          "Tailwind",
-          "Vercel"
-        ],
-        "url": "https://www.mma-balkan.org/",
-        "links": {},
-        "images": [
-          "/mmabalkan.jpeg"
-        ]
-      },
-      {
-        "id": "efina",
-        "category": "FINTECH",
-        "title": "eFina",
-        "description": "Fintech solution for the Croatian market: e‚Äëinvoices, fiscalization, and a cash‚Äëflow dashboard. I led product discovery and integrations while AI agents covered repetitive code.",
-        "stack": [
-          "Next.js",
-          "TypeScript",
-          "Supabase",
-          "Tailwind",
-          "Azure"
-        ],
-        "url": "https://efakturahr.vercel.app/",
-        "links": {
-          "live": "Open App"
-        }
-      },
-      {
-        "id": "aferesns",
-        "category": "DATA PLATFORM",
-        "title": "SNS Scandals List",
-        "description": "Database with over 324 recorded or reported scandals and affairs. Visual representation of estimated damage, categorization by areas, and search and filter capabilities.",
-        "stack": [
-          "React",
-          "TypeScript",
-          "Tailwind",
-          "Vite"
-        ],
-        "url": "https://aferesns.vercel.app/",
-        "links": {
-          "live": "Open App"
-        }
-      },
-      {
-        "id": "blokirani",
-        "category": "DATA TOOL",
-        "title": "Public Twitter Bot Accounts Database",
-        "description": "Public database of Twitter bot accounts. Transparent platform for accessing information about bot accounts and their activity.",
-        "stack": [
-          "React",
-          "TypeScript",
-          "Tailwind",
-          "Vite"
-        ],
-        "url": "https://blokirani.vercel.app/",
-        "links": {
-          "live": "Open App"
-        }
-      },
-      {
-        "id": "radecosic",
-        "category": "E-COMMERCE",
-        "title": "Rade Cosic Books",
-        "description": "E-commerce platform for book sales with modern design and user experience. Implemented with focus on simple navigation and fast book search.",
-        "stack": [
-          "React",
-          "TypeScript",
-          "Tailwind",
-          "Vite"
-        ],
-        "url": "https://radecosic.vercel.app/",
-        "links": {
-          "live": "Open App"
-        },
-        "images": [
-          "/radecosic.jpeg"
-        ]
-      },
-      {
-        "id": "david-knezevic",
-        "category": "PORTFOLIO",
-        "title": "David Kne≈æeviƒá Portfolio",
-        "description": "Premium fitness coaching portfolio with personalized programs, client success stories, and comprehensive training information. Modern design focused on conversion and professional image.",
-        "stack": [
-          "React",
-          "TypeScript",
-          "Tailwind",
-          "Vite"
-        ],
-        "url": "https://davidportfolio-ochre.vercel.app/",
-        "links": {
-          "live": "Open App"
-        }
-      },
-      {
-        "id": "nestasica",
-        "category": "DATA PLATFORM",
-        "title": "Nesta≈°ica",
-        "description": "Satirical data hub that imagines shortages and responses tied to potential sanctions on NIS in Serbia. I use it as a parody dashboard showing how transparent alerts, filters, and narratives could look.",
-        "stack": [
-          "Next.js",
-          "TypeScript",
-          "Supabase",
-          "Tailwind"
-        ],
-        "url": "https://nestasica.vercel.app/",
-        "links": {
-          "live": "Open App"
-        }
-      },
-      {
-        "id": "filmovi",
-        "category": "MEDIA HUB",
-        "title": "Filmovi & Serije",
-        "description": "Curated catalogue of movies and TV shows with genre-based recommendations, watchlist support, and detailed content cards‚Äîideal for discovering new titles and sharing picks.",
-        "stack": [
-          "React",
-          "TypeScript",
-          "Tailwind",
-          "Vite"
-        ],
-        "url": "https://filmovi-serije.vercel.app/",
-        "links": {
-          "live": "Open App"
-        }
-      },
-      {
-        "id": "vremenska-prognoza",
-        "category": "WEATHER APP",
-        "title": "Vremenska Prognoza",
-        "description": "Modern Next.js 16 web application for tracking weather forecasts and air quality in the Balkans with real-time data from multiple sources. Features 7-day forecasts, interactive maps, AQI monitoring, and smart alerts.",
-        "stack": [
-          "Next.js 16",
-          "TypeScript",
-          "Tailwind CSS",
-          "Mapbox",
-          "Drizzle ORM",
-          "PostgreSQL"
-        ],
-        "url": "https://vremenskaprognoza.vercel.app/",
-        "links": {
-          "live": "Open App"
-        },
-        "images": [
-          "/vremenskaprognoza.png"
-        ]
-      },
-      {
-        "id": "brojac-vozila",
-        "category": "DATA TOOL",
-        "title": "Brojac Vozila",
-        "description": "Vehicle counting application for tracking and analyzing traffic data with real-time monitoring capabilities.",
-        "stack": [
-          "Next.js",
-          "TypeScript",
-          "Tailwind"
-        ]
-      },
-      {
-        "id": "pisma",
-        "category": "DIGITAL HERITAGE",
-        "title": "Pisma",
-        "description": "Digital platform for time-locked letters that combines modern technology with the nostalgia of handwritten correspondence. Features personalized wax seals, audio messages, vintage paper effects, QR code tracking, and 3D unboxing experience.",
-        "stack": [
-          "Next.js 16",
-          "TypeScript",
-          "Prisma",
-          "PostgreSQL",
-          "NextAuth.js",
-          "Tailwind CSS",
-          "Framer Motion"
-        ],
-        "url": "https://pisma.fun/",
-        "links": {
-          "live": "Open App"
-        },
-        "images": [
-          "/pisma.png"
-        ]
-      },
-      {
-        "id": "sipka-group",
-        "category": "REAL ESTATE",
-        "title": "Sipka Group",
-        "description": "Premium website for property investment group in New Zealand. Features property portfolio, company history, and available spaces with modern design and interactive maps.",
-        "stack": [
-          "Next.js",
-          "TypeScript",
-          "Tailwind CSS",
-          "Framer Motion",
-          "Vercel"
-        ],
-        "url": "https://sipagroupweb.vercel.app/",
-        "links": {
-          "live": "Open App"
-        },
-        "images": [
-          "/sipkagroup.png"
-        ]
-      },
-      {
-        "id": "ketering-bg",
-        "category": "FOOD & CATERING",
-        "title": "Ketering Beograd",
-        "description": "Exclusive catering service for corporate events and private celebrations in Belgrade. Website with menus, food gallery, personalized offers, and multi-language support (Serbian, English, Russian).",
-        "stack": [
-          "Next.js",
-          "TypeScript",
-          "Tailwind CSS",
-          "Vercel"
-        ],
-        "url": "https://keteringbg.vercel.app/",
-        "links": {
-          "live": "Open App"
-        }
-      },
-      {
-        "id": "bidon",
-        "category": "PWA",
-        "title": "Bidon",
-        "description": "Modern PWA application for tracking and recording fuel dispensing from tanks. Ideal for agricultural farms and transport companies. Features tank management with animated fuel level display, vehicle records, consumption reports by vehicle and sector, and PWA support for mobile installation.",
-        "stack": [
-          "Next.js 15",
-          "TypeScript",
-          "Tailwind CSS",
-          "Drizzle ORM",
-          "PostgreSQL",
-          "NextAuth.js",
-          "Framer Motion",
-          "Recharts"
-        ],
-        "url": "https://bidon-tau.vercel.app/",
-        "links": {
-          "live": "Open App"
-        },
-        "images": [
-          "/bidon.jpeg"
-        ]
-      },
-      {
-        "id": "twitter-block-manager",
-        "category": "CHROME EXTENSION",
-        "title": "Block Manager for Twitter/X",
-        "description": "Chrome extension for managing blocked users on Twitter/X platform. Modern glassmorphism UI with dark/light themes, Alt+B shortcut for quick blocking, advanced manager with search and filtering, visual statistics, smart tagging, and backup system. Supports import/export and bulk actions.",
-        "stack": [
-          "Chrome Extension",
-          "Manifest V3",
-          "Vanilla JavaScript",
-          "CSS3 Glassmorphism",
-          "Chrome Storage API"
-        ],
-        "repo": "https://github.com/zoxknez/Twitter-X-Block-Manager",
-        "images": [
-          "/G7xomZvXQAAEiSm.png",
-          "/G7xopjAXoAAlToB.png"
-        ],
-        "links": {
-          "repo": "Repo"
-        }
-      }
-    ]
-  },
-  "contact": {
-    "heading": "Contact Me",
-    "intro": "I‚Äôm open to collaboration, consulting, and brainstorming. If you have an idea to turn into a solution with AI and a team‚Äëdriven approach, reach out via email, phone, or social.",
-    "emailLabel": "Email",
-    "emailValue": "zoxknez@hotmail.com",
-    "githubLabel": "GitHub",
-    "githubValue": "github.com/zoxknez",
-    "phoneLabel": "Phone / Viber / WhatsApp",
-    "phoneValue": "+381 60 049 4451",
-    "form": {
-      "sendMessage": "Send a Message",
-      "name": "Your Name",
-      "email": "Email",
-      "message": "Message",
-      "submit": "Send Message",
-      "sending": "Sending...",
-      "success": "‚úì Message sent successfully!",
-      "error": "‚úó Error sending message. Please try again."
-    }
-  },
-  "footer": {
-    "tagline": "AI-first Digital Maker building solutions for the modern web",
-    "quickLinks": "Quick Links",
-    "connect": "Connect",
-    "rights": "All rights reserved",
-    "backToTop": "Back to Top"
-  }
-}
+-{-
+- - -"-n-a-v-"-:- -{-
+- - - - -"-p-o-r-t-f-o-l-i-o-"-:- -"-P-O-R-T-F-O-L-I-O-"-,-
+- - - - -"-h-o-m-e-"-:- -"-H-o-m-e-"-,-
+- - - - -"-s-k-i-l-l-s-"-:- -"-S-k-i-l-l-s-"-,-
+- - - - -"-p-r-o-j-e-c-t-s-"-:- -"-P-r-o-j-e-c-t-s-"-,-
+- - - - -"-c-o-n-t-a-c-t-"-:- -"-C-o-n-t-a-c-t-"-,-
+- - - - -"-l-a-n-g-u-a-g-e-"-:- -"-L-a-n-g-u-a-g-e-"-,-
+- - - - -"-s-r-"-:- -"-S-R-"-,-
+- - - - -"-e-n-"-:- -"-E-N-"-
+- - -}-,-
+- - -"-i-n-t-r-o-"-:- -"-I-'-m- -o-p-e-n- -t-o- -c-o-l-l-a-b-o-r-a-t-i-o-n-,- -c-o-n-s-u-l-t-i-n-g-,- -a-n-d- -c-r-e-a-t-i-v-e- -d-i-s-c-u-s-s-i-o-n-s-.- -I-f- -y-o-u- -h-a-v-e- -a-n- -i-d-e-a- -t-o- -t-u-r-n- -i-n-t-o- -a- -s-o-l-u-t-i-o-n- -w-i-t-h- -A-I- -a-n-d- -a- -t-e-a-m-‚-Ä-ë-d-r-i-v-e-n- -a-p-p-r-o-a-c-h-,- -r-e-a-c-h- -o-u-t- -v-i-a- -e-m-a-i-l-,- -p-h-o-n-e-,- -o-r- -s-o-c-i-a-l-.-"-,-
+- - -"-h-e-r-o-"-:- -{-
+- - - - -"-h-e-a-d-i-n-g-"-:- -"-W-h-o- -a-m- -I-?-"-,-
+- - - - -"-n-a-m-e-"-:- -"-Z-o-r-a-n- -K-n-e-≈-æ-e-v-i-ƒ-á-"-,-
+- - - - -"-t-a-g-l-i-n-e-"-:- -"-I-T- -e-n-t-h-u-s-i-a-s-t- -w-i-t-h- -2-0-+- -y-e-a-r-s- -c-o-n-n-e-c-t-i-n-g- -i-n-f-r-a-s-t-r-u-c-t-u-r-e-,- -s-u-p-p-o-r-t-,- -d-e-s-i-g-n-,- -a-n-d- -p-r-o-c-e-s-s- -o-p-t-i-m-i-z-a-t-i-o-n-.- -I-‚-Ä-ô-m- -n-o-t- -a- -h-a-r-d-c-o-r-e- -p-r-o-g-r-a-m-m-e-r-,- -b-u-t- -I- -a-l-i-g-n- -p-e-o-p-l-e-,- -t-o-o-l-s-,- -a-n-d- -A-I- -a-s-s-i-s-t-a-n-t-s- -t-o- -t-u-r-n- -i-d-e-a-s- -i-n-t-o- -w-o-r-k-i-n-g- -s-o-l-u-t-i-o-n-s-.-"-,-
+- - - - -"-s-t-o-r-y-"-:- -"-I- -s-t-a-r-t-e-d- -i-n- -2-0-0-5- -o-n- -t-h-e- -M-y-C-i-t-y-.-r-s- -f-o-r-u-m-,- -o-p-e-n-i-n-g- -m-y- -f-i-r-s-t- -I-T- -a-c-c-o-u-n-t- -a-n-d- -d-i-v-i-n-g- -i-n-t-o- -t-h-i-s- -w-o-r-l-d-.- -T-h-a-t-‚-Ä-ô-s- -w-h-e-n- -I- -d-i-s-c-o-v-e-r-e-d- -L-i-n-u-x- -a-n-d- -s-e-t- -u-p- -m-y- -f-i-r-s-t- -c-a-r-d-‚-Ä-ë-s-h-a-r-i-n-g- -s-e-r-v-e-r-.- -T-o-d-a-y- --- -u-s-i-n-g- -a- -m-o-d-e-r-n- -A-I- -t-o-o-l-c-h-a-i-n- --- -I- -a-s-s-e-m-b-l-e- -w-e-b-,- -d-e-s-k-t-o-p-,- -a-n-d- -m-o-b-i-l-e- -s-o-l-u-t-i-o-n-s- -w-i-t-h-o-u-t- -n-e-e-d-i-n-g- -t-o- -b-e- -a- -h-a-r-d-c-o-r-e- -c-o-d-e-r-.-"-,-
+- - - - -"-c-t-a-V-i-e-w-P-o-r-t-f-o-l-i-o-"-:- -"-V-i-e-w- -P-o-r-t-f-o-l-i-o-"-,-
+- - - - -"-c-t-a-C-o-n-t-a-c-t-"-:- -"-C-o-n-t-a-c-t- -M-e-"-
+- - -}-,-
+- - -"-s-t-a-t-s-"-:- -{-
+- - - - -"-y-e-a-r-s-"-:- -"-2-0-+-"-,-
+- - - - -"-y-e-a-r-s-L-a-b-e-l-"-:- -"-y-e-a-r-s- -i-n- -t-h-e- -I-T- -e-c-o-s-y-s-t-e-m-"-,-
+- - - - -"-s-o-l-u-t-i-o-n-s-"-:- -"-3-0-+-"-,-
+- - - - -"-s-o-l-u-t-i-o-n-s-L-a-b-e-l-"-:- -"-s-o-l-u-t-i-o-n-s- -b-u-i-l-t- -i-n-d-e-p-e-n-d-e-n-t-l-y-"-,-
+- - - - -"-a-i-F-i-r-s-t-"-:- -"-A-I---f-i-r-s-t-"-,-
+- - - - -"-a-i-F-i-r-s-t-L-a-b-e-l-"-:- -"-w-o-r-k-f-l-o-w- -a-s- -m-y- -e-d-g-e-"-
+- - -}-,-
+- - -"-p-i-l-l-a-r-s-"-:- -[-
+- - - - -{-
+- - - - - - -"-i-c-o-n-"-:- -"-f-l-a-s-h-"-,-
+- - - - - - -"-t-i-t-l-e-"-:- -"-F-a-s-t- -D-e-l-i-v-e-r-y-"-,-
+- - - - - - -"-d-e-s-c-"-:- -"-A-I---p-o-w-e-r-e-d- -d-e-v-e-l-o-p-m-e-n-t- -f-o-r- -e-f-f-i-c-i-e-n-t- -r-e-s-u-l-t-s-"-
+- - - - -}-,-
+- - - - -{-
+- - - - - - -"-i-c-o-n-"-:- -"-t-a-r-g-e-t-"-,-
+- - - - - - -"-t-i-t-l-e-"-:- -"-V-a-l-u-e---F-i-r-s-t-"-,-
+- - - - - - -"-d-e-s-c-"-:- -"-P-r-a-c-t-i-c-a-l- -s-o-l-u-t-i-o-n-s- -t-h-a-t- -s-o-l-v-e- -r-e-a-l- -p-r-o-b-l-e-m-s-"-
+- - - - -}-,-
+- - - - -{-
+- - - - - - -"-i-c-o-n-"-:- -"-w-r-e-n-c-h-"-,-
+- - - - - - -"-t-i-t-l-e-"-:- -"-F-l-e-x-i-b-l-e- -A-p-p-r-o-a-c-h-"-,-
+- - - - - - -"-d-e-s-c-"-:- -"-F-r-o-m- -i-d-e-a- -t-o- -p-r-o-d-u-c-t-i-o-n-,- -w-i-t-h- -t-h-e- -r-i-g-h-t- -t-o-o-l-s-"-
+- - - - -}-,-
+- - - - -{-
+- - - - - - -"-i-c-o-n-"-:- -"-g-l-o-b-e-"-,-
+- - - - - - -"-t-i-t-l-e-"-:- -"-A-l-l- -T-y-p-e-s- -o-f- -W-e-b- -A-p-p-l-i-c-a-t-i-o-n-s-"-,-
+- - - - - - -"-d-e-s-c-"-:- -"-I- -b-u-i-l-d- -c-o-m-p-l-e-x- -w-e-b- -a-p-p-l-i-c-a-t-i-o-n-s-:- -e---c-o-m-m-e-r-c-e- -p-l-a-t-f-o-r-m-s-,- -S-a-a-S- -s-o-l-u-t-i-o-n-s-,- -d-a-s-h-b-o-a-r-d- -a-p-p-l-i-c-a-t-i-o-n-s-,- -P-W-A-s-,- -r-e-a-l---t-i-m-e- -s-y-s-t-e-m-s-,- -A-P-I- -i-n-t-e-g-r-a-t-i-o-n-s-,- -a-n-d- -c-u-s-t-o-m- -e-n-t-e-r-p-r-i-s-e- -s-o-l-u-t-i-o-n-s-"-,-
+- - - - - - -"-f-e-a-t-u-r-e-d-"-:- -t-r-u-e-
+- - - - -}-
+- - -]-,-
+- - -"-s-k-i-l-l-s-"-:- -{-
+- - - - -"-h-e-a-d-i-n-g-"-:- -"-T-e-c-h-n-i-c-a-l- -S-k-i-l-l-s-"-,-
+- - - - -"-i-n-t-r-o-"-:- -"-T-h-e-s-e- -a-r-e- -t-h-e- -t-o-o-l-s- -I- -m-o-s-t- -o-f-t-e-n- -u-s-e- -w-i-t-h- -A-I- -p-a-i-r---p-r-o-g-r-a-m-m-i-n-g- -a-n-d- -r-e-a-d-y---m-a-d-e- -t-e-m-p-l-a-t-e-s-.- -P-e-r-c-e-n-t-a-g-e-s- -r-e-f-l-e-c-t- -m-y- -c-o-n-f-i-d-e-n-c-e- -w-h-e-n- -a-s-s-e-m-b-l-i-n-g- -w-i-t-h-i-n- -t-h-i-s- -e-c-o-s-y-s-t-e-m---n-o-t- -a- -c-l-a-i-m- -o-f- -s-e-n-i-o-r-i-t-y-.-"-,-
+- - - - -"-f-o-c-u-s-S-t-a-c-k-H-e-a-d-i-n-g-"-:- -"-F-o-c-u-s- -s-t-a-c-k-"-,-
+- - - - -"-t-o-o-l-b-o-x-H-e-a-d-i-n-g-"-:- -"-D-e-v-e-l-o-p-m-e-n-t- -T-o-o-l-b-o-x-"-,-
+- - - - -"-t-o-o-l-b-o-x-I-n-t-r-o-"-:- -"-E-s-s-e-n-t-i-a-l- -t-o-o-l-s- -a-n-d- -s-e-r-v-i-c-e-s- -I- -u-s-e- -f-o-r- -d-e-p-l-o-y-m-e-n-t-,- -d-a-t-a-b-a-s-e- -m-a-n-a-g-e-m-e-n-t-,- -a-n-d- -a-u-t-o-m-a-t-i-o-n-"-,-
+- - - - -"-c-a-t-e-g-o-r-i-e-s-"-:- -{-
+- - - - - - -"-f-r-o-n-t-e-n-d-"-:- -"-F-r-o-n-t-e-n-d- -F-r-a-m-e-w-o-r-k-s-"-,-
+- - - - - - -"-b-a-c-k-e-n-d-"-:- -"-B-a-c-k-e-n-d- -&- -A-P-I-s-"-,-
+- - - - - - -"-d-a-t-a-b-a-s-e-s-"-:- -"-D-a-t-a-b-a-s-e-s-"-,-
+- - - - - - -"-c-l-o-u-d-"-:- -"-C-l-o-u-d- -&- -D-e-v-O-p-s-"-,-
+- - - - - - -"-l-a-n-g-u-a-g-e-s-"-:- -"-P-r-o-g-r-a-m-m-i-n-g- -L-a-n-g-u-a-g-e-s-"-,-
+- - - - - - -"-o-t-h-e-r-"-:- -"-O-t-h-e-r- -T-o-o-l-s-"-
+- - - - -}-,-
+- - - - -"-f-o-c-u-s-S-t-a-c-k-"-:- -[-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-N-e-x-t-.-j-s- -&- -R-e-a-c-t-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-9-4-%-"-,-
+- - - - - - - - -"-n-o-t-e-"-:- -"-c-o-n-f-i-d-e-n-c-e- -w-i-t-h- -A-I- -a-s-s-i-s-t-a-n-c-e-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-T-y-p-e-S-c-r-i-p-t- -&- -N-o-d-e-.-j-s-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-9-0-%-"-,-
+- - - - - - - - -"-n-o-t-e-"-:- -"-c-o-n-f-i-d-e-n-c-e- -w-i-t-h- -A-I- -a-s-s-i-s-t-a-n-c-e-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-S-u-p-a-b-a-s-e- -&- -P-o-s-t-g-r-e-S-Q-L-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-9-0-%-"-,-
+- - - - - - - - -"-n-o-t-e-"-:- -"-c-o-n-f-i-d-e-n-c-e- -w-i-t-h- -A-I- -a-s-s-i-s-t-a-n-c-e-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-T-a-i-l-w-i-n-d- -C-S-S- -&- -S-h-a-d-c-n-/-u-i-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-9-0-%-"-,-
+- - - - - - - - -"-n-o-t-e-"-:- -"-c-o-n-f-i-d-e-n-c-e- -w-i-t-h- -A-I- -a-s-s-i-s-t-a-n-c-e-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-E-x-p-r-e-s-s- -&- -A-P-I- -d-e-s-i-g-n-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-8-4-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-T-a-i-l-w-i-n-d- -C-S-S- -&- -U-I- -d-e-s-i-g-n-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-8-2-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-E-l-e-c-t-r-o-n- -&- -D-e-s-k-t-o-p- -e-c-o-s-y-s-t-e-m-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-7-8-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-P-y-t-h-o-n- -&- -a-u-t-o-m-a-t-i-o-n-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-7-4-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-J-a-v-a-S-c-r-i-p-t- -&- -E-S-6-+-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-8-8-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-J-a-v-a- -&- -S-p-r-i-n-g- -B-o-o-t-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-7-2-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-C-#- -&- -.-N-E-T-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-7-0-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-G-o- -&- -m-i-c-r-o-s-e-r-v-i-c-e-s-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-6-8-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-P-H-P- -&- -L-a-r-a-v-e-l-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-7-5-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-R-u-s-t- -&- -s-y-s-t-e-m-s- -p-r-o-g-r-a-m-m-i-n-g-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-6-5-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-R-u-b-y- -&- -R-a-i-l-s-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-7-0-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-S-Q-L- -&- -d-a-t-a-b-a-s-e- -o-p-t-i-m-i-z-a-t-i-o-n-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-8-0-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-B-a-s-h-/-S-h-e-l-l- -&- -D-e-v-O-p-s-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-7-6-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-V-u-e-.-j-s- -&- -N-u-x-t-.-j-s-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-7-5-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-A-n-g-u-l-a-r- -&- -R-x-J-S-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-7-0-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-S-v-e-l-t-e- -&- -S-v-e-l-t-e-K-i-t-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-7-2-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-G-r-a-p-h-Q-L- -&- -A-p-o-l-l-o-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-7-8-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-R-E-S-T- -A-P-I- -&- -O-p-e-n-A-P-I-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-8-5-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-M-o-n-g-o-D-B- -&- -M-o-n-g-o-o-s-e-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-7-7-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-F-i-r-e-b-a-s-e- -&- -F-i-r-e-s-t-o-r-e-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-8-0-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-A-W-S- -L-a-m-b-d-a- -&- -S-e-r-v-e-r-l-e-s-s-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-7-3-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-M-i-c-r-o-s-e-r-v-i-c-e-s- -&- -g-R-P-C-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-7-1-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-W-e-b-S-o-c-k-e-t- -&- -R-e-a-l---t-i-m-e-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-7-9-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-J-W-T- -&- -A-u-t-h-0-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-8-2-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-S-t-r-i-p-e- -&- -P-a-y-m-e-n-t- -A-P-I-s-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-7-6-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-T-e-n-s-o-r-F-l-o-w- -&- -M-L-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-6-8-%-"-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-n-a-m-e-"-:- -"-B-l-o-c-k-c-h-a-i-n- -&- -W-e-b-3-"-,-
+- - - - - - - - -"-c-o-n-f-i-d-e-n-c-e-"-:- -"-6-5-%-"-
+- - - - - - -}-
+- - - - -]-,-
+- - - - -"-t-o-o-l-b-o-x-"-:- -[-
+- - - - - - -"-S-u-p-a-b-a-s-e-"-,-
+- - - - - - -"-P-r-i-s-m-a-"-,-
+- - - - - - -"-V-e-r-c-e-l-"-,-
+- - - - - - -"-R-a-i-l-w-a-y-"-,-
+- - - - - - -"-G-i-t-H-u-b- -A-c-t-i-o-n-s-"-,-
+- - - - - - -"-D-o-c-k-e-r-"-,-
+- - - - - - -"-R-e-d-i-s-"-,-
+- - - - - - -"-f-f-m-p-e-g-/-y-t---d-l-p-"-,-
+- - - - - - -"-P-o-s-t-g-r-e-S-Q-L-"-,-
+- - - - - - -"-M-o-n-g-o-D-B-"-,-
+- - - - - - -"-M-y-S-Q-L-"-,-
+- - - - - - -"-A-W-S-"-,-
+- - - - - - -"-A-z-u-r-e-"-,-
+- - - - - - -"-G-o-o-g-l-e- -C-l-o-u-d-"-,-
+- - - - - - -"-N-e-t-l-i-f-y-"-,-
+- - - - - - -"-C-l-o-u-d-f-l-a-r-e-"-,-
+- - - - - - -"-N-g-i-n-x-"-,-
+- - - - - - -"-P-M-2-"-,-
+- - - - - - -"-G-i-t-"-,-
+- - - - - - -"-V-S- -C-o-d-e-"-,-
+- - - - - - -"-P-o-s-t-m-a-n-"-,-
+- - - - - - -"-F-i-g-m-a-"-,-
+- - - - - - -"-J-e-s-t-"-,-
+- - - - - - -"-C-y-p-r-e-s-s-"-,-
+- - - - - - -"-E-S-L-i-n-t-"-,-
+- - - - - - -"-P-r-e-t-t-i-e-r-"-,-
+- - - - - - -"-W-e-b-p-a-c-k-"-,-
+- - - - - - -"-V-i-t-e-"-,-
+- - - - - - -"-n-p-m-/-y-a-r-n-/-p-n-p-m-"-,-
+- - - - - - -"-T-e-r-r-a-f-o-r-m-"-,-
+- - - - - - -"-K-u-b-e-r-n-e-t-e-s-"-,-
+- - - - - - -"-J-e-n-k-i-n-s-"-,-
+- - - - - - -"-C-i-r-c-l-e-C-I-"-
+- - - - -]-
+- - -}-,-
+- - -"-p-r-o-j-e-c-t-s-"-:- -{-
+- - - - -"-h-e-a-d-i-n-g-"-:- -"-P-o-r-t-f-o-l-i-o-"-,-
+- - - - -"-i-n-t-r-o-"-:- -"-T-h-e- -p-r-o-j-e-c-t-s- -b-e-l-o-w- -w-e-r-e- -c-r-e-a-t-e-d- -t-h-r-o-u-g-h- -a- -m-i-x- -o-f- -o-f-f-‚-Ä-ë-t-h-e-‚-Ä-ë-s-h-e-l-f- -s-e-r-v-i-c-e-s-,- -A-I- -a-s-s-i-s-t-a-n-c-e-,- -a-n-d- -s-o-l-o- -w-o-r-k-.- -I- -c-h-o-o-s-e- -s-o-l-u-t-i-o-n-s- -t-h-a-t- -d-e-l-i-v-e-r- -t-h-e- -m-o-s-t- -v-a-l-u-e- -t-o- -u-s-e-r-s-,- -w-h-i-l-e- -c-o-d-i-n-g- -t-o- -t-h-e- -l-e-v-e-l- -r-e-q-u-i-r-e-d- -t-o- -m-a-k-e- -t-h-e- -i-d-e-a- -w-o-r-k-.-"-,-
+- - - - -"-d-e-m-o-A-c-c-e-s-s-L-a-b-e-l-"-:- -"-D-e-m-o- -a-c-c-e-s-s-"-,-
+- - - - -"-i-t-e-m-s-"-:- -[-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-o-d-m-o-r-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-T-R-A-V-E-L- -P-L-A-T-F-O-R-M-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-T-r-a-v-e-l-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-C-o-m-p-r-e-h-e-n-s-i-v-e- -t-r-a-v-e-l- -p-l-a-t-f-o-r-m- -f-e-a-t-u-r-i-n-g- -8-0-+- -b-e-s-t- -w-e-b-s-i-t-e-s- -f-o-r- -f-l-i-g-h-t-s-,- -a-c-c-o-m-m-o-d-a-t-i-o-n-,- -t-r-a-n-s-p-o-r-t-,- -a-n-d- -a-c-t-i-v-i-t-i-e-s- -i-n- -o-n-e- -p-l-a-c-e-.- -O-r-g-a-n-i-z-e-d- -b-y- -c-a-t-e-g-o-r-i-e-s- -w-i-t-h- -d-e-t-a-i-l-e-d- -r-e-v-i-e-w-s- -a-n-d- -l-i-n-k-s- -t-o- -p-r-o-v-i-d-e-r-s-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-R-e-a-c-t-"-,-
+- - - - - - - - - - -"-T-y-p-e-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d-"-,-
+- - - - - - - - - - -"-V-i-t-e-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-w-w-w-.-o-d-m-o-r-.-f-u-n-/-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-
+- - - - - - - - -}-,-
+- - - - - - - - -"-i-m-a-g-e-s-"-:- -[-
+- - - - - - - - - - -"-/-o-d-m-o-r-.-p-n-g-"-
+- - - - - - - - -]-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-k-u-r-s-e-v-i-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-E-D-U-C-A-T-I-O-N-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-C-o-u-r-s-e-s-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-E-d-u-c-a-t-i-o-n-a-l- -p-l-a-t-f-o-r-m- -f-o-r- -o-n-l-i-n-e- -c-o-u-r-s-e-s- -a-n-d- -l-e-a-r-n-i-n-g- -r-e-s-o-u-r-c-e-s-.- -C-e-n-t-r-a-l-i-z-e-d- -p-l-a-c-e- -t-o- -a-c-c-e-s-s- -q-u-a-l-i-t-y- -e-d-u-c-a-t-i-o-n-a-l- -c-o-n-t-e-n-t- -a-n-d- -c-o-u-r-s-e-s-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-R-e-a-c-t-"-,-
+- - - - - - - - - - -"-T-y-p-e-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d-"-,-
+- - - - - - - - - - -"-V-i-t-e-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-w-w-w-.-c-o-u-r-s-e-s-e-d-u-.-s-p-a-c-e-/-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-
+- - - - - - - - -}-,-
+- - - - - - - - -"-i-m-a-g-e-s-"-:- -[-
+- - - - - - - - - - -"-/-k-u-r-s-.-p-n-g-"-
+- - - - - - - - -]-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-n-e-m-a-c-k-i---j-e-z-i-k-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-L-A-N-G-U-A-G-E- -L-E-A-R-N-I-N-G-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-G-e-r-m-a-n- -L-a-n-g-u-a-g-e- -L-e-a-r-n-i-n-g- -P-l-a-t-f-o-r-m-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-C-o-m-p-r-e-h-e-n-s-i-v-e- -p-l-a-t-f-o-r-m- -f-o-r- -l-e-a-r-n-i-n-g- -G-e-r-m-a-n- -l-a-n-g-u-a-g-e- -w-i-t-h- -i-n-t-e-r-a-c-t-i-v-e- -l-e-s-s-o-n-s-,- -e-x-e-r-c-i-s-e-s-,- -t-e-s-t-s-,- -a-n-d- -p-r-o-g-r-e-s-s- -t-r-a-c-k-i-n-g-.- -F-e-a-t-u-r-e-s- -p-e-r-s-o-n-a-l-i-z-e-d- -c-o-u-r-s-e-s-,- -g-r-a-d-i-n-g- -s-y-s-t-e-m-,- -A-I- -t-u-t-o-r-,- -a-c-h-i-e-v-e-m-e-n-t-s- -s-y-s-t-e-m-,- -l-e-a-d-e-r-b-o-a-r-d-,- -a-n-d- -d-e-t-a-i-l-e-d- -l-e-a-r-n-i-n-g- -a-n-a-l-y-t-i-c-s-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-N-e-x-t-.-j-s-"-,-
+- - - - - - - - - - -"-T-y-p-e-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-S-u-p-a-b-a-s-e-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d- -C-S-S-"-,-
+- - - - - - - - - - -"-V-e-r-c-e-l-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-n-e-m-a-c-k-i-j-e-z-i-k-.-v-e-r-c-e-l-.-a-p-p-/-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-
+- - - - - - - - -}-,-
+- - - - - - - - -"-i-m-a-g-e-s-"-:- -[-
+- - - - - - - - - - -"-/-n-e-m-a-c-k-i---j-e-z-i-k-.-j-p-e-g-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-d-e-m-o-A-c-c-o-u-n-t-s-"-:- -[-
+- - - - - - - - - - -"-d-e-m-o-@-d-e-u-t-s-c-h-m-a-s-t-e-r-.-r-s- -/- -d-e-m-o-1-2-3-"-,-
+- - - - - - - - - - -"-m-a-r-k-o-@-d-e-m-o-.-r-s- -/- -d-e-m-o-1-2-3-"-,-
+- - - - - - - - - - -"-a-n-a-@-d-e-m-o-.-r-s- -/- -d-e-m-o-1-2-3-"-,-
+- - - - - - - - - - -"-t-e-s-t-@-t-e-s-t-.-c-o-m- -/- -d-e-m-o-1-2-3-"-
+- - - - - - - - -]-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-r-a-c-u-n-i-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-P-W-A-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-R-a-ƒ-ç-u-n-i-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-O-f-f-l-i-n-e---f-i-r-s-t- -P-W-A- -f-o-r- -s-c-a-n-n-i-n-g- -f-i-s-c-a-l- -r-e-c-e-i-p-t-s-,- -s-t-o-r-i-n-g- -w-a-r-r-a-n-t-i-e-s-,- -a-n-d- -t-r-a-c-k-i-n-g- -h-o-u-s-e-h-o-l-d- -s-p-e-n-d-i-n-g-.- -I- -l-e-a-d- -t-h-e- -p-r-o-d-u-c-t- -v-i-s-i-o-n-,- -S-u-p-a-b-a-s-e- -s-y-n-c- -a-r-c-h-i-t-e-c-t-u-r-e-,- -a-n-d- -A-I---a-s-s-i-s-t-e-d- -O-C-R-/-a-n-a-l-y-t-i-c-s- -e-x-p-e-r-i-e-n-c-e-s-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-R-e-a-c-t-"-,-
+- - - - - - - - - - -"-T-y-p-e-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-Z-u-s-t-a-n-d-"-,-
+- - - - - - - - - - -"-S-u-p-a-b-a-s-e-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d-"-,-
+- - - - - - - - - - -"-V-i-t-e-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-f-i-s-k-a-l-n-i-.-a-p-p-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-
+- - - - - - - - -}-,-
+- - - - - - - - -"-i-m-a-g-e-s-"-:- -[-
+- - - - - - - - - - -"-/-f-i-s-k-a-l-n-i-.-j-p-e-g-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-d-e-m-o-A-c-c-o-u-n-t-s-"-:- -[-
+- - - - - - - - - - -"-p-r-o-b-a-@-g-m-a-i-l-.-c-o-m- -/- -p-r-o-b-a-1-2-3-4-"-,-
+- - - - - - - - - - -"-p-r-o-b-a-1-@-g-m-a-i-l-.-c-o-m- -/- -p-r-o-b-a-1-2-3-4-"-,-
+- - - - - - - - - - -"-p-r-o-b-a-2-@-g-m-a-i-l-.-c-o-m- -/- -p-r-o-b-a-1-2-3-4-"-
+- - - - - - - - -]-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-o-s-n-o-v-c-i-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-E-D-T-E-C-H-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-O-s-n-o-v-c-i-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-H-o-l-i-s-t-i-c- -l-e-a-r-n-i-n-g- -p-l-a-t-f-o-r-m- -f-o-r- -e-l-e-m-e-n-t-a-r-y- -s-t-u-d-e-n-t-s- -c-o-m-b-i-n-i-n-g- -m-a-s-t-e-r-y---b-a-s-e-d- -l-e-s-s-o-n-s-,- -p-a-r-e-n-t- -d-a-s-h-b-o-a-r-d-s-,- -a-n-d- -A-I- -c-o-a-c-h-i-n-g-.- -I- -a-r-c-h-i-t-e-c-t- -t-h-e- -m-u-l-t-i---t-e-n-a-n-t- -c-u-r-r-i-c-u-l-u-m- -C-M-S-,- -r-e-a-l---t-i-m-e- -c-l-a-s-s-r-o-o-m- -a-u-t-o-m-a-t-i-o-n-s-,- -a-n-d- -p-r-o-g-r-e-s-s- -a-n-a-l-y-t-i-c-s-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-N-e-x-t-.-j-s-"-,-
+- - - - - - - - - - -"-T-y-p-e-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-S-u-p-a-b-a-s-e-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d-"-,-
+- - - - - - - - - - -"-V-e-r-c-e-l-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-o-s-n-o-v-c-i-.-v-e-r-c-e-l-.-a-p-p-/-d-a-s-h-b-o-a-r-d-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-
+- - - - - - - - -}-,-
+- - - - - - - - -"-d-e-m-o-A-c-c-o-u-n-t-s-"-:- -[-
+- - - - - - - - - - -"-1-Ô-∏-è-‚-É-£- -M-a-r-k-o- -M-a-r-k-o-v-i-ƒ-á- --- -m-a-r-k-o-@-d-e-m-o-.-r-s- -/- -m-a-r-k-o-1-2-3-"-,-
+- - - - - - - - - - -"-2-Ô-∏-è-‚-É-£- -A-n-a- -P-e-t-r-o-v-i-ƒ-á- --- -a-n-a-@-d-e-m-o-.-r-s- -/- -a-n-a-1-2-3-"-,-
+- - - - - - - - - - -"-3-Ô-∏-è-‚-É-£- -S-t-e-f-a-n- -N-i-k-o-l-i-ƒ-á- --- -s-t-e-f-a-n-@-d-e-m-o-.-r-s- -/- -s-t-e-f-a-n-1-2-3-"-,-
+- - - - - - - - - - -"-4-Ô-∏-è-‚-É-£- -M-i-l-i-c-a- -S-t-a-n-k-o-v-i-ƒ-á- --- -m-i-l-i-c-a-@-d-e-m-o-.-r-s- -/- -m-i-l-i-c-a-1-2-3-"-,-
+- - - - - - - - - - -"-5-Ô-∏-è-‚-É-£- -L-u-k-a- -P-a-v-l-o-v-i-ƒ-á- --- -l-u-k-a-@-d-e-m-o-.-r-s- -/- -l-u-k-a-1-2-3-"-
+- - - - - - - - -]-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-b-a-l-k-a-n---r-e-m-o-t-e-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-W-E-B- -P-L-A-T-F-O-R-M-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-B-a-l-k-a-n- -R-e-m-o-t-e-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-C-a-r-e-e-r- -h-u-b- -f-o-r- -r-e-m-o-t-e- -t-a-l-e-n-t- -f-r-o-m- -t-h-e- -B-a-l-k-a-n-s-:- -t-a-x- -c-a-l-c-u-l-a-t-o-r-,- -j-o-b- -a-g-g-r-e-g-a-t-o-r-,- -r-e-s-o-u-r-c-e-s-,- -t-o-o-l-s-,- -a-n-d- -a- -Q-&-A- -f-o-r-u-m-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-N-e-x-t-.-j-s- -1-5-"-,-
+- - - - - - - - - - -"-S-u-p-a-b-a-s-e-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d-"-,-
+- - - - - - - - - - -"-V-e-r-c-e-l-"-,-
+- - - - - - - - - - -"-G-i-t-H-u-b- -A-c-t-i-o-n-s-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-w-w-w-.-b-a-l-k-a-n---r-e-m-o-t-e-.-c-o-m-/-"-,-
+- - - - - - - - -"-r-e-p-o-"-:- -"-h-t-t-p-s-:-/-/-g-i-t-h-u-b-.-c-o-m-/-z-o-x-k-n-e-z-/-B-a-l-k-a-n-R-e-m-o-t-e-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-,-
+- - - - - - - - - - -"-r-e-p-o-"-:- -"-R-e-p-o-"-
+- - - - - - - - -}-,-
+- - - - - - - - -"-i-m-a-g-e-s-"-:- -[-
+- - - - - - - - - - -"-/-b-a-l-k-a-n-r-e-m-o-t-e-.-p-n-g-"-
+- - - - - - - - -]-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-p-u-m-p-a-j-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-M-U-L-T-I- -P-L-A-T-F-O-R-M-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-P-u-m-p-a-j- -V-i-d-e-o- -D-o-w-n-l-o-a-d-e-r-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-V-i-d-e-o- -d-o-w-n-l-o-a-d-e-r- -o-r-c-h-e-s-t-r-a-t-e-d- -b-y- -c-o-m-b-i-n-i-n-g- -a- -N-e-x-t-.-j-s- -c-l-i-e-n-t-,- -E-x-p-r-e-s-s- -A-P-I-,- -a-n-d- -E-l-e-c-t-r-o-n- -s-h-e-l-l- -w-i-t-h- -A-I- -p-a-i-r-‚-Ä-ë-p-r-o-g-r-a-m-m-i-n-g-.- -S-u-p-p-o-r-t-s- -1-0-0-+- -p-l-a-t-f-o-r-m-s- -a-n-d- -s-h-o-w-s- -r-e-a-l-‚-Ä-ë-t-i-m-e- -p-r-o-g-r-e-s-s-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-N-e-x-t-.-j-s-"-,-
+- - - - - - - - - - -"-E-x-p-r-e-s-s-"-,-
+- - - - - - - - - - -"-E-l-e-c-t-r-o-n-"-,-
+- - - - - - - - - - -"-y-t---d-l-p-"-,-
+- - - - - - - - - - -"-S-u-p-a-b-a-s-e-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-p-u-m-p-a-j-v-i-d-e-o-d-l-.-c-o-m-/-"-,-
+- - - - - - - - -"-r-e-p-o-"-:- -"-h-t-t-p-s-:-/-/-g-i-t-h-u-b-.-c-o-m-/-z-o-x-k-n-e-z-/-p-u-m-p-a-j-v-i-d-e-o-d-o-w-n-l-o-a-d-e-r-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-,-
+- - - - - - - - - - -"-r-e-p-o-"-:- -"-R-e-p-o-"-
+- - - - - - - - -}-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-s-e-f---e-f-a-k-t-u-r-e-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-E-N-T-E-R-P-R-I-S-E-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-S-E-F- -e-I-n-v-o-i-c-e-s-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-C-o-m-p-l-e-t-e- -e-‚-Ä-ë-i-n-v-o-i-c-i-n-g- -s-y-s-t-e-m- -f-o-r- -t-h-e- -S-e-r-b-i-a-n- -S-E-F-.- -S-o-l-o- -p-r-o-j-e-c-t- -w-h-e-r-e- -I- -h-a-n-d-l-e- -a-r-c-h-i-t-e-c-t-u-r-e-,- -i-n-t-e-g-r-a-t-i-o-n-s-,- -Q-A-,- -a-n-d- -c-o-d-i-n-g- -w-i-t-h- -A-I- -a-s-s-i-s-t-a-n-c-e- -(-d-a-s-h-b-o-a-r-d-,- -U-B-L- -2-.-1-,- -A-P-I-,- -w-e-b-h-o-o-k-s-,- -a-u-d-i-t- -t-r-a-i-l-)-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-R-e-a-c-t-"-,-
+- - - - - - - - - - -"-N-o-d-e-.-j-s-"-,-
+- - - - - - - - - - -"-P-r-i-s-m-a-"-,-
+- - - - - - - - - - -"-P-o-s-t-g-r-e-S-Q-L-"-,-
+- - - - - - - - - - -"-R-e-d-i-s-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-e-s-e-f---o-l-i-v-e-.-v-e-r-c-e-l-.-a-p-p-/-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-
+- - - - - - - - -}-,-
+- - - - - - - - -"-i-m-a-g-e-s-"-:- -[-
+- - - - - - - - - - -"-/-s-e-f-.-j-p-e-g-"-
+- - - - - - - - -]-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-p-d-f---s-c-r-a-p-e-r-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-D-A-T-A- -T-O-O-L-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-P-D-F- -S-c-r-a-p-e-r-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-O-p-e-n---s-o-u-r-c-e- -t-o-o-l- -f-o-r- -i-n-d-e-x-i-n-g- -P-D-F- -d-o-c-u-m-e-n-t-s---l-e-d- -c-o-n-c-e-p-t-,- -a-u-t-o-m-a-t-i-o-n-,- -a-n-d- -o-r-c-h-e-s-t-r-a-t-i-o-n-,- -w-i-t-h- -A-I- -a-s-s-i-s-t-a-n-t-s- -h-e-l-p-i-n-g- -o-n- -s-c-r-a-p-e- -r-o-u-t-i-n-e-s- -a-n-d- -l-o-c-a-l-i-z-e-d- -U-I-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-P-y-t-h-o-n-"-,-
+- - - - - - - - - - -"-F-l-a-s-k-"-,-
+- - - - - - - - - - -"-S-Q-L-i-t-e-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d-"-,-
+- - - - - - - - - - -"-D-o-c-k-e-r-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-r-e-p-o-"-:- -"-h-t-t-p-s-:-/-/-g-i-t-h-u-b-.-c-o-m-/-z-o-x-k-n-e-z-/-p-d-f-s-k-r-e-j-p-e-r-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-r-e-p-o-"-:- -"-R-e-p-o-"-
+- - - - - - - - -}-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-m-m-a---b-a-l-k-a-n-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-C-O-M-M-U-N-I-T-Y-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-M-M-A- -B-a-l-k-a-n-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-R-e-g-i-o-n-a-l- -h-u-b- -f-o-r- -t-h-e- -M-M-A- -c-o-m-m-u-n-i-t-y- -w-i-t-h- -n-e-w-s-,- -e-v-e-n-t-s-,- -a-n-d- -c-o-r-p-o-r-a-t-e- -p-a-r-t-n-e-r-s-h-i-p-s-.- -M-y- -r-o-l-e-:- -a-r-c-h-i-t-e-c-t-u-r-e-,- -a-u-t-o-m-a-t-e-d- -i-n-g-e-s-t- -p-i-p-e-l-i-n-e-s-,- -a-n-d- -A-I-‚-Ä-ë-s-u-p-p-o-r-t-e-d- -c-o-n-t-e-n-t-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-N-e-x-t-.-j-s-"-,-
+- - - - - - - - - - -"-S-u-p-a-b-a-s-e-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d-"-,-
+- - - - - - - - - - -"-V-e-r-c-e-l-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-w-w-w-.-m-m-a---b-a-l-k-a-n-.-o-r-g-/-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-}-,-
+- - - - - - - - -"-i-m-a-g-e-s-"-:- -[-
+- - - - - - - - - - -"-/-m-m-a-b-a-l-k-a-n-.-j-p-e-g-"-
+- - - - - - - - -]-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-e-f-i-n-a-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-F-I-N-T-E-C-H-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-e-F-i-n-a-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-F-i-n-t-e-c-h- -s-o-l-u-t-i-o-n- -f-o-r- -t-h-e- -C-r-o-a-t-i-a-n- -m-a-r-k-e-t-:- -e-‚-Ä-ë-i-n-v-o-i-c-e-s-,- -f-i-s-c-a-l-i-z-a-t-i-o-n-,- -a-n-d- -a- -c-a-s-h-‚-Ä-ë-f-l-o-w- -d-a-s-h-b-o-a-r-d-.- -I- -l-e-d- -p-r-o-d-u-c-t- -d-i-s-c-o-v-e-r-y- -a-n-d- -i-n-t-e-g-r-a-t-i-o-n-s- -w-h-i-l-e- -A-I- -a-g-e-n-t-s- -c-o-v-e-r-e-d- -r-e-p-e-t-i-t-i-v-e- -c-o-d-e-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-N-e-x-t-.-j-s-"-,-
+- - - - - - - - - - -"-T-y-p-e-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-S-u-p-a-b-a-s-e-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d-"-,-
+- - - - - - - - - - -"-A-z-u-r-e-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-e-f-a-k-t-u-r-a-h-r-.-v-e-r-c-e-l-.-a-p-p-/-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-
+- - - - - - - - -}-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-a-f-e-r-e-s-n-s-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-D-A-T-A- -P-L-A-T-F-O-R-M-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-S-N-S- -S-c-a-n-d-a-l-s- -L-i-s-t-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-D-a-t-a-b-a-s-e- -w-i-t-h- -o-v-e-r- -3-2-4- -r-e-c-o-r-d-e-d- -o-r- -r-e-p-o-r-t-e-d- -s-c-a-n-d-a-l-s- -a-n-d- -a-f-f-a-i-r-s-.- -V-i-s-u-a-l- -r-e-p-r-e-s-e-n-t-a-t-i-o-n- -o-f- -e-s-t-i-m-a-t-e-d- -d-a-m-a-g-e-,- -c-a-t-e-g-o-r-i-z-a-t-i-o-n- -b-y- -a-r-e-a-s-,- -a-n-d- -s-e-a-r-c-h- -a-n-d- -f-i-l-t-e-r- -c-a-p-a-b-i-l-i-t-i-e-s-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-R-e-a-c-t-"-,-
+- - - - - - - - - - -"-T-y-p-e-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d-"-,-
+- - - - - - - - - - -"-V-i-t-e-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-a-f-e-r-e-s-n-s-.-v-e-r-c-e-l-.-a-p-p-/-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-
+- - - - - - - - -}-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-b-l-o-k-i-r-a-n-i-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-D-A-T-A- -T-O-O-L-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-P-u-b-l-i-c- -T-w-i-t-t-e-r- -B-o-t- -A-c-c-o-u-n-t-s- -D-a-t-a-b-a-s-e-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-P-u-b-l-i-c- -d-a-t-a-b-a-s-e- -o-f- -T-w-i-t-t-e-r- -b-o-t- -a-c-c-o-u-n-t-s-.- -T-r-a-n-s-p-a-r-e-n-t- -p-l-a-t-f-o-r-m- -f-o-r- -a-c-c-e-s-s-i-n-g- -i-n-f-o-r-m-a-t-i-o-n- -a-b-o-u-t- -b-o-t- -a-c-c-o-u-n-t-s- -a-n-d- -t-h-e-i-r- -a-c-t-i-v-i-t-y-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-R-e-a-c-t-"-,-
+- - - - - - - - - - -"-T-y-p-e-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d-"-,-
+- - - - - - - - - - -"-V-i-t-e-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-b-l-o-k-i-r-a-n-i-.-v-e-r-c-e-l-.-a-p-p-/-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-
+- - - - - - - - -}-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-r-a-d-e-c-o-s-i-c-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-E---C-O-M-M-E-R-C-E-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-R-a-d-e- -C-o-s-i-c- -B-o-o-k-s-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-E---c-o-m-m-e-r-c-e- -p-l-a-t-f-o-r-m- -f-o-r- -b-o-o-k- -s-a-l-e-s- -w-i-t-h- -m-o-d-e-r-n- -d-e-s-i-g-n- -a-n-d- -u-s-e-r- -e-x-p-e-r-i-e-n-c-e-.- -I-m-p-l-e-m-e-n-t-e-d- -w-i-t-h- -f-o-c-u-s- -o-n- -s-i-m-p-l-e- -n-a-v-i-g-a-t-i-o-n- -a-n-d- -f-a-s-t- -b-o-o-k- -s-e-a-r-c-h-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-R-e-a-c-t-"-,-
+- - - - - - - - - - -"-T-y-p-e-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d-"-,-
+- - - - - - - - - - -"-V-i-t-e-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-r-a-d-e-c-o-s-i-c-.-v-e-r-c-e-l-.-a-p-p-/-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-
+- - - - - - - - -}-,-
+- - - - - - - - -"-i-m-a-g-e-s-"-:- -[-
+- - - - - - - - - - -"-/-r-a-d-e-c-o-s-i-c-.-j-p-e-g-"-
+- - - - - - - - -]-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-d-a-v-i-d---k-n-e-z-e-v-i-c-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-P-O-R-T-F-O-L-I-O-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-D-a-v-i-d- -K-n-e-≈-æ-e-v-i-ƒ-á- -P-o-r-t-f-o-l-i-o-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-P-r-e-m-i-u-m- -f-i-t-n-e-s-s- -c-o-a-c-h-i-n-g- -p-o-r-t-f-o-l-i-o- -w-i-t-h- -p-e-r-s-o-n-a-l-i-z-e-d- -p-r-o-g-r-a-m-s-,- -c-l-i-e-n-t- -s-u-c-c-e-s-s- -s-t-o-r-i-e-s-,- -a-n-d- -c-o-m-p-r-e-h-e-n-s-i-v-e- -t-r-a-i-n-i-n-g- -i-n-f-o-r-m-a-t-i-o-n-.- -M-o-d-e-r-n- -d-e-s-i-g-n- -f-o-c-u-s-e-d- -o-n- -c-o-n-v-e-r-s-i-o-n- -a-n-d- -p-r-o-f-e-s-s-i-o-n-a-l- -i-m-a-g-e-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-R-e-a-c-t-"-,-
+- - - - - - - - - - -"-T-y-p-e-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d-"-,-
+- - - - - - - - - - -"-V-i-t-e-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-d-a-v-i-d-p-o-r-t-f-o-l-i-o---o-c-h-r-e-.-v-e-r-c-e-l-.-a-p-p-/-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-
+- - - - - - - - -}-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-n-e-s-t-a-s-i-c-a-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-D-A-T-A- -P-L-A-T-F-O-R-M-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-N-e-s-t-a-≈-°-i-c-a-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-S-a-t-i-r-i-c-a-l- -d-a-t-a- -h-u-b- -t-h-a-t- -i-m-a-g-i-n-e-s- -s-h-o-r-t-a-g-e-s- -a-n-d- -r-e-s-p-o-n-s-e-s- -t-i-e-d- -t-o- -p-o-t-e-n-t-i-a-l- -s-a-n-c-t-i-o-n-s- -o-n- -N-I-S- -i-n- -S-e-r-b-i-a-.- -I- -u-s-e- -i-t- -a-s- -a- -p-a-r-o-d-y- -d-a-s-h-b-o-a-r-d- -s-h-o-w-i-n-g- -h-o-w- -t-r-a-n-s-p-a-r-e-n-t- -a-l-e-r-t-s-,- -f-i-l-t-e-r-s-,- -a-n-d- -n-a-r-r-a-t-i-v-e-s- -c-o-u-l-d- -l-o-o-k-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-N-e-x-t-.-j-s-"-,-
+- - - - - - - - - - -"-T-y-p-e-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-S-u-p-a-b-a-s-e-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-n-e-s-t-a-s-i-c-a-.-v-e-r-c-e-l-.-a-p-p-/-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-
+- - - - - - - - -}-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-f-i-l-m-o-v-i-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-M-E-D-I-A- -H-U-B-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-F-i-l-m-o-v-i- -&- -S-e-r-i-j-e-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-C-u-r-a-t-e-d- -c-a-t-a-l-o-g-u-e- -o-f- -m-o-v-i-e-s- -a-n-d- -T-V- -s-h-o-w-s- -w-i-t-h- -g-e-n-r-e---b-a-s-e-d- -r-e-c-o-m-m-e-n-d-a-t-i-o-n-s-,- -w-a-t-c-h-l-i-s-t- -s-u-p-p-o-r-t-,- -a-n-d- -d-e-t-a-i-l-e-d- -c-o-n-t-e-n-t- -c-a-r-d-s---i-d-e-a-l- -f-o-r- -d-i-s-c-o-v-e-r-i-n-g- -n-e-w- -t-i-t-l-e-s- -a-n-d- -s-h-a-r-i-n-g- -p-i-c-k-s-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-R-e-a-c-t-"-,-
+- - - - - - - - - - -"-T-y-p-e-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d-"-,-
+- - - - - - - - - - -"-V-i-t-e-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-f-i-l-m-o-v-i---s-e-r-i-j-e-.-v-e-r-c-e-l-.-a-p-p-/-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-
+- - - - - - - - -}-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-v-r-e-m-e-n-s-k-a---p-r-o-g-n-o-z-a-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-W-E-A-T-H-E-R- -A-P-P-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-V-r-e-m-e-n-s-k-a- -P-r-o-g-n-o-z-a-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-M-o-d-e-r-n- -N-e-x-t-.-j-s- -1-6- -w-e-b- -a-p-p-l-i-c-a-t-i-o-n- -f-o-r- -t-r-a-c-k-i-n-g- -w-e-a-t-h-e-r- -f-o-r-e-c-a-s-t-s- -a-n-d- -a-i-r- -q-u-a-l-i-t-y- -i-n- -t-h-e- -B-a-l-k-a-n-s- -w-i-t-h- -r-e-a-l---t-i-m-e- -d-a-t-a- -f-r-o-m- -m-u-l-t-i-p-l-e- -s-o-u-r-c-e-s-.- -F-e-a-t-u-r-e-s- -7---d-a-y- -f-o-r-e-c-a-s-t-s-,- -i-n-t-e-r-a-c-t-i-v-e- -m-a-p-s-,- -A-Q-I- -m-o-n-i-t-o-r-i-n-g-,- -a-n-d- -s-m-a-r-t- -a-l-e-r-t-s-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-N-e-x-t-.-j-s- -1-6-"-,-
+- - - - - - - - - - -"-T-y-p-e-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d- -C-S-S-"-,-
+- - - - - - - - - - -"-M-a-p-b-o-x-"-,-
+- - - - - - - - - - -"-D-r-i-z-z-l-e- -O-R-M-"-,-
+- - - - - - - - - - -"-P-o-s-t-g-r-e-S-Q-L-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-v-r-e-m-e-n-s-k-a-p-r-o-g-n-o-z-a-.-v-e-r-c-e-l-.-a-p-p-/-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-
+- - - - - - - - -}-,-
+- - - - - - - - -"-i-m-a-g-e-s-"-:- -[-
+- - - - - - - - - - -"-/-v-r-e-m-e-n-s-k-a-p-r-o-g-n-o-z-a-.-p-n-g-"-
+- - - - - - - - -]-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-b-r-o-j-a-c---v-o-z-i-l-a-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-D-A-T-A- -T-O-O-L-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-B-r-o-j-a-c- -V-o-z-i-l-a-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-V-e-h-i-c-l-e- -c-o-u-n-t-i-n-g- -a-p-p-l-i-c-a-t-i-o-n- -f-o-r- -t-r-a-c-k-i-n-g- -a-n-d- -a-n-a-l-y-z-i-n-g- -t-r-a-f-f-i-c- -d-a-t-a- -w-i-t-h- -r-e-a-l---t-i-m-e- -m-o-n-i-t-o-r-i-n-g- -c-a-p-a-b-i-l-i-t-i-e-s-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-N-e-x-t-.-j-s-"-,-
+- - - - - - - - - - -"-T-y-p-e-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d-"-
+- - - - - - - - -]-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-p-i-s-m-a-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-D-I-G-I-T-A-L- -H-E-R-I-T-A-G-E-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-P-i-s-m-a-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-D-i-g-i-t-a-l- -p-l-a-t-f-o-r-m- -f-o-r- -t-i-m-e---l-o-c-k-e-d- -l-e-t-t-e-r-s- -t-h-a-t- -c-o-m-b-i-n-e-s- -m-o-d-e-r-n- -t-e-c-h-n-o-l-o-g-y- -w-i-t-h- -t-h-e- -n-o-s-t-a-l-g-i-a- -o-f- -h-a-n-d-w-r-i-t-t-e-n- -c-o-r-r-e-s-p-o-n-d-e-n-c-e-.- -F-e-a-t-u-r-e-s- -p-e-r-s-o-n-a-l-i-z-e-d- -w-a-x- -s-e-a-l-s-,- -a-u-d-i-o- -m-e-s-s-a-g-e-s-,- -v-i-n-t-a-g-e- -p-a-p-e-r- -e-f-f-e-c-t-s-,- -Q-R- -c-o-d-e- -t-r-a-c-k-i-n-g-,- -a-n-d- -3-D- -u-n-b-o-x-i-n-g- -e-x-p-e-r-i-e-n-c-e-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-N-e-x-t-.-j-s- -1-6-"-,-
+- - - - - - - - - - -"-T-y-p-e-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-P-r-i-s-m-a-"-,-
+- - - - - - - - - - -"-P-o-s-t-g-r-e-S-Q-L-"-,-
+- - - - - - - - - - -"-N-e-x-t-A-u-t-h-.-j-s-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d- -C-S-S-"-,-
+- - - - - - - - - - -"-F-r-a-m-e-r- -M-o-t-i-o-n-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-p-i-s-m-a-.-f-u-n-/-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-
+- - - - - - - - -}-,-
+- - - - - - - - -"-i-m-a-g-e-s-"-:- -[-
+- - - - - - - - - - -"-/-p-i-s-m-a-.-p-n-g-"-
+- - - - - - - - -]-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-s-i-p-k-a---g-r-o-u-p-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-R-E-A-L- -E-S-T-A-T-E-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-S-i-p-k-a- -G-r-o-u-p-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-P-r-e-m-i-u-m- -w-e-b-s-i-t-e- -f-o-r- -p-r-o-p-e-r-t-y- -i-n-v-e-s-t-m-e-n-t- -g-r-o-u-p- -i-n- -N-e-w- -Z-e-a-l-a-n-d-.- -F-e-a-t-u-r-e-s- -p-r-o-p-e-r-t-y- -p-o-r-t-f-o-l-i-o-,- -c-o-m-p-a-n-y- -h-i-s-t-o-r-y-,- -a-n-d- -a-v-a-i-l-a-b-l-e- -s-p-a-c-e-s- -w-i-t-h- -m-o-d-e-r-n- -d-e-s-i-g-n- -a-n-d- -i-n-t-e-r-a-c-t-i-v-e- -m-a-p-s-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-N-e-x-t-.-j-s-"-,-
+- - - - - - - - - - -"-T-y-p-e-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d- -C-S-S-"-,-
+- - - - - - - - - - -"-F-r-a-m-e-r- -M-o-t-i-o-n-"-,-
+- - - - - - - - - - -"-V-e-r-c-e-l-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-s-i-p-a-g-r-o-u-p-w-e-b-.-v-e-r-c-e-l-.-a-p-p-/-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-
+- - - - - - - - -}-,-
+- - - - - - - - -"-i-m-a-g-e-s-"-:- -[-
+- - - - - - - - - - -"-/-s-i-p-k-a-g-r-o-u-p-.-p-n-g-"-
+- - - - - - - - -]-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-k-e-t-e-r-i-n-g---b-g-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-F-O-O-D- -&- -C-A-T-E-R-I-N-G-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-K-e-t-e-r-i-n-g- -B-e-o-g-r-a-d-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-E-x-c-l-u-s-i-v-e- -c-a-t-e-r-i-n-g- -s-e-r-v-i-c-e- -f-o-r- -c-o-r-p-o-r-a-t-e- -e-v-e-n-t-s- -a-n-d- -p-r-i-v-a-t-e- -c-e-l-e-b-r-a-t-i-o-n-s- -i-n- -B-e-l-g-r-a-d-e-.- -W-e-b-s-i-t-e- -w-i-t-h- -m-e-n-u-s-,- -f-o-o-d- -g-a-l-l-e-r-y-,- -p-e-r-s-o-n-a-l-i-z-e-d- -o-f-f-e-r-s-,- -a-n-d- -m-u-l-t-i---l-a-n-g-u-a-g-e- -s-u-p-p-o-r-t- -(-S-e-r-b-i-a-n-,- -E-n-g-l-i-s-h-,- -R-u-s-s-i-a-n-)-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-N-e-x-t-.-j-s-"-,-
+- - - - - - - - - - -"-T-y-p-e-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d- -C-S-S-"-,-
+- - - - - - - - - - -"-V-e-r-c-e-l-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-k-e-t-e-r-i-n-g-b-g-.-v-e-r-c-e-l-.-a-p-p-/-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-
+- - - - - - - - -}-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-b-i-d-o-n-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-P-W-A-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-B-i-d-o-n-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-M-o-d-e-r-n- -P-W-A- -a-p-p-l-i-c-a-t-i-o-n- -f-o-r- -t-r-a-c-k-i-n-g- -a-n-d- -r-e-c-o-r-d-i-n-g- -f-u-e-l- -d-i-s-p-e-n-s-i-n-g- -f-r-o-m- -t-a-n-k-s-.- -I-d-e-a-l- -f-o-r- -a-g-r-i-c-u-l-t-u-r-a-l- -f-a-r-m-s- -a-n-d- -t-r-a-n-s-p-o-r-t- -c-o-m-p-a-n-i-e-s-.- -F-e-a-t-u-r-e-s- -t-a-n-k- -m-a-n-a-g-e-m-e-n-t- -w-i-t-h- -a-n-i-m-a-t-e-d- -f-u-e-l- -l-e-v-e-l- -d-i-s-p-l-a-y-,- -v-e-h-i-c-l-e- -r-e-c-o-r-d-s-,- -c-o-n-s-u-m-p-t-i-o-n- -r-e-p-o-r-t-s- -b-y- -v-e-h-i-c-l-e- -a-n-d- -s-e-c-t-o-r-,- -a-n-d- -P-W-A- -s-u-p-p-o-r-t- -f-o-r- -m-o-b-i-l-e- -i-n-s-t-a-l-l-a-t-i-o-n-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-N-e-x-t-.-j-s- -1-5-"-,-
+- - - - - - - - - - -"-T-y-p-e-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-T-a-i-l-w-i-n-d- -C-S-S-"-,-
+- - - - - - - - - - -"-D-r-i-z-z-l-e- -O-R-M-"-,-
+- - - - - - - - - - -"-P-o-s-t-g-r-e-S-Q-L-"-,-
+- - - - - - - - - - -"-N-e-x-t-A-u-t-h-.-j-s-"-,-
+- - - - - - - - - - -"-F-r-a-m-e-r- -M-o-t-i-o-n-"-,-
+- - - - - - - - - - -"-R-e-c-h-a-r-t-s-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-u-r-l-"-:- -"-h-t-t-p-s-:-/-/-b-i-d-o-n---t-a-u-.-v-e-r-c-e-l-.-a-p-p-/-"-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-l-i-v-e-"-:- -"-O-p-e-n- -A-p-p-"-
+- - - - - - - - -}-,-
+- - - - - - - - -"-i-m-a-g-e-s-"-:- -[-
+- - - - - - - - - - -"-/-b-i-d-o-n-.-j-p-e-g-"-
+- - - - - - - - -]-
+- - - - - - -}-,-
+- - - - - - -{-
+- - - - - - - - -"-i-d-"-:- -"-t-w-i-t-t-e-r---b-l-o-c-k---m-a-n-a-g-e-r-"-,-
+- - - - - - - - -"-c-a-t-e-g-o-r-y-"-:- -"-C-H-R-O-M-E- -E-X-T-E-N-S-I-O-N-"-,-
+- - - - - - - - -"-t-i-t-l-e-"-:- -"-B-l-o-c-k- -M-a-n-a-g-e-r- -f-o-r- -T-w-i-t-t-e-r-/-X-"-,-
+- - - - - - - - -"-d-e-s-c-r-i-p-t-i-o-n-"-:- -"-C-h-r-o-m-e- -e-x-t-e-n-s-i-o-n- -f-o-r- -m-a-n-a-g-i-n-g- -b-l-o-c-k-e-d- -u-s-e-r-s- -o-n- -T-w-i-t-t-e-r-/-X- -p-l-a-t-f-o-r-m-.- -M-o-d-e-r-n- -g-l-a-s-s-m-o-r-p-h-i-s-m- -U-I- -w-i-t-h- -d-a-r-k-/-l-i-g-h-t- -t-h-e-m-e-s-,- -A-l-t-+-B- -s-h-o-r-t-c-u-t- -f-o-r- -q-u-i-c-k- -b-l-o-c-k-i-n-g-,- -a-d-v-a-n-c-e-d- -m-a-n-a-g-e-r- -w-i-t-h- -s-e-a-r-c-h- -a-n-d- -f-i-l-t-e-r-i-n-g-,- -v-i-s-u-a-l- -s-t-a-t-i-s-t-i-c-s-,- -s-m-a-r-t- -t-a-g-g-i-n-g-,- -a-n-d- -b-a-c-k-u-p- -s-y-s-t-e-m-.- -S-u-p-p-o-r-t-s- -i-m-p-o-r-t-/-e-x-p-o-r-t- -a-n-d- -b-u-l-k- -a-c-t-i-o-n-s-.-"-,-
+- - - - - - - - -"-s-t-a-c-k-"-:- -[-
+- - - - - - - - - - -"-C-h-r-o-m-e- -E-x-t-e-n-s-i-o-n-"-,-
+- - - - - - - - - - -"-M-a-n-i-f-e-s-t- -V-3-"-,-
+- - - - - - - - - - -"-V-a-n-i-l-l-a- -J-a-v-a-S-c-r-i-p-t-"-,-
+- - - - - - - - - - -"-C-S-S-3- -G-l-a-s-s-m-o-r-p-h-i-s-m-"-,-
+- - - - - - - - - - -"-C-h-r-o-m-e- -S-t-o-r-a-g-e- -A-P-I-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-r-e-p-o-"-:- -"-h-t-t-p-s-:-/-/-g-i-t-h-u-b-.-c-o-m-/-z-o-x-k-n-e-z-/-T-w-i-t-t-e-r---X---B-l-o-c-k---M-a-n-a-g-e-r-"-,-
+- - - - - - - - -"-i-m-a-g-e-s-"-:- -[-
+- - - - - - - - - - -"-/-G-7-x-o-m-Z-v-X-Q-A-A-E-i-S-m-.-p-n-g-"-,-
+- - - - - - - - - - -"-/-G-7-x-o-p-j-A-X-o-A-A-l-T-o-B-.-p-n-g-"-
+- - - - - - - - -]-,-
+- - - - - - - - -"-l-i-n-k-s-"-:- -{-
+- - - - - - - - - - -"-r-e-p-o-"-:- -"-R-e-p-o-"-
+- - - - - - - - -}-
+- - - - - - -}-
+- - - - -]-
+- - -}-,-
+- - -"-c-o-n-t-a-c-t-"-:- -{-
+- - - - -"-h-e-a-d-i-n-g-"-:- -"-C-o-n-t-a-c-t- -M-e-"-,-
+- - - - -"-i-n-t-r-o-"-:- -"-I-‚-Ä-ô-m- -o-p-e-n- -t-o- -c-o-l-l-a-b-o-r-a-t-i-o-n-,- -c-o-n-s-u-l-t-i-n-g-,- -a-n-d- -b-r-a-i-n-s-t-o-r-m-i-n-g-.- -I-f- -y-o-u- -h-a-v-e- -a-n- -i-d-e-a- -t-o- -t-u-r-n- -i-n-t-o- -a- -s-o-l-u-t-i-o-n- -w-i-t-h- -A-I- -a-n-d- -a- -t-e-a-m-‚-Ä-ë-d-r-i-v-e-n- -a-p-p-r-o-a-c-h-,- -r-e-a-c-h- -o-u-t- -v-i-a- -e-m-a-i-l-,- -p-h-o-n-e-,- -o-r- -s-o-c-i-a-l-.-"-,-
+- - - - -"-e-m-a-i-l-L-a-b-e-l-"-:- -"-E-m-a-i-l-"-,-
+- - - - -"-e-m-a-i-l-V-a-l-u-e-"-:- -"-z-o-x-k-n-e-z-@-h-o-t-m-a-i-l-.-c-o-m-"-,-
+- - - - -"-g-i-t-h-u-b-L-a-b-e-l-"-:- -"-G-i-t-H-u-b-"-,-
+- - - - -"-g-i-t-h-u-b-V-a-l-u-e-"-:- -"-g-i-t-h-u-b-.-c-o-m-/-z-o-x-k-n-e-z-"-,-
+- - - - -"-p-h-o-n-e-L-a-b-e-l-"-:- -"-P-h-o-n-e- -/- -V-i-b-e-r- -/- -W-h-a-t-s-A-p-p-"-,-
+- - - - -"-p-h-o-n-e-V-a-l-u-e-"-:- -"-+-3-8-1- -6-0- -0-4-9- -4-4-5-1-"-,-
+- - - - -"-f-o-r-m-"-:- -{-
+- - - - - - -"-s-e-n-d-M-e-s-s-a-g-e-"-:- -"-S-e-n-d- -a- -M-e-s-s-a-g-e-"-,-
+- - - - - - -"-n-a-m-e-"-:- -"-Y-o-u-r- -N-a-m-e-"-,-
+- - - - - - -"-e-m-a-i-l-"-:- -"-E-m-a-i-l-"-,-
+- - - - - - -"-m-e-s-s-a-g-e-"-:- -"-M-e-s-s-a-g-e-"-,-
+- - - - - - -"-s-u-b-m-i-t-"-:- -"-S-e-n-d- -M-e-s-s-a-g-e-"-,-
+- - - - - - -"-s-e-n-d-i-n-g-"-:- -"-S-e-n-d-i-n-g-.-.-.-"-,-
+- - - - - - -"-s-u-c-c-e-s-s-"-:- -"-‚-ú-ì- -M-e-s-s-a-g-e- -s-e-n-t- -s-u-c-c-e-s-s-f-u-l-l-y-!-"-,-
+- - - - - - -"-e-r-r-o-r-"-:- -"-‚-ú-ó- -E-r-r-o-r- -s-e-n-d-i-n-g- -m-e-s-s-a-g-e-.- -P-l-e-a-s-e- -t-r-y- -a-g-a-i-n-.-"-
+- - - - -}-
+- - -}-,-
+- - -"-f-o-o-t-e-r-"-:- -{-
+- - - - -"-t-a-g-l-i-n-e-"-:- -"-A-I---f-i-r-s-t- -D-i-g-i-t-a-l- -M-a-k-e-r- -b-u-i-l-d-i-n-g- -s-o-l-u-t-i-o-n-s- -f-o-r- -t-h-e- -m-o-d-e-r-n- -w-e-b-"-,-
+- - - - -"-q-u-i-c-k-L-i-n-k-s-"-:- -"-Q-u-i-c-k- -L-i-n-k-s-"-,-
+- - - - -"-c-o-n-n-e-c-t-"-:- -"-C-o-n-n-e-c-t-"-,-
+- - - - -"-r-i-g-h-t-s-"-:- -"-A-l-l- -r-i-g-h-t-s- -r-e-s-e-r-v-e-d-"-,-
+- - - - -"-b-a-c-k-T-o-T-o-p-"-:- -"-B-a-c-k- -t-o- -T-o-p-"-
+- - -}-
+-}-

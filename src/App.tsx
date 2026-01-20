@@ -23,10 +23,10 @@ function App() {
   const { t } = useLanguage();
 
   const SECTIONS = useMemo(() => [
-    { id: 'hero', label: `✨ ${t?.nav?.home || 'Početak'}` },
-    { id: 'skills', label: `🛠️ ${t?.nav?.skills || 'Veštine'}` },
-    { id: 'portfolio', label: `🚀 ${t?.nav?.projects || 'Projekti'}` },
-    { id: 'contact', label: `📬 ${t?.nav?.contact || 'Kontakt'}` },
+    { id: 'hero', label: t?.nav?.home || 'Početak' },
+    { id: 'skills', label: t?.nav?.skills || 'Veštine' },
+    { id: 'portfolio', label: t?.nav?.projects || 'Projekti' },
+    { id: 'contact', label: t?.nav?.contact || 'Kontakt' },
   ], [t]);
 
   useEffect(() => {
@@ -94,7 +94,7 @@ function App() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-slate-950 text-white overflow-x-hidden">
+    <div className="relative min-h-screen bg-slate-950 text-white overflow-x-hidden selection:bg-cyan-500/30 selection:text-white">
       <BackgroundCanvas />
 
       <Nav sections={SECTIONS} activeSection={activeSection} onNavigate={handleNavigate} />
@@ -107,7 +107,7 @@ function App() {
         <Footer />
       </main>
 
-      <div className="fixed bottom-8 right-8 z-50 hidden flex-col gap-2 md:flex">
+      <div className="fixed right-10 top-1/2 -translate-y-1/2 z-50 hidden flex-col gap-5 lg:flex">
         {SECTIONS.map((section) => {
           const isActive = activeSection === section.id;
           return (
@@ -115,12 +115,16 @@ function App() {
               key={section.id}
               type="button"
               onClick={() => handleNavigate(section.id)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 ${
-                isActive ? 'bg-cyan-400 w-8' : 'bg-white/20 hover:bg-white/40'
-              }`}
+              className="group relative flex items-center justify-end"
               aria-label={`Idi na sekciju ${section.label}`}
-              aria-current={isActive ? 'page' : undefined}
-            />
+            >
+              <span className={`absolute right-8 text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300 ${isActive ? 'opacity-100 translate-x-0 text-cyan-400' : 'opacity-0 translate-x-4 pointer-events-none text-slate-500'
+                }`}>
+                {section.label}
+              </span>
+              <div className={`w-1.5 h-1.5 rounded-full transition-all duration-500 ${isActive ? 'bg-cyan-400 scale-[2] shadow-[0_0_15px_rgba(34,211,238,0.8)]' : 'bg-white/10 group-hover:bg-white/40'
+                }`} />
+            </button>
           );
         })}
       </div>

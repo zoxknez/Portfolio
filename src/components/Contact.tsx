@@ -1,4 +1,5 @@
-import { Mail, Github, Phone, MessageCircle, Send } from 'lucide-react';
+import { Mail, Github, Phone, MessageCircle, Send, CheckCircle2, AlertCircle } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useState, FormEvent } from 'react';
 import emailjs from '@emailjs/browser';
@@ -17,182 +18,229 @@ export default function Contact({ sectionId }: ContactProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.15 }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } as any }
+  };
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
     try {
-      // EmailJS configuration - replace with your actual keys
       const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
       const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
       const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 
       if (!PUBLIC_KEY || !SERVICE_ID || !TEMPLATE_ID) {
-        console.warn('EmailJS not configured. Please add credentials to .env file');
-        // Fallback to mailto for now
         window.location.href = `mailto:zoxknez@hotmail.com?subject=Portfolio Contact from ${formData.name}&body=${formData.message}`;
         setSubmitStatus('success');
         return;
       }
 
-      await emailjs.send(
-        SERVICE_ID,
-        TEMPLATE_ID,
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message,
-          to_email: 'zoxknez@hotmail.com',
-        },
-        PUBLIC_KEY
-      );
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        to_email: 'zoxknez@hotmail.com',
+      }, PUBLIC_KEY);
 
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
-      console.error('Email sending failed:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
       setTimeout(() => setSubmitStatus('idle'), 5000);
     }
   };
+
   return (
-    <section
-      id={sectionId}
-      className="min-h-screen md:min-h-0 flex items-center justify-center px-4 md:px-6 py-16 md:py-20"
-    >
-      <div className="max-w-4xl w-full">
-        <div className="relative mb-10 md:mb-16">
-          <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-blue-500/15 to-purple-500/20 blur-3xl -z-10" />
-          <div className="relative p-6 md:p-10 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-2xl text-center shadow-[0_30px_90px_-45px_rgba(14,165,233,0.45)]">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent pb-2">
-              {t?.contact?.heading || 'Kontaktiraj Me'}
-            </h2>
-            <p className="text-base md:text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto">
-              {t?.contact?.intro}
-            </p>
-          </div>
+    <section id={sectionId} className="min-h-screen px-4 md:px-6 py-24 md:py-32 relative overflow-hidden">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(168,85,247,0.05)_0%,transparent_70%)] pointer-events-none" />
+
+      <div className="max-w-6xl w-full mx-auto relative z-10">
+        <div className="text-center space-y-4 mb-20">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-5xl md:text-7xl font-black bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent"
+          >
+            {t?.contact?.heading || 'Kontaktiraj Me'}
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed"
+          >
+            {t?.contact?.intro}
+          </motion.p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-[1.15fr_1fr] gap-6 md:gap-10 items-stretch">
-          <div className="flex flex-col gap-4 md:gap-6 h-full">
-            <div className="group p-5 md:p-8 rounded-3xl bg-gradient-to-br from-white/10 to-white/[0.02] backdrop-blur-2xl border border-white/10 hover:border-cyan-400/50 transition-all duration-300 shadow-[0_20px_70px_-40px_rgba(34,211,238,0.6)] min-h-[120px] md:min-h-[150px] flex items-center hover:scale-[1.02] hover:shadow-[0_25px_80px_-35px_rgba(34,211,238,0.8)]">
-              <div className="flex items-center gap-4 md:gap-5 w-full">
-                <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-[0_15px_35px_-20px_rgba(6,182,212,0.9)] group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
-                  <Mail className="w-6 h-6 md:w-7 md:h-7" />
-                </div>
-                <div className="space-y-1">
-                  <div className="text-xs md:text-sm uppercase tracking-[0.15em] md:tracking-[0.2em] text-gray-400">{t?.contact?.emailLabel || 'Email'}</div>
-                  <a href="mailto:zoxknez@hotmail.com" className="text-base md:text-xl font-semibold text-white hover:text-cyan-300 transition-colors break-all">
-                    {t?.contact?.emailValue || 'zoxknez@hotmail.com'}
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="group p-5 md:p-8 rounded-3xl bg-gradient-to-br from-white/10 to-white/[0.02] backdrop-blur-2xl border border-white/10 hover:border-blue-400/60 transition-all duration-300 shadow-[0_20px_70px_-40px_rgba(59,130,246,0.6)] min-h-[120px] md:min-h-[150px] flex items-center hover:scale-[1.02] hover:shadow-[0_25px_80px_-35px_rgba(59,130,246,0.8)]">
-              <div className="flex items-center gap-4 md:gap-5 w-full">
-                <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-[0_15px_35px_-20px_rgba(37,99,235,0.9)] group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
-                  <Github className="w-6 h-6 md:w-7 md:h-7" />
-                </div>
-                <div className="space-y-1">
-                  <div className="text-xs md:text-sm uppercase tracking-[0.15em] md:tracking-[0.2em] text-gray-400">{t?.contact?.githubLabel || 'GitHub'}</div>
-                  <a
-                    href="https://github.com/zoxknez"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-base md:text-xl font-semibold text-white hover:text-cyan-300 transition-colors"
-                  >
-                    {t?.contact?.githubValue || 'github.com/zoxknez'}
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="group p-5 md:p-8 rounded-3xl bg-gradient-to-br from-white/10 to-white/[0.02] backdrop-blur-2xl border border-white/10 hover:border-green-400/60 transition-all duration-300 shadow-[0_20px_70px_-40px_rgba(34,197,94,0.6)] min-h-[120px] md:min-h-[150px] flex items-center hover:scale-[1.02] hover:shadow-[0_25px_80px_-35px_rgba(34,197,94,0.8)]">
-              <div className="flex items-center gap-4 md:gap-5 w-full">
-                <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-[0_15px_35px_-20px_rgba(34,197,94,0.9)] group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
-                  <Phone className="w-6 h-6 md:w-7 md:h-7" />
-                </div>
-                <div className="space-y-1 flex-1">
-                  <div className="text-xs md:text-sm uppercase tracking-[0.15em] md:tracking-[0.2em] text-gray-400">{t?.contact?.phoneLabel || 'Telefon'}</div>
-                  <a
-                    href="tel:+381600494451"
-                    className="text-base md:text-xl font-semibold text-white hover:text-cyan-300 transition-colors block"
-                  >
-                    {t?.contact?.phoneValue || '+381 60 049 4451'}
-                  </a>
-                  <div className="flex gap-2 pt-2">
-                    <a
-                      href="https://wa.me/381600494451"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-green-500/20 border border-green-400/40 text-green-300 hover:bg-green-500/30 transition-colors text-xs font-medium"
-                    >
-                      <MessageCircle className="w-3 h-3" />
-                      WhatsApp
+
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start"
+        >
+          {/* Contact Info */}
+          <div className="space-y-6">
+            {[
+              {
+                icon: Mail,
+                label: t?.contact?.emailLabel || 'Email',
+                value: t?.contact?.emailValue || 'zoxknez@hotmail.com',
+                href: 'mailto:zoxknez@hotmail.com',
+                color: 'from-cyan-500 to-blue-600'
+              },
+              {
+                icon: Github,
+                label: t?.contact?.githubLabel || 'GitHub',
+                value: t?.contact?.githubValue || 'github.com/zoxknez',
+                href: 'https://github.com/zoxknez',
+                color: 'from-blue-500 to-indigo-600'
+              },
+              {
+                icon: Phone,
+                label: t?.contact?.phoneLabel || 'Telefon',
+                value: t?.contact?.phoneValue || '+381 60 049 4451',
+                href: 'tel:+381600494451',
+                color: 'from-emerald-500 to-teal-600',
+                isPhone: true
+              }
+            ].map((item, idx) => (
+              <motion.div
+                key={idx}
+                variants={itemVariants}
+                whileHover={{ x: 10 }}
+                className="group p-8 rounded-[2rem] border border-white/5 bg-white/[0.02] backdrop-blur-3xl hover:border-white/20 transition-all duration-300"
+              >
+                <div className="flex items-center gap-6">
+                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-transform duration-500`}>
+                    <item.icon className="w-7 h-7 text-white" />
+                  </div>
+                  <div className="space-y-1">
+                    <span className="text-xs font-black uppercase tracking-[0.2em] text-slate-500">{item.label}</span>
+                    <a href={item.href} className="text-xl font-bold text-white hover:text-cyan-400 transition-colors block break-all">
+                      {item.value}
                     </a>
-                    <a
-                      href="viber://chat?number=381600494451"
-                      className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-purple-500/20 border border-purple-400/40 text-purple-300 hover:bg-purple-500/30 transition-colors text-xs font-medium"
-                    >
-                      <Send className="w-3 h-3" />
-                      Viber
-                    </a>
+                    {item.isPhone && (
+                      <div className="flex gap-4 pt-4">
+                        <a href="https://wa.me/381600494451" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-emerald-400 hover:text-emerald-300">
+                          <MessageCircle className="w-4 h-4" /> WhatsApp
+                        </a>
+                        <a href="viber://chat?number=381600494451" className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-purple-400 hover:text-purple-300">
+                          <Send className="w-4 h-4" /> Viber
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Contact Form */}
+          <motion.div
+            variants={itemVariants}
+            className="p-10 rounded-[2.5rem] border border-white/10 bg-white/[0.03] backdrop-blur-3xl relative overflow-hidden"
+          >
+            <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/5 blur-[100px] -z-10" />
+
+            <h3 className="text-3xl font-black text-white uppercase tracking-tight mb-8">
+              {t?.contact?.form?.sendMessage || 'Pošalji Poruku'}
+            </h3>
+
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="space-y-2">
+                <input
+                  type="text"
+                  placeholder={t?.contact?.form?.name || 'Tvoje Ime'}
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  required
+                  className="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 text-white placeholder:text-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-4 focus:ring-cyan-400/10 transition-all font-medium"
+                />
               </div>
-            </div>
-          </div>
-          <div className="p-6 md:p-8 rounded-2xl bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 hover:border-cyan-400/30 transition-all duration-500">
-            <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">{t?.contact?.form?.sendMessage || 'Pošalji Poruku'}</h3>
-            <form onSubmit={handleSubmit} className="space-y-3 md:space-y-4">
-              <input
-                type="text"
-                placeholder={t?.contact?.form?.name || 'Tvoje Ime'}
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                required
-                className="w-full px-3 md:px-4 py-2 md:py-3 rounded-xl bg-white/5 border border-white/10 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/20 transition-all placeholder:text-gray-500 text-sm md:text-base hover:border-white/20"
-              />
-              <input
-                type="email"
-                placeholder={t?.contact?.form?.email || 'Email'}
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                required
-                className="w-full px-3 md:px-4 py-2 md:py-3 rounded-xl bg-white/5 border border-white/10 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/20 transition-all placeholder:text-gray-500 text-sm md:text-base hover:border-white/20"
-              />
-              <textarea
-                placeholder={t?.contact?.form?.message || 'Poruka'}
-                rows={4}
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                required
-                className="w-full px-3 md:px-4 py-2 md:py-3 rounded-xl bg-white/5 border border-white/10 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/20 transition-all placeholder:text-gray-500 resize-none text-sm md:text-base hover:border-white/20"
-              />
-              
-              {submitStatus === 'success' && (
-                <div className="p-3 rounded-lg bg-green-500/20 border border-green-400/40 text-green-300 text-sm text-center animate-[slideIn_0.3s_ease-out] shadow-lg shadow-green-500/20">
-                  <span className="inline-block animate-[bounce_0.5s_ease-in-out]">✓</span> {t?.contact?.form?.success || 'Poruka uspešno poslata!'}
-                </div>
-              )}
-              
-              {submitStatus === 'error' && (
-                <div className="p-3 rounded-lg bg-red-500/20 border border-red-400/40 text-red-300 text-sm text-center animate-[shake_0.5s_ease-in-out] shadow-lg shadow-red-500/20">
-                  <span className="inline-block">✗</span> {t?.contact?.form?.error || 'Greška prilikom slanja. Pokušajte ponovo.'}
-                </div>
-              )}
-              
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full py-2.5 md:py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 transform hover:scale-[1.02] text-sm md:text-base disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {isSubmitting ? (t?.contact?.form?.sending || 'Šaljem...') : (t?.contact?.form?.submit || 'Pošalji Poruku')}
-              </button>
+              <div className="space-y-2">
+                <input
+                  type="email"
+                  placeholder={t?.contact?.form?.email || 'Email'}
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  required
+                  className="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 text-white placeholder:text-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-4 focus:ring-cyan-400/10 transition-all font-medium"
+                />
+              </div>
+              <div className="space-y-2">
+                <textarea
+                  placeholder={t?.contact?.form?.message || 'Poruka'}
+                  rows={5}
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  required
+                  className="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 text-white placeholder:text-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-4 focus:ring-cyan-400/10 transition-all resize-none font-medium"
+                />
+              </div>
+
+              <AnimatePresence mode="wait">
+                {submitStatus === 'success' ? (
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    className="p-6 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center gap-4"
+                  >
+                    <CheckCircle2 className="w-6 h-6 text-emerald-400" />
+                    <span className="text-emerald-400 font-bold uppercase tracking-widest text-xs">
+                      {t?.contact?.form?.success || 'Poruka poslata!'}
+                    </span>
+                  </motion.div>
+                ) : submitStatus === 'error' ? (
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    className="p-6 rounded-2xl bg-rose-500/10 border border-rose-500/20 flex items-center gap-4"
+                  >
+                    <AlertCircle className="w-6 h-6 text-rose-400" />
+                    <span className="text-rose-400 font-bold uppercase tracking-widest text-xs">
+                      {t?.contact?.form?.error || 'Greška pri slanju.'}
+                    </span>
+                  </motion.div>
+                ) : (
+                  <motion.button
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    type="submit"
+                    disabled={isSubmitting}
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="w-full py-5 rounded-2xl bg-white text-slate-950 font-black uppercase tracking-widest shadow-2xl disabled:opacity-50 flex items-center justify-center gap-3 transition-all"
+                  >
+                    {isSubmitting ? t?.contact?.form?.sending || 'Šaljem...' : (
+                      <>
+                        {t?.contact?.form?.submit || 'Pošalji Poruku'}
+                        <Send className="w-4 h-4" />
+                      </>
+                    )}
+                  </motion.button>
+                )}
+              </AnimatePresence>
             </form>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
