@@ -230,7 +230,7 @@
   },
   "projects": {
     "heading": "Portfolio",
-    "intro": "Svaki projekat u nastavku je rezultat mog samostalnog rada, gde svako rešenje razvijam od nule — od dizajna baze podataka do finalnog korisničkog interfejsa. Fokusiran sam na kreiranje autentičnih platformi koje rešavaju realne poslovne izazove.",
+    "intro": "Svaki projekat u nastavku je rezultat mog samostalnog rada, gde svako rešenje razvijam od nule - od dizajna baze podataka do finalnog korisničkog interfejsa. Fokusiran sam na kreiranje autentičnih platformi koje rešavaju realne poslovne izazove.",
     "banner": {
       "message": "Ovo je samo mali deo mojih projekata. Iza sebe imam i par kompletnih platformi koje sam razvio od nule. Ako ste zainteresovani za više informacija o tim rešenjima, slobodno me kontaktirajte.",
       "cta": "Saznaj više"
@@ -377,7 +377,7 @@
         "id": "pumpaj",
         "category": "MULTI PLATFORM",
         "title": "Pumpaj Video Downloader",
-        "description": "Video downloader koji sam orkestrirao kombinujući Next.js klijent, Express API i Electron shell uz pomoć AI pair‑programminga. Pokriva 100+ platformi i prikazuje progres u realnom vremenu.",
+        "description": "Video downloader koji sam orkestrirao kombinujući Next.js klijent, Express API i Electron shell uz pomoć AI pair-programminga. Pokriva 100+ platformi i prikazuje progres u realnom vremenu.",
         "stack": [
           "Next.js",
           "Express",
@@ -700,7 +700,7 @@
   },
   "contact": {
     "heading": "Kontaktiraj Me",
-    "intro": "Otvoren sam za saradnju, konsultacije i kreativne razgovore. Ako imaš ideju koju želiš da pretvorimo u rešenje uz AI i timski pristup, javi mi se preko email‑a, telefona ili društvenih mreža.",
+    "intro": "Otvoren sam za saradnju, konsultacije i kreativne razgovore. Ako imaš ideju koju želiš da pretvorimo u rešenje uz AI i timski pristup, javi mi se preko email-a, telefona ili društvenih mreža.",
     "emailLabel": "Email",
     "emailValue": "zoxknez@hotmail.com",
     "githubLabel": "GitHub profil",

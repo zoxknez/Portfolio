@@ -9,7 +9,7 @@
     "sr": "SR",
     "en": "EN"
   },
-  "intro": "I'm open to collaboration, consulting, and creative discussions. If you have an idea to turn into a solution with AI and a team‑driven approach, reach out via email, phone, or social.",
+  "intro": "I'm open to collaboration, consulting, and creative discussions. If you have an idea to turn into a solution with AI and a team-driven approach, reach out via email, phone, or social.",
   "hero": {
     "heading": "Who am I?",
     "name": "Zoran Knežević",
@@ -231,7 +231,7 @@
   },
   "projects": {
     "heading": "Portfolio",
-    "intro": "Every project below is the result of my independent work, where I develop each solution from scratch — from database design to the final user interface. I focus on creating authentic platforms that solve real business challenges.",
+    "intro": "Every project below is the result of my independent work, where I develop each solution from scratch - from database design to the final user interface. I focus on creating authentic platforms that solve real business challenges.",
     "banner": {
       "message": "This is just a small sample of my projects. I also have several complete platforms built from scratch. If you're interested in learning more about these solutions, feel free to contact me.",
       "cta": "Learn more"
@@ -451,7 +451,7 @@
         "id": "efina",
         "category": "FINTECH",
         "title": "eFina",
-        "description": "Fintech solution for the Croatian market: e‑invoices, fiscalization, and a cash‑flow dashboard. I led product discovery and integrations while AI agents covered repetitive code.",
+        "description": "Fintech solution for the Croatian market: e-invoices, fiscalization, and a cash-flow dashboard. I led product discovery and integrations while AI agents covered repetitive code.",
         "stack": [
           "Next.js",
           "TypeScript",
@@ -701,7 +701,7 @@
   },
   "contact": {
     "heading": "Contact Me",
-    "intro": "I’m open to collaboration, consulting, and brainstorming. If you have an idea to turn into a solution with AI and a team‑driven approach, reach out via email, phone, or social.",
+    "intro": "I’m open to collaboration, consulting, and brainstorming. If you have an idea to turn into a solution with AI and a team-driven approach, reach out via email, phone, or social.",
     "emailLabel": "Email",
     "emailValue": "zoxknez@hotmail.com",
     "githubLabel": "GitHub",
