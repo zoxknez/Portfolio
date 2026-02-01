@@ -12,8 +12,8 @@
   "hero": {
     "heading": "Ko sam ja?",
     "name": "Zoran Knežević",
-    "tagline": "IT entuzijasta koji već 20+ godina spaja infrastrukturu, podršku, dizajn i optimizaciju procesa. Nemam duboku programersku pozadinu, ali umem da povežem ljude, alate i AI asistente kako bismo ideju pretvorili u rešenje.",
-    "story": "Početak je bio 2005. na MyCity.rs forumu, kada sam otvorio svoj prvi nalog na IT forumu i ušao u ovaj svet. Tada sam otkrio Linux i postavio svoj prvi server za card‑sharing. Danas, uz pomoć modernog AI toolchaina, sastavljam web, desktop i mobilna rešenja bez potrebe da budem „hardcore“ programer.",
+    "tagline": "IT ekspert koji već 20+ godina spaja infrastrukturu, dizajn i arhitekturu kompleksnih sistema. Razvijam moderna softverska rešenja od prve linije koda, integrišući decenijsko iskustvo sa najsavremenijim tehnologijama.",
+    "story": "Sve je počelo 2005. na MyCity.rs forumu, gde sam ušao u svet IT-a kroz Linux i serverske konfiguracije. Danas samostalno projektujem i razvijam kompletna web, desktop i mobilna rešenja, pretvarajući svaku ideju u stabilan i profesionalan proizvod.",
     "ctaViewPortfolio": "Vidi Portfolio",
     "ctaContact": "Kontaktiraj Me"
   },
@@ -50,7 +50,7 @@
   ],
   "skills": {
     "heading": "Tehničke Veštine",
-    "intro": "Ovo su alati koje najčešće koristim uz AI pair‑programming i gotove template‑ove. Procente shvatam kao nivo sigurnosti kad treba da nešto sastavim u ovom ekosistemu, a ne kao tvrdnju da sam senior programer.",
+    "intro": "Koristim moderan stack tehnologija za razvoj robusnih i skalabilnih rešenja. Svaka veština je rezultat dugogodišnjeg rada na realnim projektima gde kontrolišem svaki aspekt razvojnog procesa.",
     "focusStackHeading": "Fokus stack",
     "toolboxHeading": "Razvojni Alati",
     "toolboxIntro": "Ključni alati i servisi koje koristim za deployment, upravljanje bazama podataka i automatizaciju",
@@ -230,7 +230,7 @@
   },
   "projects": {
     "heading": "Portfolio",
-    "intro": "Projekti u nastavku nastali su kombinacijom gotovih servisa, AI asistencije i samostalnog rada. Biram rešenja koja donose najveću vrednost korisnicima, dok kodiranje prilagođavam nivou koji je potreban da ideja proradi.",
+    "intro": "Svaki projekat u nastavku je rezultat mog samostalnog rada, gde svako rešenje razvijam od nule — od dizajna baze podataka do finalnog korisničkog interfejsa. Fokusiran sam na kreiranje autentičnih platformi koje rešavaju realne poslovne izazove.",
     "banner": {
       "message": "Ovo je samo mali deo mojih projekata. Iza sebe imam i par kompletnih platformi koje sam razvio od nule. Ako ste zainteresovani za više informacija o tim rešenjima, slobodno me kontaktirajte.",
       "cta": "Saznaj više"

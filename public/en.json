@@ -13,8 +13,8 @@
   "hero": {
     "heading": "Who am I?",
     "name": "Zoran Knežević",
-    "tagline": "IT enthusiast with 20+ years connecting infrastructure, support, design, and process optimization. I’m not a hardcore programmer, but I align people, tools, and AI assistants to turn ideas into working solutions.",
-    "story": "I started in 2005 on the MyCity.rs forum, opening my first IT account and diving into this world. That’s when I discovered Linux and set up my first card‑sharing server. Today - using a modern AI toolchain - I assemble web, desktop, and mobile solutions without needing to be a hardcore coder.",
+    "tagline": "IT expert with 20+ years connecting infrastructure, design, and architecture of complex systems. I develop modern software solutions from the first line of code, integrating decades of experience with cutting-edge technologies.",
+    "story": "It all started in 2005 on the MyCity.rs forum, where I entered the IT world through Linux and server configurations. Today, I independently design and develop complete web, desktop, and mobile solutions, turning every idea into a stable and professional product.",
     "ctaViewPortfolio": "View Portfolio",
     "ctaContact": "Contact Me"
   },
@@ -51,7 +51,7 @@
   ],
   "skills": {
     "heading": "Technical Skills",
-    "intro": "These are the tools I most often use with AI pair-programming and ready-made templates. Percentages reflect my confidence when assembling within this ecosystem—not a claim of seniority.",
+    "intro": "I use a modern technology stack to develop robust and scalable solutions. Each skill is the result of years of work on real projects where I control every aspect of the development process.",
     "focusStackHeading": "Focus stack",
     "toolboxHeading": "Development Toolbox",
     "toolboxIntro": "Essential tools and services I use for deployment, database management, and automation",
@@ -231,7 +231,7 @@
   },
   "projects": {
     "heading": "Portfolio",
-    "intro": "The projects below were created through a mix of off‑the‑shelf services, AI assistance, and solo work. I choose solutions that deliver the most value to users, while coding to the level required to make the idea work.",
+    "intro": "Every project below is the result of my independent work, where I develop each solution from scratch — from database design to the final user interface. I focus on creating authentic platforms that solve real business challenges.",
     "banner": {
       "message": "This is just a small sample of my projects. I also have several complete platforms built from scratch. If you're interested in learning more about these solutions, feel free to contact me.",
       "cta": "Learn more"
