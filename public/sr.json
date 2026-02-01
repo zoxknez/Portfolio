@@ -416,7 +416,7 @@
         "id": "pdf-scraper",
         "category": "DATA TOOL",
         "title": "PDF Skrejper",
-        "description": "Open‑source alat za indeksiranje PDF dokumenata — vodio sam koncept, automatizaciju i orkestraciju, uz pomoć AI asistenata za scrape rutine i lokalizovani UI.",
+        "description": "Open-source alat za indeksiranje PDF dokumenata - vodio sam koncept, automatizaciju i orkestraciju, uz pomoć AI asistenata za scrape rutine i lokalizovani UI.",
         "stack": [
           "Python",
           "Flask",
@@ -433,7 +433,7 @@
         "id": "mma-balkan",
         "category": "COMMUNITY",
         "title": "MMA Balkan",
-        "description": "Regionalni hub za MMA zajednicu sa vestima, eventima i korporativnim partnerstvima. Moja uloga: arhitektura, automatizovani ingest pipeline‑ovi i AI podrška za sadržaj.",
+        "description": "Regionalni hub za MMA zajednicu sa vestima, eventima i korporativnim partnerstvima. Moja uloga: arhitektura, automatizovani ingest pipeline-ovi i AI podrška za sadržaj.",
         "stack": [
           "Next.js",
           "Supabase",
@@ -450,7 +450,7 @@
         "id": "efina",
         "category": "FINTECH",
         "title": "eFina",
-        "description": "Fintech rešenje za hrvatsko tržište: e‑računi, fiskalizacija i cashflow dashboard. Vodio sam product discovery i integracije, dok AI agenti pokrivaju repetitivni kod.",
+        "description": "Fintech rešenje za hrvatsko tržište: e-računi, fiskalizacija i cashflow dashboard. Vodio sam product discovery i integracije, dok AI agenti pokrivaju repetitivni kod.",
         "stack": [
           "Next.js",
           "TypeScript",

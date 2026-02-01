@@ -378,7 +378,7 @@
         "id": "pumpaj",
         "category": "MULTI PLATFORM",
         "title": "Pumpaj Video Downloader",
-        "description": "Video downloader orchestrated by combining a Next.js client, Express API, and Electron shell with AI pair‑programming. Supports 100+ platforms and shows real‑time progress.",
+        "description": "Video downloader orchestrated by combining a Next.js client, Express API, and Electron shell with AI pair-programming. Supports 100+ platforms and shows real-time progress.",
         "stack": [
           "Next.js",
           "Express",
@@ -397,7 +397,7 @@
         "id": "sef-efakture",
         "category": "ENTERPRISE",
         "title": "SEF eInvoices",
-        "description": "Complete e‑invoicing system for the Serbian SEF. Solo project where I handle architecture, integrations, QA, and coding with AI assistance (dashboard, UBL 2.1, API, webhooks, audit trail).",
+        "description": "Complete e-invoicing system for the Serbian SEF. Solo project where I handle architecture, integrations, QA, and coding with AI assistance (dashboard, UBL 2.1, API, webhooks, audit trail),",
         "stack": [
           "React",
           "Node.js",
@@ -417,7 +417,7 @@
         "id": "pdf-scraper",
         "category": "DATA TOOL",
         "title": "PDF Scraper",
-        "description": "Open‑source tool for indexing PDF documents—led concept, automation, and orchestration, with AI assistants helping on scrape routines and localized UI.",
+        "description": "Open-source tool for indexing PDF documents-led concept, automation, and orchestration, with AI assistants helping on scrape routines and localized UI.",
         "stack": [
           "Python",
           "Flask",
@@ -434,7 +434,7 @@
         "id": "mma-balkan",
         "category": "COMMUNITY",
         "title": "MMA Balkan",
-        "description": "Regional hub for the MMA community with news, events, and corporate partnerships. My role: architecture, automated ingest pipelines, and AI‑supported content.",
+        "description": "Regional hub for the MMA community with news, events, and corporate partnerships. My role: architecture, automated ingest pipelines, and AI-supported content.",
         "stack": [
           "Next.js",
           "Supabase",
@@ -551,7 +551,7 @@
         "id": "filmovi",
         "category": "MEDIA HUB",
         "title": "Filmovi & Serije",
-        "description": "Curated catalogue of movies and TV shows with genre-based recommendations, watchlist support, and detailed content cards—ideal for discovering new titles and sharing picks.",
+        "description": "Curated catalogue of movies and TV shows with genre-based recommendations, watchlist support, and detailed content cards-ideal for discovering new titles and sharing picks.",
         "stack": [
           "React",
           "TypeScript",
