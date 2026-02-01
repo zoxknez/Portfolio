@@ -279,7 +279,7 @@
         "id": "nemacki-jezik",
         "category": "LANGUAGE LEARNING",
         "title": "Platforma za učenje Nemačkog jezika",
-        "description": "Kompleksna platforma za učenje nemačkog jezika sa interaktivnim lekcijama, vežbama, testovima i praćenjem napretka. Uključuje personalizovane kurseve, sistem ocenjivanja, AI tutora, sistem dostignuća, rang listu i detaljnu analitiku učenja.",
+        "description": "Kompleksna platforma za učenje nemačkog jezika sa interaktivnim lekcijama, vežbama, testovima i praćenjem napretka. Uključuje personalizovane kurseve, sistem ocenjivanja, interaktivnog digitalnog tutora, sistem dostignuća, rang listu i detaljnu analitiku učenja.",
         "stack": [
           "Next.js",
           "TypeScript",
@@ -305,7 +305,7 @@
         "id": "racuni",
         "category": "PWA",
         "title": "Računi",
-        "description": "Offline-first PWA za skeniranje fiskalnih računa, čuvanje garancija i praćenje kućnih troškova. Vodim produkt viziju, Supabase sinhronizaciju i AI podržan OCR/analitičke tokove.",
+        "description": "Offline-first PWA za skeniranje fiskalnih računa, čuvanje garancija i praćenje kućnih troškova. Vodim produkt viziju, Supabase sinhronizaciju i napredne OCR/analitičke tokove.",
         "stack": [
           "React",
           "TypeScript",
@@ -331,7 +331,7 @@
         "id": "osnovci",
         "category": "EDTECH",
         "title": "Osnovci",
-        "description": "Holistička platforma za osnovce koja spaja adaptivne lekcije, roditeljske panele i AI mentora. Gradim višetemantski nastavni CMS, automatizaciju učionica u realnom vremenu i analitiku napretka.",
+        "description": "Holistička platforma za osnovce koja spaja adaptivne lekcije, roditeljske panele i digitalnog mentora. Gradim višetemantski nastavni CMS, automatizaciju učionica u realnom vremenu i analitiku napretka.",
         "stack": [
           "Next.js",
           "TypeScript",
@@ -719,7 +719,7 @@
     }
   },
   "footer": {
-    "tagline": "AI-first Digital Maker koji gradi rešenja za moderan web",
+    "tagline": "Full-stack Developer koji gradi rešenja za moderan web",
     "quickLinks": "Brzi Linkovi",
     "connect": "Poveži se",
     "rights": "Sva prava zadržana",

@@ -9,7 +9,7 @@
     "sr": "SR",
     "en": "EN"
   },
-  "intro": "I'm open to collaboration, consulting, and creative discussions. If you have an idea to turn into a solution with AI and a team-driven approach, reach out via email, phone, or social.",
+  "intro": "I'm open to collaboration, consulting, and creative discussions. If you have an idea to turn into a solution, reach out via email, phone, or social.",
   "hero": {
     "heading": "Who am I?",
     "name": "Zoran Knežević",
@@ -280,7 +280,7 @@
         "id": "nemacki-jezik",
         "category": "LANGUAGE LEARNING",
         "title": "German Language Learning Platform",
-        "description": "Comprehensive platform for learning German language with interactive lessons, exercises, tests, and progress tracking. Features personalized courses, grading system, AI tutor, achievements system, leaderboard, and detailed learning analytics.",
+        "description": "Comprehensive platform for learning German language with interactive lessons, exercises, tests, and progress tracking. Features personalized courses, grading system, interactive digital tutor, achievements system, leaderboard, and detailed learning analytics.",
         "stack": [
           "Next.js",
           "TypeScript",
@@ -306,7 +306,7 @@
         "id": "racuni",
         "category": "PWA",
         "title": "Računi",
-        "description": "Offline-first PWA for scanning fiscal receipts, storing warranties, and tracking household spending. I lead the product vision, Supabase sync architecture, and AI-assisted OCR/analytics experiences.",
+        "description": "Offline-first PWA for scanning fiscal receipts, storing warranties, and tracking household spending. I lead the product vision, Supabase sync architecture, and advanced OCR/analytics experiences.",
         "stack": [
           "React",
           "TypeScript",
@@ -332,7 +332,7 @@
         "id": "osnovci",
         "category": "EDTECH",
         "title": "Osnovci",
-        "description": "Holistic learning platform for elementary students combining mastery-based lessons, parent dashboards, and AI coaching. I architect the multi-tenant curriculum CMS, real-time classroom automations, and progress analytics.",
+        "description": "Holistic learning platform for elementary students combining mastery-based lessons, parent dashboards, and digital coaching. I architect the multi-tenant curriculum CMS, real-time classroom automations, and progress analytics.",
         "stack": [
           "Next.js",
           "TypeScript",
@@ -720,7 +720,7 @@
     }
   },
   "footer": {
-    "tagline": "AI-first Digital Maker building solutions for the modern web",
+    "tagline": "Full-stack Developer building solutions for the modern web",
     "quickLinks": "Quick Links",
     "connect": "Connect",
     "rights": "All rights reserved",
