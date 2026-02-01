@@ -21,7 +21,7 @@
   "stats": {
     "years": "20+",
     "yearsLabel": "years in the IT ecosystem",
-    "solutions": "30+",
+    "solutions": "80+",
     "solutionsLabel": "solutions built independently",
     "aiFirst": "AI-first",
     "aiFirstLabel": "workflow as my edge"
@@ -232,6 +232,10 @@
   "projects": {
     "heading": "Portfolio",
     "intro": "The projects below were created through a mix of off‑the‑shelf services, AI assistance, and solo work. I choose solutions that deliver the most value to users, while coding to the level required to make the idea work.",
+    "banner": {
+      "message": "This is just a small sample of my projects. I also have several complete platforms built from scratch. If you're interested in learning more about these solutions, feel free to contact me.",
+      "cta": "Learn more"
+    },
     "demoAccessLabel": "Demo access",
     "items": [
       {

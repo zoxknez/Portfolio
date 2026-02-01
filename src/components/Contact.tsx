@@ -2,7 +2,6 @@ import { Mail, Github, Phone, MessageCircle, Send, CheckCircle2, AlertCircle } f
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useState, FormEvent } from 'react';
-import emailjs from '@emailjs/browser';
 
 interface ContactProps {
   sectionId?: string;
@@ -37,26 +36,22 @@ export default function Contact({ sectionId }: ContactProps) {
     setSubmitStatus('idle');
 
     try {
-      const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-      const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-      const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-      if (!PUBLIC_KEY || !SERVICE_ID || !TEMPLATE_ID) {
-        window.location.href = `mailto:zoxknez@hotmail.com?subject=Portfolio Contact from ${formData.name}&body=${formData.message}`;
-        setSubmitStatus('success');
-        return;
+      if (!response.ok) {
+        throw new Error('Failed to send message');
       }
-
-      await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
-        from_name: formData.name,
-        from_email: formData.email,
-        message: formData.message,
-        to_email: 'zoxknez@hotmail.com',
-      }, PUBLIC_KEY);
 
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
+      console.error('Error sending message:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);

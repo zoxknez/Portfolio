@@ -20,7 +20,7 @@
   "stats": {
     "years": "20+",
     "yearsLabel": "godina u IT ekosistemu",
-    "solutions": "30+",
+    "solutions": "80+",
     "solutionsLabel": "kreiranih rešenja samostalno",
     "aiFirst": "AI-first",
     "aiFirstLabel": "workflow kao moja prednost"
@@ -231,6 +231,10 @@
   "projects": {
     "heading": "Portfolio",
     "intro": "Projekti u nastavku nastali su kombinacijom gotovih servisa, AI asistencije i samostalnog rada. Biram rešenja koja donose najveću vrednost korisnicima, dok kodiranje prilagođavam nivou koji je potreban da ideja proradi.",
+    "banner": {
+      "message": "Ovo je samo mali deo mojih projekata. Iza sebe imam i par kompletnih platformi koje sam razvio od nule. Ako ste zainteresovani za više informacija o tim rešenjima, slobodno me kontaktirajte.",
+      "cta": "Saznaj više"
+    },
     "demoAccessLabel": "Demo nalozi",
     "items": [
       {

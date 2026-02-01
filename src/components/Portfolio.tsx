@@ -239,6 +239,42 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
             );
           })}
         </motion.div>
+
+        {/* Info Banner */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+          className="mt-20 relative p-8 md:p-12 rounded-[2.5rem] border border-cyan-500/20 bg-gradient-to-br from-cyan-500/5 via-transparent to-purple-500/5 backdrop-blur-3xl overflow-hidden group"
+        >
+          <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/10 blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-cyan-500/20 transition-colors duration-700" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-500/10 blur-[100px] translate-y-1/2 -translate-x-1/2 group-hover:bg-purple-500/20 transition-colors duration-700" />
+
+          <div className="relative z-10 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center shadow-lg shrink-0">
+              <AlertCircle className="w-8 h-8 md:w-10 md:h-10 text-white" />
+            </div>
+
+            <div className="flex-1 text-center md:text-left space-y-4">
+              <p className="text-xl md:text-2xl text-slate-200 font-light leading-relaxed italic">
+                {t?.projects?.banner?.message}
+              </p>
+            </div>
+
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                contactSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="px-8 py-4 rounded-2xl bg-white text-slate-950 font-black text-sm uppercase tracking-wider shadow-xl shrink-0 hover:bg-cyan-50 transition-colors"
+            >
+              {t?.projects?.banner?.cta}
+            </motion.button>
+          </div>
+        </motion.div>
       </div>
 
       {/* Lightbox Modal */}
