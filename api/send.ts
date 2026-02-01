@@ -24,9 +24,10 @@ export default async function handler(
             return req_res.status(400).json({ error: 'Missing required fields' });
         }
 
-        console.log('Attempting to send email via Resend...');
+        // Since you don't have a verified domain, we must use onboarding@resend.dev
+        // and it will only work if the 'to' address is the email you registered with Resend.
         const { data, error } = await resend.emails.send({
-            from: 'Contact Form <onboarding@resend.dev>',
+            from: 'onboarding@resend.dev',
             to: ['zoxknez@hotmail.com'],
             subject: `Portfolio: Message from ${name}`,
             replyTo: email,
