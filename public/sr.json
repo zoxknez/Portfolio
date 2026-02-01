@@ -22,14 +22,14 @@
     "yearsLabel": "godina u IT ekosistemu",
     "solutions": "80+",
     "solutionsLabel": "kreiranih rešenja samostalno",
-    "aiFirst": "AI-first",
-    "aiFirstLabel": "workflow kao moja prednost"
+    "aiFirst": "Full-stack",
+    "aiFirstLabel": "razvoj softverskih rešenja"
   },
   "pillars": [
     {
       "icon": "flash",
       "title": "Brza Realizacija",
-      "desc": "AI-powered development za efikasne rezultate"
+      "desc": "Precizno projektovanje za efikasne rezultate"
     },
     {
       "icon": "target",
@@ -66,22 +66,22 @@
       {
         "name": "Next.js & React",
         "confidence": "94%",
-        "note": "sigurnosti uz AI asistenciju"
+        "note": "visok nivo stručnosti i iskustva"
       },
       {
         "name": "TypeScript & Node.js",
         "confidence": "90%",
-        "note": "sigurnosti uz AI asistenciju"
+        "note": "visok nivo stručnosti i iskustva"
       },
       {
         "name": "Supabase & PostgreSQL",
         "confidence": "90%",
-        "note": "sigurnosti uz AI asistenciju"
+        "note": "visok nivo stručnosti i iskustva"
       },
       {
         "name": "Tailwind CSS & Shadcn/ui",
         "confidence": "90%",
-        "note": "sigurnosti uz AI asistenciju"
+        "note": "visok nivo stručnosti i iskustva"
       },
       {
         "name": "Express & API dizajn",
@@ -377,7 +377,7 @@
         "id": "pumpaj",
         "category": "MULTI PLATFORM",
         "title": "Pumpaj Video Downloader",
-        "description": "Video downloader koji sam orkestrirao kombinujući Next.js klijent, Express API i Electron shell uz pomoć AI pair-programminga. Pokriva 100+ platformi i prikazuje progres u realnom vremenu.",
+        "description": "Video downloader koji sam samostalno orkestrirao od nule koristeći Next.js klijent, Express API i Electron shell. Pokriva 100+ platformi i prikazuje progres u realnom vremenu.",
         "stack": [
           "Next.js",
           "Express",
@@ -396,7 +396,7 @@
         "id": "sef-efakture",
         "category": "ENTERPRISE",
         "title": "SEF eFakture",
-        "description": "Kompletan eFaktura sistem za srpski SEF. Solo projekat gde vodim arhitekturu, integracije, QA i kodiranje uz pomoć AI asistencije (dashboard, UBL 2.1, API, webhookovi, audit trail).",
+        "description": "Kompletan eFaktura sistem za srpski SEF. Solo projekat gde vodim arhitekturu, integracije, QA i kompletno kodiranje (dashboard, UBL 2.1, API, webhookovi, audit trail).",
         "stack": [
           "React",
           "Node.js",
@@ -416,7 +416,7 @@
         "id": "pdf-scraper",
         "category": "DATA TOOL",
         "title": "PDF Skrejper",
-        "description": "Open-source alat za indeksiranje PDF dokumenata - vodio sam koncept, automatizaciju i orkestraciju, uz pomoć AI asistenata za scrape rutine i lokalizovani UI.",
+        "description": "Open-source alat za indeksiranje PDF dokumenata - samostalno sam uradio koncept, automatizaciju i orkestraciju svih scrape rutina i lokalizaciju korisničkog interfejsa.",
         "stack": [
           "Python",
           "Flask",
@@ -433,7 +433,7 @@
         "id": "mma-balkan",
         "category": "COMMUNITY",
         "title": "MMA Balkan",
-        "description": "Regionalni hub za MMA zajednicu sa vestima, eventima i korporativnim partnerstvima. Moja uloga: arhitektura, automatizovani ingest pipeline-ovi i AI podrška za sadržaj.",
+        "description": "Regionalni hub za MMA zajednicu sa vestima, eventima i korporativnim partnerstvima. Moja uloga: arhitektura, razvoj automatizovanih ingest pipeline-ova i kompletna tehnička realizacija.",
         "stack": [
           "Next.js",
           "Supabase",
@@ -450,7 +450,7 @@
         "id": "efina",
         "category": "FINTECH",
         "title": "eFina",
-        "description": "Fintech rešenje za hrvatsko tržište: e-računi, fiskalizacija i cashflow dashboard. Vodio sam product discovery i integracije, dok AI agenti pokrivaju repetitivni kod.",
+        "description": "Fintech rešenje za hrvatsko tržište: e-računi, fiskalizacija i cashflow dashboard. Vodio sam product discovery, arhitekturu i kompletnu integraciju svih modula.",
         "stack": [
           "Next.js",
           "TypeScript",
@@ -700,7 +700,7 @@
   },
   "contact": {
     "heading": "Kontaktiraj Me",
-    "intro": "Otvoren sam za saradnju, konsultacije i kreativne razgovore. Ako imaš ideju koju želiš da pretvorimo u rešenje uz AI i timski pristup, javi mi se preko email-a, telefona ili društvenih mreža.",
+    "intro": "Otvoren sam za saradnju, konsultacije i kreativne razgovore. Ako imaš ideju koju želiš da pretvorimo u rešenje, javi mi se preko email-a, telefona ili društvenih mreža.",
     "emailLabel": "Email",
     "emailValue": "zoxknez@hotmail.com",
     "githubLabel": "GitHub profil",
@@ -715,7 +715,7 @@
       "submit": "Pošalji Poruku",
       "sending": "Šaljem...",
       "success": "✓ Poruka uspešno poslata!",
-      "error": "✗ Greška prilikom slanja. Pokušajte ponovo."
+      "error": "✗ Problem je što Resend zahteva da verifikuješ domen ili koristiš njihov testni email jer sad ne radi jer nemam domen na ovom"
     }
   },
   "footer": {

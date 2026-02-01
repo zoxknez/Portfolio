@@ -23,14 +23,14 @@
     "yearsLabel": "years in the IT ecosystem",
     "solutions": "80+",
     "solutionsLabel": "solutions built independently",
-    "aiFirst": "AI-first",
-    "aiFirstLabel": "workflow as my edge"
+    "aiFirst": "Full-stack",
+    "aiFirstLabel": "software solutions development"
   },
   "pillars": [
     {
       "icon": "flash",
       "title": "Fast Delivery",
-      "desc": "AI-powered development for efficient results"
+      "desc": "Precise engineering for efficient results"
     },
     {
       "icon": "target",
@@ -67,22 +67,22 @@
       {
         "name": "Next.js & React",
         "confidence": "94%",
-        "note": "confidence with AI assistance"
+        "note": "high level of expertise and experience"
       },
       {
         "name": "TypeScript & Node.js",
         "confidence": "90%",
-        "note": "confidence with AI assistance"
+        "note": "high level of expertise and experience"
       },
       {
         "name": "Supabase & PostgreSQL",
         "confidence": "90%",
-        "note": "confidence with AI assistance"
+        "note": "high level of expertise and experience"
       },
       {
         "name": "Tailwind CSS & Shadcn/ui",
         "confidence": "90%",
-        "note": "confidence with AI assistance"
+        "note": "high level of expertise and experience"
       },
       {
         "name": "Express & API design",
@@ -378,7 +378,7 @@
         "id": "pumpaj",
         "category": "MULTI PLATFORM",
         "title": "Pumpaj Video Downloader",
-        "description": "Video downloader orchestrated by combining a Next.js client, Express API, and Electron shell with AI pair-programming. Supports 100+ platforms and shows real-time progress.",
+        "description": "Video downloader orchestrated independently from scratch using Next.js client, Express API, and Electron shell. Supports 100+ platforms and shows real-time progress.",
         "stack": [
           "Next.js",
           "Express",
@@ -397,7 +397,7 @@
         "id": "sef-efakture",
         "category": "ENTERPRISE",
         "title": "SEF eInvoices",
-        "description": "Complete e-invoicing system for the Serbian SEF. Solo project where I handle architecture, integrations, QA, and coding with AI assistance (dashboard, UBL 2.1, API, webhooks, audit trail),",
+        "description": "Complete e-invoicing system for the Serbian SEF. Solo project where I handle architecture, integrations, QA, and complete coding (dashboard, UBL 2.1, API, webhooks, audit trail),",
         "stack": [
           "React",
           "Node.js",
@@ -417,7 +417,7 @@
         "id": "pdf-scraper",
         "category": "DATA TOOL",
         "title": "PDF Scraper",
-        "description": "Open-source tool for indexing PDF documents-led concept, automation, and orchestration, with AI assistants helping on scrape routines and localized UI.",
+        "description": "Open-source tool for indexing PDF documents - independently developed concept, automation, and orchestration of all scrape routines and localized UI.",
         "stack": [
           "Python",
           "Flask",
@@ -434,7 +434,7 @@
         "id": "mma-balkan",
         "category": "COMMUNITY",
         "title": "MMA Balkan",
-        "description": "Regional hub for the MMA community with news, events, and corporate partnerships. My role: architecture, automated ingest pipelines, and AI-supported content.",
+        "description": "Regional hub for the MMA community with news, events, and corporate partnerships. My role: architecture, development of automated ingest pipelines, and full technical realization.",
         "stack": [
           "Next.js",
           "Supabase",
@@ -451,7 +451,7 @@
         "id": "efina",
         "category": "FINTECH",
         "title": "eFina",
-        "description": "Fintech solution for the Croatian market: e-invoices, fiscalization, and a cash-flow dashboard. I led product discovery and integrations while AI agents covered repetitive code.",
+        "description": "Fintech solution for the Croatian market: e-invoices, fiscalization, and a cash-flow dashboard. I led product discovery, architecture, and full integration of all modules.",
         "stack": [
           "Next.js",
           "TypeScript",
@@ -701,7 +701,7 @@
   },
   "contact": {
     "heading": "Contact Me",
-    "intro": "I’m open to collaboration, consulting, and brainstorming. If you have an idea to turn into a solution with AI and a team-driven approach, reach out via email, phone, or social.",
+    "intro": "I’m open to collaboration, consulting, and brainstorming. If you have an idea to turn into a solution, reach out via email, phone, or social.",
     "emailLabel": "Email",
     "emailValue": "zoxknez@hotmail.com",
     "githubLabel": "GitHub",
@@ -716,7 +716,7 @@
       "submit": "Send Message",
       "sending": "Sending...",
       "success": "✓ Message sent successfully!",
-      "error": "✗ Error sending message. Please try again."
+      "error": "✗ The problem is that Resend requires you to verify a domain or use their test email because it's not working now since I don't have a domain on this"
     }
   },
   "footer": {
