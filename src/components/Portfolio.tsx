@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, BookOpen, CircleDollarSign, Download, Dumbbell, FileSpreadsheet, FileText, Globe, ScanText, Plane, GraduationCap, AlertCircle, Users, Cloud, Car, Mail, Building2, UtensilsCrossed, Fuel, Shield, X, Languages } from 'lucide-react';
+import { ExternalLink, BookOpen, CircleDollarSign, Download, Dumbbell, FileSpreadsheet, FileText, Globe, ScanText, Plane, GraduationCap, AlertCircle, Users, Cloud, Car, Mail, Building2, UtensilsCrossed, Fuel, Shield, X, Languages, Tv, Navigation, Home, Gem } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface PortfolioProps {
@@ -56,6 +56,10 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
     'bidon': Fuel,
     'twitter-block-manager': Shield,
     'nemacki-jezik': Languages,
+    'iptv': Tv,
+    'putovanje-pro': Navigation,
+    'house-of-mirrors': Home,
+    'nakit': Gem,
   };
 
   const gradients = [

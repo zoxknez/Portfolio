@@ -695,6 +695,84 @@
         "links": {
           "repo": "Repo"
         }
+      },
+      {
+        "id": "iptv",
+        "category": "WEB APP",
+        "title": "IPTV Platforma",
+        "description": "Besplatno IPTV iskustvo sa preko 1000 kanala iz celog sveta, uključujući EX-YU regiju. Aplikacija podržava promenu jezika, pretragu kanala u realnom vremenu i personalizovanu favorit listu.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Vercel"
+        ],
+        "url": "https://iptvm3u.vercel.app",
+        "links": {
+          "live": "Otvori aplikaciju"
+        },
+        "images": [
+          "/iptv.png"
+        ]
+      },
+      {
+        "id": "putovanje-pro",
+        "category": "TRAVEL TOOL",
+        "title": "Planer Puta",
+        "description": "Sveobuhvatan planer putovanja za Balkan sa kalkulatorom udaljenosti, AI asistentom za planiranje ruta i podrškom za različite vrste vozila (automobili, motocikli, kamioni).",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Mapbox",
+          "Gemini AI"
+        ],
+        "url": "https://www.putovanje.pro",
+        "links": {
+          "live": "Otvori aplikaciju"
+        },
+        "images": [
+          "/putovanje-pro.png"
+        ]
+      },
+      {
+        "id": "house-of-mirrors",
+        "category": "REAL ESTATE",
+        "title": "Stan na Dan - House of Mirrors",
+        "description": "Premium portfolio za luksuzni apartman 'House of Mirrors' u Beogradu (4 zvezdice). Prikazuje galeriju, pogodnosti, kućni red i omogućava direktnu rezervaciju.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Framer Motion",
+          "Vercel"
+        ],
+        "url": "https://houseofmirrors-roan.vercel.app",
+        "links": {
+          "live": "Otvori aplikaciju"
+        },
+        "images": [
+          "/house-of-mirrors.png"
+        ]
+      },
+      {
+        "id": "nakit",
+        "category": "E-COMMERCE",
+        "title": "Njata Shiz - Handcrafted Jewelry",
+        "description": "Ekskluzivna platforma za ručno izrađen kožni nakit. Sadrži interaktivnu galeriju kolekcija, priču o brendu i detaljan prikaz procesa izrade.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Framer Motion"
+        ],
+        "url": "https://nakit.vercel.app/sr",
+        "links": {
+          "live": "Otvori aplikaciju"
+        },
+        "images": [
+          "/nakit.png"
+        ]
       }
     ]
   },

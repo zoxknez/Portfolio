@@ -696,6 +696,84 @@
         "links": {
           "repo": "Repo"
         }
+      },
+      {
+        "id": "iptv",
+        "category": "WEB APP",
+        "title": "IPTV Platform",
+        "description": "Free IPTV experience with over 1000 channels globally, including the EX-YU region. Features multi-language support, real-time channel search, and a personalized favorites list.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Vercel"
+        ],
+        "url": "https://iptvm3u.vercel.app",
+        "links": {
+          "live": "Open App"
+        },
+        "images": [
+          "/iptv.png"
+        ]
+      },
+      {
+        "id": "putovanje-pro",
+        "category": "TRAVEL TOOL",
+        "title": "Travel Planner",
+        "description": "A comprehensive travel planner for the Balkan region featuring a distance calculator, AI-powered route planning, and support for various vehicle types (cars, motorcycles, trucks).",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Mapbox",
+          "Gemini AI"
+        ],
+        "url": "https://www.putovanje.pro",
+        "links": {
+          "live": "Open App"
+        },
+        "images": [
+          "/putovanje-pro.png"
+        ]
+      },
+      {
+        "id": "house-of-mirrors",
+        "category": "REAL ESTATE",
+        "title": "Short-term Rental - House of Mirrors",
+        "description": "Premium portfolio for the 4-star 'House of Mirrors' luxury apartment in Belgrade. Showcases a high-end gallery, amenities, house rules, and allows direct bookings.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Framer Motion",
+          "Vercel"
+        ],
+        "url": "https://houseofmirrors-roan.vercel.app",
+        "links": {
+          "live": "Open App"
+        },
+        "images": [
+          "/house-of-mirrors.png"
+        ]
+      },
+      {
+        "id": "nakit",
+        "category": "E-COMMERCE",
+        "title": "Njata Shiz - Handcrafted Jewelry",
+        "description": "Exclusive platform for handcrafted leather jewelry. Features interactive collection galleries, brand background story, and a detailed look at the crafting process.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Framer Motion"
+        ],
+        "url": "https://nakit.vercel.app/sr",
+        "links": {
+          "live": "Open App"
+        },
+        "images": [
+          "/nakit.png"
+        ]
       }
     ]
   },

@@ -1,4 +1,4 @@
-import { CircleDollarSign, Download, Dumbbell, FileSpreadsheet, FileText, Globe, ScanText } from 'lucide-react';
+import { CircleDollarSign, Download, Dumbbell, FileSpreadsheet, FileText, Globe, ScanText, Tv, Navigation, Home, Gem } from 'lucide-react';
 
 export const portfolioProjects = [
   {
@@ -80,5 +80,45 @@ export const portfolioProjects = [
     gradient: 'from-emerald-500 via-sky-500 to-indigo-500',
     icon: CircleDollarSign,
     url: 'https://efakturahr.vercel.app/',
+  },
+  {
+    id: 'iptv',
+    title: 'IPTV Platforma',
+    description: 'Besplatno IPTV iskustvo sa preko 1000 kanala iz celog sveta, uključujući EX-YU regiju.',
+    type: 'WEB APP',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+    gradient: 'from-indigo-500 via-purple-500 to-pink-500',
+    icon: Tv,
+    url: 'https://iptvm3u.vercel.app',
+  },
+  {
+    id: 'putovanje-pro',
+    title: 'Planer Puta',
+    description: 'Sveobuhvatan planer putovanja za Balkan sa kalkulatorom udaljenosti i AI asistentom.',
+    type: 'TRAVEL TOOL',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Mapbox', 'Gemini AI'],
+    gradient: 'from-emerald-400 via-cyan-500 to-blue-600',
+    icon: Navigation,
+    url: 'https://www.putovanje.pro',
+  },
+  {
+    id: 'house-of-mirrors',
+    title: 'Stan na Dan - House of Mirrors',
+    description: 'Premium portfolio za luksuzni apartman House of Mirrors u Beogradu.',
+    type: 'REAL ESTATE',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vercel'],
+    gradient: 'from-amber-200 via-yellow-400 to-orange-500',
+    icon: Home,
+    url: 'https://houseofmirrors-roan.vercel.app',
+  },
+  {
+    id: 'nakit',
+    title: 'Njata Shiz - Handcrafted Jewelry',
+    description: 'Ekskluzivna platforma za ručno izrađen kožni nakit.',
+    type: 'E-COMMERCE',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    gradient: 'from-fuchsia-500 via-purple-600 to-indigo-700',
+    icon: Gem,
+    url: 'https://nakit.vercel.app/sr',
   },
 ];
