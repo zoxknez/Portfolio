@@ -34,7 +34,7 @@ export default function Hero({ onNavigate, isLoaded, sectionId }: HeroProps) {
   };
 
   return (
-    <section id={sectionId} className="min-h-screen flex items-center justify-center px-4 md:px-6 py-16 md:py-24 relative overflow-hidden">
+    <section id={sectionId} className="min-h-screen flex items-center justify-center px-4 md:px-6 pt-24 pb-12 md:py-24 relative overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute top-1/4 -left-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-[120px] -z-10 animate-pulse" />
       <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-purple-500/10 rounded-full blur-[120px] -z-10 animate-pulse" />

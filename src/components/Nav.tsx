@@ -14,6 +14,8 @@ export default function Nav({ sections, activeSection, onNavigate }: NavProps) {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isNavVisible, setIsNavVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,11 +25,21 @@ export default function Nav({ sections, activeSection, onNavigate }: NavProps) {
       const progress = (scrolled / documentHeight) * 100;
       setScrollProgress(progress);
       setIsScrolled(scrolled > 50);
+
+      // Hide/show navbar based on scroll direction
+      if (scrolled > lastScrollY && scrolled > 100) {
+        // Scrolling down & past threshold - hide navbar
+        setIsNavVisible(false);
+      } else {
+        // Scrolling up - show navbar
+        setIsNavVisible(true);
+      }
+      setLastScrollY(scrolled);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
   const handleClick = (event: MouseEvent<HTMLAnchorElement>, sectionId?: string) => {
     event.preventDefault();
@@ -39,8 +51,8 @@ export default function Nav({ sections, activeSection, onNavigate }: NavProps) {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'py-3 bg-slate-950/80 backdrop-blur-2xl border-b border-white/5 shadow-2xl' : 'py-6'
-        }`}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'py-2 md:py-3 bg-slate-950/95 backdrop-blur-2xl border-b border-white/5 shadow-2xl' : 'py-3 md:py-6'
+        } ${!isNavVisible && !isMobileMenuOpen ? '-translate-y-full' : 'translate-y-0'}`}>
         {/* Scroll Progress Bar */}
         <motion.div
           className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 z-[60]"
