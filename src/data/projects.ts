@@ -121,4 +121,16 @@ export const portfolioProjects = [
     icon: Gem,
     url: 'https://nakit.vercel.app/sr',
   },
+  {
+    id: 'sipka-group-spaces',
+    title: 'Sipka Group - Available Spaces',
+    description: 'Premium komercijalna i industrijska platforma za upravljanje nekretninama za iznajmljivanje širom Novog Zelanda. Sadrži interaktivne liste sa više režima prikaza, naprednu pretragu i integrisane brošure.',
+    type: 'REAL ESTATE',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+    gradient: 'from-sky-400 via-blue-500 to-indigo-600',
+    icon: Home,
+    url: 'https://sipkagroup.vercel.app/available-spaces',
+  },
 ];
+
+

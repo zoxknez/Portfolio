@@ -774,6 +774,25 @@
         "images": [
           "/nakit.png"
         ]
+      },
+      {
+        "id": "sipka-group-spaces",
+        "category": "REAL ESTATE",
+        "title": "Sipka Group - Available Spaces",
+        "description": "Premium commercial and industrial property management platform for leasing spaces across New Zealand. Features interactive property listings with multiple view modes, advanced search, and integrated property brochures.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Vercel"
+        ],
+        "url": "https://sipkagroup.vercel.app/available-spaces",
+        "links": {
+          "live": "Launch"
+        },
+        "images": [
+          "/sipkagroup.png"
+        ]
       }
     ]
   },

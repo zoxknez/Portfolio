@@ -773,6 +773,25 @@
         "images": [
           "/nakit.png"
         ]
+      },
+      {
+        "id": "sipka-group-spaces",
+        "category": "REAL ESTATE",
+        "title": "Sipka Group - Available Spaces",
+        "description": "Premium komercijalna i industrijska platforma za upravljanje nekretninama za iznajmljivanje širom Novog Zelanda. Sadrži interaktivne liste sa više režima prikaza, naprednu pretragu i integrisane brošure.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Vercel"
+        ],
+        "url": "https://sipkagroup.vercel.app/available-spaces",
+        "links": {
+          "live": "Otvori aplikaciju"
+        },
+        "images": [
+          "/sipkagroup.png"
+        ]
       }
     ]
   },

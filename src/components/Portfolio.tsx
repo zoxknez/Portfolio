@@ -52,7 +52,9 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
     'brojac-vozila': Car,
     'pisma': Mail,
     'sipka-group': Building2,
+    'sipka-group-spaces': Navigation,
     'ketering-bg': UtensilsCrossed,
+
     'bidon': Fuel,
     'twitter-block-manager': Shield,
     'nemacki-jezik': Languages,
