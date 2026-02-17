@@ -793,6 +793,26 @@
         "images": [
           "/sipkagroup.png"
         ]
+      },
+      {
+        "id": "o0o0o0o",
+        "category": "WINDOWS APP",
+        "title": "o0o0o0o - Movie & TV App",
+        "description": "Windows portable application for watching online movies/series with subtitles (if available)! 🎬🍿",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Electron"
+        ],
+        "url": "https://1drv.ms/u/c/762c62c040d0625d/IQAJNSDwBq4OTJc6LbwXt9F-AXc1hoPfoi_x_-pPpRkquic?e=IkL9iB",
+        "links": {
+          "live": "Open Application"
+        },
+        "images": [
+          "/movie-app-1.png",
+          "/movie-app-2.png"
+        ]
       }
     ]
   },

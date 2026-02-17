@@ -62,6 +62,7 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
     'putovanje-pro': Navigation,
     'house-of-mirrors': Home,
     'nakit': Gem,
+    'o0o0o0o': Tv,
   };
 
   const gradients = [

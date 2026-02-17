@@ -131,6 +131,17 @@ export const portfolioProjects = [
     icon: Home,
     url: 'https://sipkagroup.vercel.app/available-spaces',
   },
+  {
+    id: 'o0o0o0o',
+    title: 'o0o0o0o - Movie & TV App',
+    description: 'Windows portabl aplikaciju za gledanje online filmova/serija sa titlovima (ukoliko su dostupni)! 🎬🍿',
+    type: 'WINDOWS APP',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Electron'],
+    gradient: 'from-red-600 via-orange-600 to-amber-600',
+    icon: Tv,
+    url: 'https://1drv.ms/u/c/762c62c040d0625d/IQAJNSDwBq4OTJc6LbwXt9F-AXc1hoPfoi_x_-pPpRkquic?e=IkL9iB',
+    image: '/movie-app-1.png',
+  },
 ];
 
 
