@@ -1,4 +1,4 @@
-import { MouseEvent, useState, useEffect } from 'react';
+import { MouseEvent, useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Rocket, Github, Languages, Menu, X } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -15,7 +15,7 @@ export default function Nav({ sections, activeSection, onNavigate }: NavProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isNavVisible, setIsNavVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,23 +23,23 @@ export default function Nav({ sections, activeSection, onNavigate }: NavProps) {
       const documentHeight = document.documentElement.scrollHeight - windowHeight;
       const scrolled = window.scrollY;
       const progress = (scrolled / documentHeight) * 100;
+
       setScrollProgress(progress);
       setIsScrolled(scrolled > 50);
 
       // Hide/show navbar based on scroll direction
-      if (scrolled > lastScrollY && scrolled > 100) {
-        // Scrolling down & past threshold - hide navbar
+      if (scrolled > lastScrollY.current && scrolled > 100) {
         setIsNavVisible(false);
       } else {
-        // Scrolling up - show navbar
         setIsNavVisible(true);
       }
-      setLastScrollY(scrolled);
+      lastScrollY.current = scrolled;
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScrollY]);
+  // Empty deps — registers listener only once
+  }, []);
 
   const handleClick = (event: MouseEvent<HTMLAnchorElement>, sectionId?: string) => {
     event.preventDefault();
@@ -51,7 +51,7 @@ export default function Nav({ sections, activeSection, onNavigate }: NavProps) {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'py-2 md:py-3 bg-slate-950/95 backdrop-blur-2xl border-b border-white/5 shadow-2xl' : 'py-3 md:py-6'
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'py-2 md:py-3 bg-slate-950/95 backdrop-blur-md border-b border-white/5 shadow-2xl' : 'py-3 md:py-6'
         } ${!isNavVisible && !isMobileMenuOpen ? '-translate-y-full' : 'translate-y-0'}`}>
         {/* Scroll Progress Bar */}
         <motion.div

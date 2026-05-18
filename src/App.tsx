@@ -78,7 +78,7 @@ function App() {
         }
       },
       {
-        threshold: [0.25, 0.5, 0.75],
+        threshold: [0.3],
         rootMargin: '-20% 0px -20% 0px',
       }
     );

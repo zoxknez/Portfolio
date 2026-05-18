@@ -101,7 +101,7 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
   };
 
   return (
-    <section id={sectionId} className="min-h-screen px-4 md:px-6 py-24 md:py-32 relative">
+    <section id={sectionId} className="min-h-screen px-4 md:px-6 py-24 md:py-32 relative" style={{ contain: 'layout style' }}>
       <div className="absolute top-0 left-0 w-full h-full bg-grid opacity-[0.03] pointer-events-none" />
 
       <div className="max-w-7xl w-full mx-auto relative z-10">
@@ -141,7 +141,7 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
                 key={project.id}
                 variants={cardVariants}
                 whileHover={{ y: -10 }}
-                className="group relative p-8 rounded-[2.5rem] border border-white/5 bg-white/[0.02] backdrop-blur-3xl hover:border-cyan-500/30 transition-all duration-500 overflow-hidden"
+                className="group relative p-8 rounded-[2.5rem] border border-white/5 bg-white/[0.02] backdrop-blur-lg hover:border-cyan-500/30 transition-all duration-500 overflow-hidden"
               >
                 {/* Visual Enhancers */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-[0.03] transition-opacity duration-1000`} />
@@ -196,7 +196,14 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
                           onClick={() => setLightboxImage(image)}
                           className="relative aspect-video overflow-hidden rounded-2xl border border-white/5 bg-slate-900 shadow-2xl group/img"
                         >
-                          <img src={image} alt="Preview" className="w-full h-full object-cover group-hover/img:scale-110 transition-transform duration-700" />
+                          <img
+                            src={image}
+                            alt="Preview"
+                            loading="lazy"
+                            decoding="async"
+                            fetchPriority={index < 2 ? 'high' : 'low'}
+                            className="w-full h-full object-cover group-hover/img:scale-110 transition-transform duration-700"
+                          />
                           <div className="absolute inset-0 bg-cyan-500/10 opacity-0 group-hover/img:opacity-100 transition-opacity" />
                         </motion.button>
                       ))}
@@ -253,7 +260,7 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="mt-20 relative p-8 md:p-12 rounded-[2.5rem] border border-cyan-500/20 bg-gradient-to-br from-cyan-500/5 via-transparent to-purple-500/5 backdrop-blur-3xl overflow-hidden group"
+          className="mt-20 relative p-8 md:p-12 rounded-[2.5rem] border border-cyan-500/20 bg-gradient-to-br from-cyan-500/5 via-transparent to-purple-500/5 backdrop-blur-lg overflow-hidden group"
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/10 blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-cyan-500/20 transition-colors duration-700" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-500/10 blur-[100px] translate-y-1/2 -translate-x-1/2 group-hover:bg-purple-500/20 transition-colors duration-700" />
@@ -313,6 +320,8 @@ export default function Portfolio({ sectionId }: PortfolioProps) {
               <img
                 src={lightboxImage}
                 alt="Fullscreen Preview"
+                loading="lazy"
+                decoding="async"
                 className="max-w-full max-h-full object-contain rounded-[2rem] shadow-[0_0_100px_rgba(0,0,0,0.5)] border border-white/10"
               />
             </motion.div>

@@ -159,7 +159,7 @@ export default function Skills({ sectionId }: SkillsProps) {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.02, y: -5 }}
-                className="p-8 rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-2xl transition-all duration-300 group hover:border-cyan-500/50 hover:bg-white/[0.05]"
+                className="p-8 rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-md transition-all duration-300 group hover:border-cyan-500/50 hover:bg-white/[0.05]"
               >
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
                   <div className="space-y-1">
@@ -187,7 +187,7 @@ export default function Skills({ sectionId }: SkillsProps) {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="rounded-[2.5rem] border border-white/5 bg-slate-900/20 backdrop-blur-3xl overflow-hidden group"
+                className="rounded-[2.5rem] border border-white/5 bg-slate-900/20 backdrop-blur-lg overflow-hidden group"
               >
                 <button
                   onClick={() => toggleCategory(category.name)}
@@ -237,10 +237,8 @@ export default function Skills({ sectionId }: SkillsProps) {
                                   whileInView={{ width: `${percentage}%` }}
                                   viewport={{ once: true }}
                                   transition={{ duration: 1, ease: "easeOut" }}
-                                  className={`h-full bg-gradient-to-r ${colors[(catIndex + skillIndex) % colors.length]} relative`}
-                                >
-                                  <div className="absolute inset-0 bg-white/20 animate-pulse" />
-                                </motion.div>
+                                  className={`h-full bg-gradient-to-r ${colors[(catIndex + skillIndex) % colors.length]}`}
+                                />
                               </div>
                             </div>
                           );
@@ -260,7 +258,7 @@ export default function Skills({ sectionId }: SkillsProps) {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="p-10 md:p-16 rounded-[4rem] border border-white/5 bg-gradient-to-br from-white/[0.02] to-transparent backdrop-blur-3xl relative overflow-hidden"
+            className="p-10 md:p-16 rounded-[4rem] border border-white/5 bg-gradient-to-br from-white/[0.02] to-transparent backdrop-blur-lg relative overflow-hidden"
           >
             <div className="absolute inset-0 bg-grid opacity-10" />
 

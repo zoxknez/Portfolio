@@ -35,9 +35,9 @@ export default function Hero({ onNavigate, isLoaded, sectionId }: HeroProps) {
 
   return (
     <section id={sectionId} className="min-h-screen flex items-center justify-center px-4 md:px-6 pt-24 pb-12 md:py-24 relative overflow-hidden">
-      {/* Decorative Background Elements */}
-      <div className="absolute top-1/4 -left-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-[120px] -z-10 animate-pulse" />
-      <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-purple-500/10 rounded-full blur-[120px] -z-10 animate-pulse" />
+      {/* Decorative Background Elements — static, no pulse animation */}
+      <div className="absolute top-1/4 -left-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-[120px] -z-10" />
+      <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-purple-500/10 rounded-full blur-[120px] -z-10" />
 
       <motion.div
         className="w-full max-w-6xl mx-auto"
@@ -47,7 +47,7 @@ export default function Hero({ onNavigate, isLoaded, sectionId }: HeroProps) {
       >
         <div className="space-y-12 md:space-y-16">
           <div className="relative">
-            <div className="relative p-6 md:p-14 rounded-[2.5rem] border border-white/10 bg-white/5 backdrop-blur-2xl shadow-2xl overflow-hidden group">
+            <div className="relative p-6 md:p-14 rounded-[2.5rem] border border-white/10 bg-white/5 backdrop-blur-md shadow-2xl overflow-hidden group">
               {/* Inner Glow Overlay */}
               <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
@@ -153,7 +153,7 @@ export default function Hero({ onNavigate, isLoaded, sectionId }: HeroProps) {
               return (
                 <motion.div
                   whileHover={{ scale: 1.01 }}
-                  className="relative p-10 md:p-14 rounded-[3rem] border border-white/10 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-purple-500/10 backdrop-blur-2xl text-center group overflow-hidden"
+                  className="relative p-10 md:p-14 rounded-[3rem] border border-white/10 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-purple-500/10 backdrop-blur-md text-center group overflow-hidden"
                 >
                   <div className="absolute inset-0 bg-grid opacity-20" />
                   <div className="relative z-10 space-y-6">

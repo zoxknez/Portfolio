@@ -121,7 +121,7 @@ export default function Contact({ sectionId }: ContactProps) {
                 key={idx}
                 variants={itemVariants}
                 whileHover={{ x: 10 }}
-                className="group p-8 rounded-[2rem] border border-white/5 bg-white/[0.02] backdrop-blur-3xl hover:border-white/20 transition-all duration-300"
+                className="group p-8 rounded-[2rem] border border-white/5 bg-white/[0.02] backdrop-blur-lg hover:border-white/20 transition-all duration-300"
               >
                 <div className="flex items-center gap-6">
                   <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-transform duration-500`}>
@@ -151,7 +151,7 @@ export default function Contact({ sectionId }: ContactProps) {
           {/* Contact Form */}
           <motion.div
             variants={itemVariants}
-            className="p-10 rounded-[2.5rem] border border-white/10 bg-white/[0.03] backdrop-blur-3xl relative overflow-hidden"
+            className="p-10 rounded-[2.5rem] border border-white/10 bg-white/[0.03] backdrop-blur-lg relative overflow-hidden"
           >
             <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/5 blur-[100px] -z-10" />
 
