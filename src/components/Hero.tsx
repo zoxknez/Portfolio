@@ -9,7 +9,7 @@ interface HeroProps {
 }
 
 export default function Hero({ onNavigate, isLoaded, sectionId }: HeroProps) {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -59,13 +59,25 @@ export default function Hero({ onNavigate, isLoaded, sectionId }: HeroProps) {
                   {t?.hero?.heading || 'Ko sam ja?'}
                 </motion.h2>
 
-                <motion.div variants={itemVariants} className="space-y-6">
-                  <p className="text-xl md:text-2xl text-slate-200 leading-relaxed font-medium flex flex-col md:flex-row items-center justify-center gap-2 md:gap-0">
-                    <span className="text-white border-b-2 border-cyan-500/50">{t?.hero?.name || 'Zoran Knežević'}</span>
-                    <span className="hidden md:inline text-slate-400 mx-2">-</span>
-                    <span className="text-slate-300 italic font-normal text-center">{t?.hero?.tagline}</span>
+                <motion.div variants={itemVariants} className="space-y-8 max-w-4xl mx-auto">
+                  {/* Name & Badge Block */}
+                  <div className="flex flex-col items-center justify-center space-y-3">
+                    <span className="px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-black text-cyan-400 uppercase tracking-[0.3em] inline-block shadow-sm">
+                      {language === 'sr' ? 'O Meni' : 'About Me'}
+                    </span>
+                    <h3 className="text-3xl md:text-5xl font-black text-white tracking-tight">
+                      {t?.hero?.name || 'Zoran Knežević'}
+                    </h3>
+                    <div className="w-20 h-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 rounded-full mt-1 shadow-[0_0_10px_rgba(34,211,238,0.5)]" />
+                  </div>
+
+                  {/* Impact Tagline */}
+                  <p className="text-xl md:text-2xl lg:text-3xl text-slate-200 font-medium leading-relaxed text-center max-w-3xl mx-auto italic drop-shadow-sm px-4">
+                    "{t?.hero?.tagline}"
                   </p>
-                  <p className="text-lg md:text-xl text-slate-400 leading-relaxed max-w-3xl mx-auto font-light">
+
+                  {/* Backstory */}
+                  <p className="text-lg md:text-xl text-slate-400 leading-relaxed max-w-3xl mx-auto font-light text-center border-t border-white/5 pt-8">
                     {t?.hero?.story}
                   </p>
                 </motion.div>

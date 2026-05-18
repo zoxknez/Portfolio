@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Database, Box, Rocket, Train, GitBranch, Container, Layers, FileCode, ChevronDown } from 'lucide-react';
+import { Database, Box, Rocket, Train, GitBranch, Container, Layers, FileCode, ChevronDown, Layout, Server, Cloud, Code2, Wrench } from 'lucide-react';
 
 interface SkillsProps {
   sectionId?: string;
@@ -14,17 +14,8 @@ interface ToolConfig {
   gradient: string;
 }
 
-interface SkillCategory {
-  name: string;
-  skills: Array<{
-    name: string;
-    confidence: string;
-    note?: string;
-  }>;
-}
-
 export default function Skills({ sectionId }: SkillsProps) {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [expandedCategories, setExpandedCategories] = useState<Record<string, boolean>>({});
 
   const skills = t?.skills?.focusStack || [];
@@ -44,9 +35,14 @@ export default function Skills({ sectionId }: SkillsProps) {
     other: 'Other Tools'
   };
 
-  const categories: SkillCategory[] = [
+  const categories = [
     {
       name: categoryNames.frontend,
+      icon: Layout,
+      iconGradient: 'from-cyan-400 to-blue-500',
+      hoverBorder: 'hover:border-cyan-500/30',
+      hoverShadow: 'hover:shadow-[0_0_50px_-12px_rgba(6,182,212,0.15)]',
+      progressGradient: 'from-cyan-400 to-blue-500',
       skills: otherSkills.filter((s: any) =>
         s.name.includes('Vue') || s.name.includes('Angular') || s.name.includes('Svelte') ||
         s.name.includes('Tailwind') || s.name.includes('UI') || s.name.includes('UI dizajn')
@@ -54,6 +50,11 @@ export default function Skills({ sectionId }: SkillsProps) {
     },
     {
       name: categoryNames.backend,
+      icon: Server,
+      iconGradient: 'from-blue-400 to-indigo-500',
+      hoverBorder: 'hover:border-indigo-500/30',
+      hoverShadow: 'hover:shadow-[0_0_50px_-12px_rgba(99,102,241,0.15)]',
+      progressGradient: 'from-blue-400 to-indigo-500',
       skills: otherSkills.filter((s: any) =>
         s.name.includes('Express') || s.name.includes('API') || s.name.includes('GraphQL') ||
         s.name.includes('gRPC') || s.name.includes('REST') || s.name.includes('Microservices')
@@ -61,6 +62,11 @@ export default function Skills({ sectionId }: SkillsProps) {
     },
     {
       name: categoryNames.databases,
+      icon: Database,
+      iconGradient: 'from-emerald-400 to-teal-500',
+      hoverBorder: 'hover:border-emerald-500/30',
+      hoverShadow: 'hover:shadow-[0_0_50px_-12px_rgba(16,185,129,0.15)]',
+      progressGradient: 'from-emerald-400 to-teal-500',
       skills: otherSkills.filter((s: any) =>
         s.name.includes('MongoDB') || s.name.includes('Firebase') || s.name.includes('SQL') ||
         s.name.includes('Postgres') || s.name.includes('Database') || s.name.includes('baza')
@@ -68,6 +74,11 @@ export default function Skills({ sectionId }: SkillsProps) {
     },
     {
       name: categoryNames.cloud,
+      icon: Cloud,
+      iconGradient: 'from-purple-400 to-pink-500',
+      hoverBorder: 'hover:border-purple-500/30',
+      hoverShadow: 'hover:shadow-[0_0_50px_-12px_rgba(168,85,247,0.15)]',
+      progressGradient: 'from-purple-400 to-pink-500',
       skills: otherSkills.filter((s: any) =>
         s.name.includes('AWS') || s.name.includes('Serverless') || s.name.includes('Bash') ||
         s.name.includes('DevOps') || s.name.includes('Lambda') || s.name.includes('Shell')
@@ -75,6 +86,11 @@ export default function Skills({ sectionId }: SkillsProps) {
     },
     {
       name: categoryNames.languages,
+      icon: Code2,
+      iconGradient: 'from-sky-400 to-cyan-500',
+      hoverBorder: 'hover:border-sky-500/30',
+      hoverShadow: 'hover:shadow-[0_0_50px_-12px_rgba(14,165,233,0.15)]',
+      progressGradient: 'from-sky-400 to-cyan-500',
       skills: otherSkills.filter((s: any) =>
         s.name.includes('Java') || s.name.includes('C#') || s.name.includes('Go') ||
         s.name.includes('PHP') || s.name.includes('Rust') || s.name.includes('Ruby') ||
@@ -83,6 +99,11 @@ export default function Skills({ sectionId }: SkillsProps) {
     },
     {
       name: categoryNames.other,
+      icon: Wrench,
+      iconGradient: 'from-orange-400 to-rose-500',
+      hoverBorder: 'hover:border-orange-500/30',
+      hoverShadow: 'hover:shadow-[0_0_50px_-12px_rgba(249,115,22,0.15)]',
+      progressGradient: 'from-orange-400 to-rose-500',
       skills: otherSkills.filter((s: any) =>
         s.name.includes('Electron') || s.name.includes('WebSocket') || s.name.includes('JWT') ||
         s.name.includes('Stripe') || s.name.includes('TensorFlow') || s.name.includes('Blockchain') ||
@@ -91,15 +112,6 @@ export default function Skills({ sectionId }: SkillsProps) {
     }
   ].filter(cat => cat.skills.length > 0);
 
-  const colors = [
-    'from-cyan-400 to-blue-500',
-    'from-blue-400 to-indigo-500',
-    'from-emerald-400 to-teal-500',
-    'from-purple-400 to-pink-500',
-    'from-sky-400 to-cyan-500',
-    'from-orange-400 to-rose-500',
-    'from-amber-400 to-lime-500',
-  ];
 
   const toolsConfig: ToolConfig[] = [
     { name: 'Supabase', url: 'https://supabase.com/', icon: Database, gradient: 'from-emerald-500 to-teal-600' },
@@ -179,7 +191,7 @@ export default function Skills({ sectionId }: SkillsProps) {
 
         {/* Categorized Skills */}
         <div className="space-y-6">
-          {categories.map((category, catIndex) => {
+          {categories.map((category) => {
             const isExpanded = expandedCategories[category.name];
             return (
               <motion.div
@@ -187,23 +199,52 @@ export default function Skills({ sectionId }: SkillsProps) {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="rounded-[2.5rem] border border-white/5 bg-slate-900/20 backdrop-blur-lg overflow-hidden group"
+                className={`rounded-[2.5rem] border border-white/5 bg-slate-900/20 backdrop-blur-lg overflow-hidden group transition-all duration-500 ${category.hoverBorder} ${category.hoverShadow}`}
               >
                 <button
                   onClick={() => toggleCategory(category.name)}
-                  className="w-full flex items-center justify-between p-8 md:p-10 hover:bg-white/[0.02] transition-colors text-left"
+                  className="w-full flex flex-col lg:flex-row lg:items-center justify-between p-6 md:p-8 lg:p-10 hover:bg-white/[0.02] transition-all duration-300 text-left gap-6"
                 >
-                  <div className="space-y-1">
-                    <h3 className="text-2xl md:text-3xl font-black text-white group-hover:text-cyan-400 transition-colors uppercase tracking-tight">
-                      {category.name}
-                    </h3>
-                    <p className="text-xs text-slate-500 font-bold uppercase tracking-[0.3em]">
-                      {category.skills.length} Technologies
-                    </p>
+                  {/* Left Segment: Icon + Title & Count */}
+                  <div className="flex items-center gap-5">
+                    {/* Glowing Category Icon */}
+                    <div className={`p-3.5 rounded-2xl bg-gradient-to-br ${category.iconGradient} bg-opacity-10 border border-white/10 shadow-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-3`}>
+                      <category.icon className="w-6 h-6 md:w-7 md:h-7 text-white" />
+                    </div>
+
+                    <div className="space-y-1">
+                      <h3 className="text-xl md:text-2xl font-black text-white group-hover:text-cyan-400 transition-colors uppercase tracking-tight">
+                        {category.name}
+                      </h3>
+                      <p className="text-xs text-slate-500 font-bold uppercase tracking-[0.2em]">
+                        {category.skills.length} {language === 'sr' ? 'Tehnologije' : 'Technologies'}
+                      </p>
+                    </div>
                   </div>
-                  <ChevronDown
-                    className={`w-8 h-8 text-slate-500 transition-transform duration-500 ${isExpanded ? 'rotate-180 text-cyan-400' : ''}`}
-                  />
+
+                  {/* Middle Segment: Dynamic Preview Pills (Desktop Only) */}
+                  <div className="hidden lg:flex items-center flex-wrap gap-2 max-w-md xl:max-w-lg">
+                    {category.skills.slice(0, 4).map((skill: any) => (
+                      <span
+                        key={skill.name}
+                        className="px-3.5 py-1 rounded-full text-xs font-bold bg-white/5 border border-white/10 text-slate-300 backdrop-blur-sm shadow-sm hover:border-white/20 transition-all uppercase tracking-wider"
+                      >
+                        {skill.name}
+                      </span>
+                    ))}
+                    {category.skills.length > 4 && (
+                      <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 backdrop-blur-sm shadow-sm uppercase tracking-wider">
+                        +{category.skills.length - 4}
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Right Segment: Stilizovani Chevron Krug */}
+                  <div className={`w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center border bg-white/[0.02] border-white/5 shadow-inner transition-all duration-500 ${isExpanded ? 'bg-cyan-500/10 border-cyan-500/30' : 'group-hover:border-white/20 group-hover:bg-white/[0.05]'}`}>
+                    <ChevronDown
+                      className={`w-5 h-5 md:w-6 md:h-6 text-slate-400 transition-transform duration-500 ${isExpanded ? 'rotate-180 text-cyan-400' : 'group-hover:text-white'}`}
+                    />
+                  </div>
                 </button>
 
                 <AnimatePresence>
@@ -213,10 +254,10 @@ export default function Skills({ sectionId }: SkillsProps) {
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                      className="px-8 md:px-10 pb-10"
+                      className="px-6 md:px-10 pb-8 md:pb-10"
                     >
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6">
-                        {category.skills.map((skill: any, skillIndex: number) => {
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 pt-6 border-t border-white/5">
+                        {category.skills.map((skill: any) => {
                           const percentage = parseInt(skill.confidence) || 0;
                           return (
                             <div key={skill.name} className="space-y-4 group/skill">
@@ -237,7 +278,7 @@ export default function Skills({ sectionId }: SkillsProps) {
                                   whileInView={{ width: `${percentage}%` }}
                                   viewport={{ once: true }}
                                   transition={{ duration: 1, ease: "easeOut" }}
-                                  className={`h-full bg-gradient-to-r ${colors[(catIndex + skillIndex) % colors.length]}`}
+                                  className={`h-full bg-gradient-to-r ${category.progressGradient}`}
                                 />
                               </div>
                             </div>

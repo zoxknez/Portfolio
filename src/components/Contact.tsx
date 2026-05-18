@@ -89,10 +89,10 @@ export default function Contact({ sectionId }: ContactProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start"
+          className="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch"
         >
           {/* Contact Info */}
-          <div className="space-y-6">
+          <div className="flex flex-col gap-6 h-full justify-between">
             {[
               {
                 icon: Mail,
@@ -121,13 +121,13 @@ export default function Contact({ sectionId }: ContactProps) {
                 key={idx}
                 variants={itemVariants}
                 whileHover={{ x: 10 }}
-                className="group p-8 rounded-[2rem] border border-white/5 bg-white/[0.02] backdrop-blur-lg hover:border-white/20 transition-all duration-300"
+                className="group p-8 rounded-[2rem] border border-white/5 bg-white/[0.02] backdrop-blur-lg hover:border-white/20 transition-all duration-300 flex-1 flex items-center"
               >
-                <div className="flex items-center gap-6">
-                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-transform duration-500`}>
+                <div className="flex items-center gap-6 w-full">
+                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-transform duration-500 shrink-0`}>
                     <item.icon className="w-7 h-7 text-white" />
                   </div>
-                  <div className="space-y-1">
+                  <div className="space-y-1 min-w-0">
                     <span className="text-xs font-black uppercase tracking-[0.2em] text-slate-500">{item.label}</span>
                     <a href={item.href} className="text-xl font-bold text-white hover:text-cyan-400 transition-colors block break-all">
                       {item.value}
