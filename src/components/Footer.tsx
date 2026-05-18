@@ -12,19 +12,19 @@ export default function Footer() {
 
   return (
     <footer className="relative py-20 px-6 border-t border-white/5 bg-slate-950 overflow-hidden">
-      {/* Background Glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-[radial-gradient(ellipse_at_bottom,rgba(168,85,247,0.1)_0%,transparent_70%)] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-20">
+
           {/* Brand Column */}
-          <div className="md:col-span-2 space-y-8">
+          <div className="md:col-span-2 flex flex-col items-center md:items-start gap-8">
             <div className="flex items-center gap-4 group">
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform duration-500">
                 <Rocket className="w-6 h-6 text-white" />
               </div>
               <div className="flex flex-col">
-                <span className="text-2xl font-black text-white tracking-widest uppercase mb-[-4px]">
+                <span className="text-2xl font-black text-white tracking-widest uppercase leading-none">
                   Zoran
                 </span>
                 <span className="text-[10px] font-black text-cyan-400 tracking-[0.4em] uppercase opacity-80">
@@ -32,7 +32,7 @@ export default function Footer() {
                 </span>
               </div>
             </div>
-            <p className="text-lg text-slate-400 font-light leading-relaxed max-w-sm">
+            <p className="text-lg text-slate-400 font-light leading-relaxed max-w-sm text-center md:text-left">
               {t?.footer?.tagline || 'AI-first Digital Maker building solutions for the modern web'}
             </p>
             <div className="flex items-center gap-4">
@@ -56,11 +56,11 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-6">
+          <div className="flex flex-col items-center md:items-start gap-6">
             <h4 className="text-sm font-black uppercase tracking-[0.2em] text-white">
-              {t?.footer?.quickLinks || 'Explore'}
+              {t?.footer?.quickLinks || 'Quick Links'}
             </h4>
-            <ul className="space-y-4">
+            <ul className="flex flex-col items-center md:items-start gap-4">
               {[
                 { label: t?.nav?.home || 'Home', href: '#hero' },
                 { label: t?.nav?.skills || 'Skills', href: '#skills' },
@@ -76,12 +76,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
-          <div className="space-y-6">
+          {/* Connect */}
+          <div className="flex flex-col items-center md:items-start gap-6">
             <h4 className="text-sm font-black uppercase tracking-[0.2em] text-white">
               {t?.footer?.connect || 'Connect'}
             </h4>
-            <div className="space-y-4">
+            <div className="flex flex-col items-center md:items-start gap-4">
               <a href="mailto:zoxknez@hotmail.com" className="group flex items-center gap-3 text-slate-400 hover:text-white transition-colors">
                 <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-cyan-500/20 group-hover:text-cyan-400 transition-colors">
                   <Mail className="w-4 h-4" />
@@ -96,14 +96,14 @@ export default function Footer() {
               </a>
             </div>
           </div>
+
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
-          <p className="text-xs font-bold uppercase tracking-widest text-slate-500">
-            © {currentYear} Zoran Knežević • {t?.footer?.rights || 'All rights reserved'}
+        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+          <p className="text-xs font-bold uppercase tracking-widest text-slate-500 text-center md:text-left">
+            © {currentYear} Zoran Knežević | {t?.footer?.rights || 'All rights reserved'}
           </p>
-
           <motion.button
             onClick={scrollToTop}
             whileHover={{ scale: 1.05 }}
