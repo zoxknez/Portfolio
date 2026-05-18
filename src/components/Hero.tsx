@@ -60,10 +60,10 @@ export default function Hero({ onNavigate, isLoaded, sectionId }: HeroProps) {
                 </motion.h2>
 
                 <motion.div variants={itemVariants} className="space-y-6">
-                  <p className="text-xl md:text-2xl text-slate-200 leading-relaxed font-medium">
+                  <p className="text-xl md:text-2xl text-slate-200 leading-relaxed font-medium flex flex-col md:flex-row items-center justify-center gap-2 md:gap-0">
                     <span className="text-white border-b-2 border-cyan-500/50">{t?.hero?.name || 'Zoran Knežević'}</span>
-                    <span className="text-slate-400 mx-2">-</span>
-                    <span className="text-slate-300 italic font-normal">{t?.hero?.tagline}</span>
+                    <span className="hidden md:inline text-slate-400 mx-2">-</span>
+                    <span className="text-slate-300 italic font-normal text-center">{t?.hero?.tagline}</span>
                   </p>
                   <p className="text-lg md:text-xl text-slate-400 leading-relaxed max-w-3xl mx-auto font-light">
                     {t?.hero?.story}

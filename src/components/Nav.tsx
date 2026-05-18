@@ -70,11 +70,11 @@ export default function Nav({ sections, activeSection, onNavigate }: NavProps) {
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform duration-500">
                 <Rocket className="w-6 h-6 text-white" />
               </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-black text-white tracking-widest uppercase mb-[-4px]">
+              <div className="flex flex-col leading-none">
+                <span className="text-xl font-black text-white tracking-widest uppercase">
                   Zoran
                 </span>
-                <span className="text-[10px] font-black text-cyan-400 tracking-[0.4em] uppercase opacity-80">
+                <span className="text-[10px] font-black text-cyan-400 tracking-[0.4em] uppercase opacity-80 mt-1">
                   Portfolio
                 </span>
               </div>
